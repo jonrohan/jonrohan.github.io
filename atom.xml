@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Jon Rohan</title>
- <link href="http://jonrohan.me/atom.xml" rel="self"/>
- <link href="http://jonrohan.me/"/>
- <updated>2015-04-17T13:08:34-04:00</updated>
- <id>http://jonrohan.me</id>
+ <link href="http://jonrohan.codes/atom.xml" rel="self"/>
+ <link href="http://jonrohan.codes/"/>
+ <updated>2015-04-17T13:25:13-04:00</updated>
+ <id>http://jonrohan.codes</id>
  <author>
    <name></name>
    <email></email>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>Class Naming: Semantic Approach</title>
-   <link href="http://jonrohan.me/fieldnotes/semantic-css-class-naming"/>
+   <link href="http://jonrohan.codes/fieldnotes/semantic-css-class-naming"/>
    <updated>2012-01-20T00:00:00-05:00</updated>
-   <id>http://jonrohan.me/fieldnotes/semantic-css-class-naming</id>
+   <id>http://jonrohan.codes/fieldnotes/semantic-css-class-naming</id>
    <content type="html">&lt;h3 id=&quot;the-semantic-web&quot;&gt;The Semantic Web&lt;/h3&gt;
 
 &lt;p&gt;With the rise of web standards we have seen the rise of the semantic web. This applies to the HTML elements selected as well as the class names chosen for the HTML. When choosing semantic elements and class names you want to pick a name considering the function or meaning of the element as it is on your page, not the position or style of the element.&lt;/p&gt;
@@ -56,9 +56,9 @@
  
  <entry>
    <title>List of Git Contributors</title>
-   <link href="http://jonrohan.me/fieldnotes/list-git-contributors"/>
+   <link href="http://jonrohan.codes/fieldnotes/list-git-contributors"/>
    <updated>2012-01-15T00:00:00-05:00</updated>
-   <id>http://jonrohan.me/fieldnotes/list-git-contributors</id>
+   <id>http://jonrohan.codes/fieldnotes/list-git-contributors</id>
    <content type="html">&lt;p&gt;This is one of my favorite Git commands, I think mainly because I like to see where I am in a list of contributors.&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;git shortlog -s -n&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -76,9 +76,9 @@
  
  <entry>
    <title>@font-face</title>
-   <link href="http://jonrohan.me/fieldnotes/font-face"/>
+   <link href="http://jonrohan.codes/fieldnotes/font-face"/>
    <updated>2011-07-12T00:00:00-04:00</updated>
-   <id>http://jonrohan.me/fieldnotes/font-face</id>
+   <id>http://jonrohan.codes/fieldnotes/font-face</id>
    <content type="html">&lt;p&gt;Surprisingly embed-able opentype fonts have been included in Internet Explorer since version 4. But with the recent release of Firefox 3.5 and Safari, you can now embed Opentype and Truetype fonts across all major browsers. It’s pretty simple and here’s how it’s done.&lt;/p&gt;
 
 &lt;p&gt;First you must define your font, basically tell the browser where to get the font file, and what you’re going to call it.&lt;/p&gt;
@@ -136,9 +136,9 @@
  
  <entry>
    <title>Clear Fixes</title>
-   <link href="http://jonrohan.me/fieldnotes/clear-fixes"/>
+   <link href="http://jonrohan.codes/fieldnotes/clear-fixes"/>
    <updated>2011-01-20T00:00:00-05:00</updated>
-   <id>http://jonrohan.me/fieldnotes/clear-fixes</id>
+   <id>http://jonrohan.codes/fieldnotes/clear-fixes</id>
    <content type="html">&lt;p&gt;There is a common problem in front end engineering where, when you float an element it is actually removed from it’s parents’ flow. This can cause the elements below the floating element to run into the floating elements. Like below. The green box is floating and it’s parent has the red border. The blue box is below the red border box.&lt;/p&gt;
 
 &lt;div style=&quot;overflow:hidden;&quot;&gt;
@@ -220,9 +220,9 @@
  
  <entry>
    <title>Creating Triangles in CSS</title>
-   <link href="http://jonrohan.me/fieldnotes/creating-triangles-in-css"/>
+   <link href="http://jonrohan.codes/fieldnotes/creating-triangles-in-css"/>
    <updated>2011-01-18T00:00:00-05:00</updated>
-   <id>http://jonrohan.me/fieldnotes/creating-triangles-in-css</id>
+   <id>http://jonrohan.codes/fieldnotes/creating-triangles-in-css</id>
    <content type="html">&lt;p&gt;I’ve come across a few techniques and tips in my career, while working at my last gig a co-worker pointed me to this technique. I believe this was originally discovered by the legendary Eric Meyer, but I couldn’t find much documentation about it on the web so I thought I would describe it here.&lt;/p&gt;
 
 &lt;h3 id=&quot;how-it-works&quot;&gt;How it works&lt;/h3&gt;
@@ -356,9 +356,9 @@
  
  <entry>
    <title>Classes and Inheritance</title>
-   <link href="http://jonrohan.me/fieldnotes/classes-and-inheritance"/>
+   <link href="http://jonrohan.codes/fieldnotes/classes-and-inheritance"/>
    <updated>2010-10-15T00:00:00-04:00</updated>
-   <id>http://jonrohan.me/fieldnotes/classes-and-inheritance</id>
+   <id>http://jonrohan.codes/fieldnotes/classes-and-inheritance</id>
    <content type="html">&lt;p&gt;Object oriented JavaScript is everywhere today, and its the type of thing that takes a developer from someone tinkering with JavaScript on the path to becoming a JavaScript ninja. In this post I’m gonna discuss the basics of creating a JavaScript class, and a subclass which inherits methods from the superclass.&lt;/p&gt;
 
 &lt;h3&gt;A JavaScript Class&lt;/h3&gt;
@@ -414,9 +414,9 @@
  
  <entry>
    <title>Text Rotation</title>
-   <link href="http://jonrohan.me/fieldnotes/text-rotation"/>
+   <link href="http://jonrohan.codes/fieldnotes/text-rotation"/>
    <updated>2010-10-10T00:00:00-04:00</updated>
-   <id>http://jonrohan.me/fieldnotes/text-rotation</id>
+   <id>http://jonrohan.codes/fieldnotes/text-rotation</id>
    <content type="html">&lt;p&gt;I recently saw an &lt;a href=&quot;http://snook.ca/archives/html_and_css/css-text-rotation&quot;&gt;article&lt;/a&gt; on CSS text rotation on the internets and decided to try my own experiement.&lt;/p&gt;
 
 &lt;p&gt;What I wanted to make was a clock. The basis of this project is using the -webkit-transform:rotate(0deg); css property. This allows you to rotate any object 360 degrees. So I began to wonder, if I have a line, and I setup a javascript timer can I rotate it every second?&lt;/p&gt;
@@ -551,9 +551,9 @@
  
  <entry>
    <title>Dead Simple Git Workflow</title>
-   <link href="http://jonrohan.me/fieldnotes/dead-simple-git-workflow-for-agile-teams"/>
+   <link href="http://jonrohan.codes/fieldnotes/dead-simple-git-workflow-for-agile-teams"/>
    <updated>2010-10-09T00:00:00-04:00</updated>
-   <id>http://jonrohan.me/fieldnotes/dead-simple-git-workflow-for-agile-teams</id>
+   <id>http://jonrohan.codes/fieldnotes/dead-simple-git-workflow-for-agile-teams</id>
    <content type="html">&lt;p&gt;Recently I have had the privilege to work with a few excellent small agile teams. With each team, they have their own process, which works best for them. And there’s nothing wrong with that, a team should work in it’s most effective way. But I came across a team recently that had a workflow that really impressed me. To put it simply it’s described as an extremely cool Git workflow.&lt;/p&gt;
 
 &lt;p&gt;I can’t take credit for coming up with this workflow, but I’m gonna do my best to re-describe it here so it can be shared. The basis for this post comes from reinh.com’s posts &lt;a href=&quot;http://reinh.com/blog/2009/03/02/a-git-workflow-for-agile-teams.html&quot;&gt;A git workflow for Agile Teams&lt;/a&gt; and &lt;a href=&quot;http://reinh.com/blog/2008/08/27/hack-and-and-ship.html&quot;&gt;Hack &amp;amp;&amp;amp; Ship&lt;/a&gt;. Also this workflow pulls alot from Josh Susser’s post on the &lt;a href=&quot;http://blog.hasmanythrough.com/2008/12/18/agile-git-and-the-story-branch-pattern&quot;&gt;story branch pattern&lt;/a&gt;.&lt;/p&gt;
