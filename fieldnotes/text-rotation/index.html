@@ -1,0 +1,252 @@
+<!doctype html>
+<html>
+
+  <head>
+
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <meta name="google-site-verification" content="RlkXEN-itWvUefIzgXZdJ2alzxiK5qruVYNaIVw5sEs" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Jon Rohan - Text Rotation</title>
+  <meta name="description" content="">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="/css/styles.css"    type="text/css" media="screen" charset="utf-8">
+  <script src="//use.typekit.net/xlf5nmg.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+</head>
+
+
+  <body>
+    <header>
+      <div class="nav-bar fixed">
+        <div class="container">
+          <nav class="right">
+            <ul>
+              <li>
+                <a href="/#about">About</a>
+              </li>
+              <li>
+                <a href="/#work">Work</a>
+              </li>
+              <li>
+                <a href="/#contact">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <h1 class="logo"><a href="/"><img src=""></a></h1>
+        </div>
+      </div>
+      <div class="container">
+        <p>I am a Web Designer and Developer working at <a href="https://github.com/about/team">GitHub</a>. My passion is building beautiful products and working with wonderful people.</p>
+        <a href="#" class="js-em button" data-text="Let&#8217;s chat">Let&#8217;s chat</a>
+      </div>
+    </header>
+
+    <article class="container">
+      <article id="post" class="blog-post">
+  <h2 class="text-center">Text Rotation</h2>
+  
+  <p class="text-center post-meta">
+    <img src="https://github.com/jonrohan.png" alt="jonrohan" class="avatar" width="30" height="30">
+    <span class="author">Jon Rohan</span>
+    <time>Oct 10, 2010</time>
+     &middot; <span>3 min read</span> &middot; <span class="menu-wrapper">
+  <span class="share-button"><span class="ion-share" title="share"></span> Share</span>
+  <span class="menu">
+    <a href="https://twitter.com/intent/tweet?text=Text Rotation&url=http://jonrohan.me/fieldnotes/text-rotation&via=jonrohan" class="muted twitter-link"><span class="ion-social-twitter"></span> Twitter</a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=http://jonrohan.me/fieldnotes/text-rotation" class="muted facebook-link"><span class="ion-social-facebook"></span> Facebook</a>
+    <a href="mailto:?&subject=Text Rotation&body=Text Rotation%0Ahttp://jonrohan.me/fieldnotes/text-rotation" class="muted"><span class="ion-email"></span> Email</a>
+  </span>
+</span>
+
+  </p>
+  <section class="markdown-body">
+    <p>I recently saw an <a href="http://snook.ca/archives/html_and_css/css-text-rotation">article</a> on CSS text rotation on the internets and decided to try my own experiement.</p>
+
+<p>What I wanted to make was a clock. The basis of this project is using the -webkit-transform:rotate(0deg); css property. This allows you to rotate any object 360 degrees. So I began to wonder, if I have a line, and I setup a javascript timer can I rotate it every second?</p>
+
+<p data-height="309" data-theme-id="14162" data-slug-hash="VYoqwj" data-default-tab="result" data-user="jonrohan" class="codepen">See the Pen <a href="http://codepen.io/jonrohan/pen/VYoqwj/">VYoqwj</a> by Jon Rohan (<a href="http://codepen.io/jonrohan">@jonrohan</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+
+<p>The design is inspired by @<a href="https://twitter.com/eston">eston</a>’s <a href="http://www.flickr.com/photos/eston/3799958463/">Sarai</a> desktop.</p>
+
+<p>This clock won’t work in IE. There is an IE rotate property, but it only rotates at 0, 90, 180, 270. So that won’t work for this clock. Here’s the IE rotate property anyways</p>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">filter</span><span class="o">:</span> <span class="nt">progid</span><span class="nd">:DXImageTransform</span><span class="nc">.Microsoft.BasicImage</span><span class="o">(</span><span class="nt">rotation</span><span class="o">=</span><span class="nt">3</span><span class="o">);</span></code></pre></div>
+
+<h3>So How did I do it?</h3>
+
+<p>I started with an external div for the clock. Giving it a width and height of 100px and position relative (so I can position the clock hands)</p>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nf">#clock</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span><span class="m">208px</span><span class="p">;</span>
+  <span class="nl">height</span><span class="p">:</span><span class="m">208px</span><span class="p">;</span>
+  <span class="nl">position</span><span class="p">:</span><span class="nb">relative</span><span class="p">;</span>
+<span class="p">}</span></code></pre></div>
+
+<p>After getting the clock, I need a second hand, a minute hand and an hour hand. Originally I just used a side border on the hands, but realized that the rotate property rotates the object at it’s center, and not at it’s end. So to create the hands, I gave them a border top equal to the length of the hand, then a height to offset the border, and some margin to vertically align.</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"clock"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ten_min"</span> <span class="na">style=</span><span class="s">"-moz-transform:rotate(0deg);-webkit-transform:rotate(0deg);"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ten_min"</span> <span class="na">style=</span><span class="s">"-moz-transform:rotate(30deg);-webkit-transform:rotate(30deg);"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ten_min"</span> <span class="na">style=</span><span class="s">"-moz-transform:rotate(60deg);-webkit-transform:rotate(60deg);"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ten_min"</span> <span class="na">style=</span><span class="s">"-moz-transform:rotate(90deg);-webkit-transform:rotate(90deg);"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ten_min"</span> <span class="na">style=</span><span class="s">"-moz-transform:rotate(120deg);-webkit-transform:rotate(120deg);"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ten_min"</span> <span class="na">style=</span><span class="s">"-moz-transform:rotate(150deg);-webkit-transform:rotate(150deg);"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"min_mark"</span> <span class="na">style=</span><span class="s">"-moz-transform:rotate(0deg);-webkit-transform:rotate(0deg);"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"min_mark"</span> <span class="na">style=</span><span class="s">"-moz-transform:rotate(6deg);-webkit-transform:rotate(6deg);"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"min_mark"</span> <span class="na">style=</span><span class="s">"-moz-transform:rotate(12deg);-webkit-transform:rotate(12deg);"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"min_mark"</span> <span class="na">style=</span><span class="s">"-moz-transform:rotate(18deg);-webkit-transform:rotate(18deg);"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"min_mark"</span> <span class="na">style=</span><span class="s">"-moz-transform:rotate(24deg);-webkit-transform:rotate(24deg);"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"min_mark"</span> <span class="na">style=</span><span class="s">"-moz-transform:rotate(36deg);-webkit-transform:rotate(36deg);"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"min_mark"</span> <span class="na">style=</span><span class="s">"-moz-transform:rotate(42deg);-webkit-transform:rotate(42deg);"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"min_mark"</span> <span class="na">style=</span><span class="s">"-moz-transform:rotate(48deg);-webkit-transform:rotate(48deg);"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"min_mark"</span> <span class="na">style=</span><span class="s">"-moz-transform:rotate(54deg);-webkit-transform:rotate(54deg);"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"min_mark"</span> <span class="na">style=</span><span class="s">"-moz-transform:rotate(66deg);-webkit-transform:rotate(66deg);"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"min_mark"</span> <span class="na">style=</span><span class="s">"-moz-transform:rotate(72deg);-webkit-transform:rotate(72deg);"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"min_mark"</span> <span class="na">style=</span><span class="s">"-moz-transform:rotate(78deg);-webkit-transform:rotate(78deg);"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"min_mark"</span> <span class="na">style=</span><span class="s">"-moz-transform:rotate(84deg);-webkit-transform:rotate(84deg);"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"min_mark"</span> <span class="na">style=</span><span class="s">"-moz-transform:rotate(96deg);-webkit-transform:rotate(96deg);"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"min_mark"</span> <span class="na">style=</span><span class="s">"-moz-transform:rotate(102deg);-webkit-transform:rotate(102deg);"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"min_mark"</span> <span class="na">style=</span><span class="s">"-moz-transform:rotate(108deg);-webkit-transform:rotate(108deg);"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"min_mark"</span> <span class="na">style=</span><span class="s">"-moz-transform:rotate(114deg);-webkit-transform:rotate(114deg);"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"min_mark"</span> <span class="na">style=</span><span class="s">"-moz-transform:rotate(126deg);-webkit-transform:rotate(126deg);"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"min_mark"</span> <span class="na">style=</span><span class="s">"-moz-transform:rotate(132deg);-webkit-transform:rotate(132deg);"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"min_mark"</span> <span class="na">style=</span><span class="s">"-moz-transform:rotate(138deg);-webkit-transform:rotate(138deg);"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"min_mark"</span> <span class="na">style=</span><span class="s">"-moz-transform:rotate(144deg);-webkit-transform:rotate(144deg);"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"min_mark"</span> <span class="na">style=</span><span class="s">"-moz-transform:rotate(156deg);-webkit-transform:rotate(156deg);"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"min_mark"</span> <span class="na">style=</span><span class="s">"-moz-transform:rotate(162deg);-webkit-transform:rotate(162deg);"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"min_mark"</span> <span class="na">style=</span><span class="s">"-moz-transform:rotate(168deg);-webkit-transform:rotate(168deg);"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"min_mark"</span> <span class="na">style=</span><span class="s">"-moz-transform:rotate(174deg);-webkit-transform:rotate(174deg);"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"sec"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"min"</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"hour"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nf">#sec</span> <span class="p">{</span>
+  <span class="nl">-moz-transform</span><span class="p">:</span> <span class="n">rotate</span><span class="p">(</span><span class="m">0deg</span><span class="p">);</span>
+  <span class="nl">-webkit-transform</span><span class="p">:</span> <span class="n">rotate</span><span class="p">(</span><span class="m">0deg</span><span class="p">);</span>
+  <span class="nl">border-top</span><span class="p">:</span><span class="m">104px</span> <span class="nb">solid</span> <span class="m">#353535</span><span class="p">;</span>
+  <span class="nl">height</span><span class="p">:</span><span class="m">104px</span><span class="p">;</span>
+  <span class="nl">left</span><span class="p">:</span> <span class="m">104px</span><span class="p">;</span>
+  <span class="nl">position</span><span class="p">:</span><span class="nb">absolute</span><span class="p">;</span>
+  <span class="nl">top</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span><span class="m">2px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#min</span> <span class="p">{</span>
+  <span class="nl">-moz-transform</span><span class="p">:</span> <span class="n">rotate</span><span class="p">(</span><span class="m">45deg</span><span class="p">);</span>
+  <span class="nl">-webkit-transform</span><span class="p">:</span> <span class="n">rotate</span><span class="p">(</span><span class="m">45deg</span><span class="p">);</span>
+  <span class="nl">border-top</span><span class="p">:</span><span class="m">104px</span> <span class="nb">solid</span> <span class="m">#353535</span><span class="p">;</span>
+  <span class="nl">height</span><span class="p">:</span><span class="m">104px</span><span class="p">;</span>
+  <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
+  <span class="nl">left</span><span class="p">:</span> <span class="m">102px</span><span class="p">;</span>
+  <span class="nl">top</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span><span class="m">4px</span><span class="p">;</span>
+ <span class="p">}</span>
+<span class="nf">#hour</span> <span class="p">{</span>
+  <span class="nl">-moz-transform</span><span class="p">:</span><span class="n">rotate</span><span class="p">(</span><span class="m">180deg</span><span class="p">);</span>
+  <span class="nl">-webkit-transform</span><span class="p">:</span><span class="n">rotate</span><span class="p">(</span><span class="m">180deg</span><span class="p">);</span>
+  <span class="nl">border-top</span><span class="p">:</span> <span class="m">52px</span> <span class="nb">solid</span> <span class="nb">rgb</span><span class="p">(</span><span class="m">53</span><span class="p">,</span> <span class="m">53</span><span class="p">,</span> <span class="m">53</span><span class="p">);</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="m">52px</span><span class="p">;</span>
+  <span class="nl">left</span><span class="p">:</span> <span class="m">104px</span><span class="p">;</span>
+  <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
+  <span class="nl">top</span><span class="p">:</span> <span class="m">52px</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">5px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#clock</span> <span class="nc">.ten_min</span> <span class="p">{</span>
+  <span class="nl">border-bottom</span><span class="p">:</span><span class="m">10px</span> <span class="nb">solid</span> <span class="m">#353535</span><span class="p">;</span>
+  <span class="nl">border-top</span><span class="p">:</span><span class="m">10px</span> <span class="nb">solid</span> <span class="m">#353535</span><span class="p">;</span>
+  <span class="nl">height</span><span class="p">:</span><span class="m">208px</span><span class="p">;</span>
+  <span class="nl">left</span><span class="p">:</span><span class="m">104px</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span><span class="m">0</span><span class="p">;</span>
+  <span class="nl">position</span><span class="p">:</span><span class="nb">absolute</span><span class="p">;</span>
+  <span class="nl">top</span><span class="p">:</span><span class="m">-9px</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span><span class="m">5px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#clock</span> <span class="nc">.min_mark</span> <span class="p">{</span>
+  <span class="nl">border-bottom</span><span class="p">:</span><span class="m">5px</span> <span class="nb">solid</span> <span class="m">#353535</span><span class="p">;</span>
+  <span class="nl">border-top</span><span class="p">:</span><span class="m">5px</span> <span class="nb">solid</span> <span class="m">#353535</span><span class="p">;</span>
+  <span class="nl">height</span><span class="p">:</span><span class="m">208px</span><span class="p">;</span>
+  <span class="nl">left</span><span class="p">:</span><span class="m">104px</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span><span class="m">0</span><span class="p">;</span>
+  <span class="nl">position</span><span class="p">:</span><span class="nb">absolute</span><span class="p">;</span>
+  <span class="nl">top</span><span class="p">:</span><span class="m">-4px</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span><span class="m">1px</span><span class="p">;</span>
+<span class="p">}</span></code></pre></div>
+
+<p>The tick marks are also the lines, with a top and bottom border rotated 180 degrees.</p>
+
+<p>The javascript is a simple timer which updates the degrees of each hand based on the time.</p>
+
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+  <span class="kd">var</span> <span class="nx">tick</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">now</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">();</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s2">"#sec"</span><span class="p">).</span><span class="nx">css</span><span class="p">({</span><span class="s2">"-moz-transform"</span><span class="p">:</span><span class="s2">"rotate("</span> <span class="o">+</span> <span class="p">(</span><span class="nx">now</span><span class="p">.</span><span class="nx">getSeconds</span><span class="p">()</span> <span class="o">*</span> <span class="mi">6</span><span class="p">)</span> <span class="o">+</span> <span class="s2">"deg)"</span><span class="p">,</span>
+    <span class="s2">"-webkit-transform"</span><span class="p">:</span><span class="s2">"rotate("</span> <span class="o">+</span> <span class="p">(</span><span class="nx">now</span><span class="p">.</span><span class="nx">getSeconds</span><span class="p">()</span> <span class="o">*</span> <span class="mi">6</span><span class="p">)</span> <span class="o">+</span> <span class="s2">"deg)"</span><span class="p">});</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s2">"#min"</span><span class="p">).</span><span class="nx">css</span><span class="p">({</span><span class="s2">"-moz-transform"</span><span class="p">:</span><span class="s2">"rotate("</span> <span class="o">+</span> <span class="p">(</span><span class="nx">now</span><span class="p">.</span><span class="nx">getMinutes</span><span class="p">()</span> <span class="o">*</span> <span class="mi">6</span><span class="p">)</span> <span class="o">+</span> <span class="s2">"deg)"</span><span class="p">,</span>
+    <span class="s2">"-webkit-transform"</span><span class="p">:</span><span class="s2">"rotate("</span> <span class="o">+</span> <span class="p">(</span><span class="nx">now</span><span class="p">.</span><span class="nx">getMinutes</span><span class="p">()</span> <span class="o">*</span> <span class="mi">6</span><span class="p">)</span> <span class="o">+</span> <span class="s2">"deg)"</span><span class="p">});</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s2">"#hour"</span><span class="p">).</span><span class="nx">css</span><span class="p">({</span><span class="s2">"-moz-transform"</span><span class="p">:</span><span class="s2">"rotate("</span> <span class="o">+</span> <span class="p">(</span><span class="nx">now</span><span class="p">.</span><span class="nx">getHours</span><span class="p">()</span> <span class="o">*</span> <span class="mi">30</span><span class="p">)</span> <span class="o">+</span> <span class="s2">"deg)"</span><span class="p">,</span>
+     <span class="s2">"-webkit-transform"</span><span class="p">:</span><span class="s2">"rotate("</span> <span class="o">+</span> <span class="p">(</span><span class="nx">now</span><span class="p">.</span><span class="nx">getHours</span><span class="p">()</span> <span class="o">*</span> <span class="mi">30</span><span class="p">)</span> <span class="o">+</span> <span class="s2">"deg)"</span><span class="p">});</span>
+  <span class="p">};</span>
+  <span class="nx">setInterval</span><span class="p">(</span><span class="nx">tick</span><span class="p">,</span><span class="mi">1000</span><span class="p">);</span>
+<span class="p">})();</span></code></pre></div>
+
+
+  </section>
+</article>
+<div class="post-page-foot clearfix">
+  <span class="right share-wrap"><span class="menu-wrapper">
+  <span class="share-button"><span class="ion-share" title="share"></span> Share</span>
+  <span class="menu">
+    <a href="https://twitter.com/intent/tweet?text=Text Rotation&url=http://jonrohan.me/fieldnotes/text-rotation&via=jonrohan" class="muted twitter-link"><span class="ion-social-twitter"></span> Twitter</a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=http://jonrohan.me/fieldnotes/text-rotation" class="muted facebook-link"><span class="ion-social-facebook"></span> Facebook</a>
+    <a href="mailto:?&subject=Text Rotation&body=Text Rotation%0Ahttp://jonrohan.me/fieldnotes/text-rotation" class="muted"><span class="ion-email"></span> Email</a>
+  </span>
+</span>
+</span>
+  <a href="https://twitter.com/jonrohan" class="twitter-link follow-me button" data-text="Follow">Follow</a>
+  <img src="https://github.com/jonrohan.png" alt="jonrohan" class="avatar" width="50" height="50">
+  This post was hastily written by
+  <span class="author-name">Jon Rohan</span>
+</div>
+
+<hr>
+<h4>More to read</h4>
+  
+    <a href="/fieldnotes/classes-and-inheritance#post" class="next-post">
+      <h3>Classes and Inheritance</h3>
+      Object oriented JavaScript is everywhere today, and its the type of thing that takes a developer from someone tinkering with JavaScript on the path to becoming a JavaScript ninja.
+    </a>
+  
+  
+    <a href="/fieldnotes/dead-simple-git-workflow-for-agile-teams#post" class="next-post">
+      <h3>Dead Simple Git Workflow</h3>
+      Recently I have had the privilege to work with a few excellent small agile teams. With each team, they have their own process, which works best for them. And there's nothing wrong with that, a team should work in it's most effective way. But I came across a team recently that had a workflow that really impressed me. To put it simply it's described as an extremely cool Git workflow.
+    </a>
+  
+
+
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+    </article>
+
+    <footer>
+      <div class="container">
+        &copy; 2015. All rights reserved. <a href="/atom.xml">Feed</a>
+      </div>
+    </footer>
+    <div class="modal-screen"></div>
+    <script async type="text/javascript" src="/js/jquery-1.11.2.min.js"></script>
+<script async type="text/javascript" src="/js/scripts.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-543420-18', 'auto');
+  ga('send', 'pageview');
+</script>
+
+  </body>
+</html>
