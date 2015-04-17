@@ -64,12 +64,13 @@
     </header>
 
     <article class="container">
-      <article id="post" class="blog-post">
-  <h2 class="text-center">List of Git Contributors</h2>
+      <article id="post" class="blog-post" itemscope itemtype="http://schema.org/NewsArticle">
+  <h2 class="text-center" itemprop="headline">List of Git Contributors</h2>
   
   <p class="text-center post-meta">
-    <img src="/images/avatar.png" alt="jonrohan" class="avatar" width="30" height="30">
+    <img itemprop="image" src="/images/avatar.png" alt="jonrohan" class="avatar" width="30" height="30">
     <span class="author">Jon Rohan</span>
+    <meta itemprop="datePublished" content="2012-01-15 00:00:00 -0500">
     <time>Jan 15, 2012</time>
      &middot; <span class="menu-wrapper">
   <span class="share-button"><span class="ion-share" title="share"></span> Share</span>
@@ -81,7 +82,7 @@
 </span>
 
   </p>
-  <section class="markdown-body">
+  <section class="markdown-body" itemprop="articleBody">
     <p>This is one of my favorite Git commands, I think mainly because I like to see where I am in a list of contributors.</p>
 
 <div class="highlight"><pre><code class="language-sh" data-lang="sh">git shortlog -s -n</code></pre></div>
@@ -151,6 +152,28 @@
     ga('create', 'UA-543420-18', 'auto');
     ga('send', 'pageview');
   }
+</script>
+<script type="application/ld+json">
+{ "@context" : "http://schema.org",
+  "@type" : "Person",
+  "name" : "Jon Rohan",
+  "url" : "http://jonrohan.codes",
+  "sameAs" : [
+    "https://www.facebook.com/jonrohan",
+    "http://www.linkedin.com/in/jonrohan",
+    "http://twitter.com/jonrohan",
+    "https://github.com/jonrohan",
+    "https://dribbble.com/jonrohan"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{  "@context" : "http://schema.org",
+   "@type" : "WebSite",
+   "name" : "Jon Rohan Codes",
+   "alternateName" : "Jon Rohan Code Blog",
+   "url" : "http://jonrohan.codes"
+}
 </script>
 
   </body>
