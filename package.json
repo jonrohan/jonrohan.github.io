@@ -5,7 +5,7 @@
   "author": "Jon Rohan",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jonrohan/jonrohan.github.io.git"
+    "url": "https://github.com/jonrohan/jonrohan.codes.git"
   },
   "devDependencies": {
     "grunt": "~0.4.5",
