@@ -8,6 +8,10 @@
     return $(".menu-wrapper.open").toggleClass("open");
   });
 
+  $(".logo-head a").on("click", function() {
+    return $(this).addClass("clicked");
+  });
+
   $(document).ready(function() {
     var emd;
     emd = ["j", "on", "@", "jonr", "ohan", ".me"];
