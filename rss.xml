@@ -3,7 +3,7 @@
   <channel>
 
     <title>Jon Rohan</title>
-    <link rel="self">http://jonrohan.codes/rss.xml</link>
+    <atom:link rel="self">http://jonrohan.codes/rss.xml</atom:link>
     <link>http://jonrohan.codes</link>
     <description><![CDATA[Web Designer & Developer]]></description>
     <language>en</language>
