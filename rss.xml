@@ -3,13 +3,12 @@
   <channel>
 
     <title>Jon Rohan</title>
+    <link rel="self">http://jonrohan.codes/rss.xml</link>
     <link>http://jonrohan.codes</link>
     <description><![CDATA[Web Designer & Developer]]></description>
     <language>en</language>
-    <lastBuildDate>2012-01-20T00:00:00-05:00</lastBuildDate>
-    <copyright><![CDATA[
-      &copy; Jon Rohan 2015. All rights reserved.
-    ]]></copyright>
+    <lastBuildDate>Fri, 20 Jan 2012 00:00:00 -0500</lastBuildDate>
+    <copyright>Copyright Jon Rohan 2015. All rights reserved.</copyright>
 
     
     <item>
@@ -17,7 +16,7 @@
       <link>http://jonrohan.codes/fieldnotes/semantic-css-class-naming</link>
       <description>With the rise of web standards we have seen the rise of the semantic web. This applies to the HTML elements selected as well as the class names chosen for the HTML. When choosing semantic elements and class names you want to pick a name considering the function or meaning of the element as it is on your page, not the position or style of the element.</description>
       <guid isPermaLink="true">http://jonrohan.codes/fieldnotes/semantic-css-class-naming</guid>
-      <pubDate>2012-01-20T00:00:00-05:00</pubDate>
+      <pubDate>Fri, 20 Jan 2012 00:00:00 -0500</pubDate>
       <category>fieldnotes</category>
       
       <category>html</category>
@@ -68,7 +67,7 @@
       <link>http://jonrohan.codes/fieldnotes/list-git-contributors</link>
       <description>Get a list of git contributors and sort by number of commits.</description>
       <guid isPermaLink="true">http://jonrohan.codes/fieldnotes/list-git-contributors</guid>
-      <pubDate>2012-01-15T00:00:00-05:00</pubDate>
+      <pubDate>Sun, 15 Jan 2012 00:00:00 -0500</pubDate>
       <category>fieldnotes</category>
       
       <content:encoded><![CDATA[<p>This is one of my favorite Git commands, I think mainly because I like to see where I am in a list of contributors.</p>
@@ -91,7 +90,7 @@
       <link>http://jonrohan.codes/fieldnotes/font-face</link>
       <description>Surprisingly embed-able opentype fonts have been included in Internet Explorer since version 4. But with the recent release of Firefox 3.5 and Safari, you can now embed Opentype and Truetype fonts across all major browsers. It&#39;s pretty simple and here&#39;s how it&#39;s done.</description>
       <guid isPermaLink="true">http://jonrohan.codes/fieldnotes/font-face</guid>
-      <pubDate>2011-07-12T00:00:00-04:00</pubDate>
+      <pubDate>Tue, 12 Jul 2011 00:00:00 -0400</pubDate>
       <category>fieldnotes</category>
       
       <content:encoded><![CDATA[<p>Surprisingly embed-able opentype fonts have been included in Internet Explorer since version 4. But with the recent release of Firefox 3.5 and Safari, you can now embed Opentype and Truetype fonts across all major browsers. It’s pretty simple and here’s how it’s done.</p>
@@ -154,7 +153,7 @@
       <link>http://jonrohan.codes/fieldnotes/clear-fixes</link>
       <description>There is a common problem in front end engineering where, when you float an element it is actually removed from it&#39;s parents&#39; flow. This can cause the elements below the floating element to run into the floating elements.</description>
       <guid isPermaLink="true">http://jonrohan.codes/fieldnotes/clear-fixes</guid>
-      <pubDate>2011-01-20T00:00:00-05:00</pubDate>
+      <pubDate>Thu, 20 Jan 2011 00:00:00 -0500</pubDate>
       <category>fieldnotes</category>
       
       <content:encoded><![CDATA[<p>There is a common problem in front end engineering where, when you float an element it is actually removed from it’s parents’ flow. This can cause the elements below the floating element to run into the floating elements. Like below. The green box is floating and it’s parent has the red border. The blue box is below the red border box.</p>
@@ -241,7 +240,7 @@
       <link>http://jonrohan.codes/fieldnotes/creating-triangles-in-css</link>
       <description>I&#39;ve come across a few techniques and tips in my career, while working at my last gig a co-worker pointed me to this technique. I believe this was originally discovered by the legendary Eric Meyer, but I couldn&#39;t find much documentation about it on the web so I thought I would describe it here.</description>
       <guid isPermaLink="true">http://jonrohan.codes/fieldnotes/creating-triangles-in-css</guid>
-      <pubDate>2011-01-18T00:00:00-05:00</pubDate>
+      <pubDate>Tue, 18 Jan 2011 00:00:00 -0500</pubDate>
       <category>fieldnotes</category>
       
       <category>howto</category>
@@ -386,7 +385,7 @@
       <link>http://jonrohan.codes/fieldnotes/classes-and-inheritance</link>
       <description>Object oriented JavaScript is everywhere today, and its the type of thing that takes a developer from someone tinkering with JavaScript on the path to becoming a JavaScript ninja.</description>
       <guid isPermaLink="true">http://jonrohan.codes/fieldnotes/classes-and-inheritance</guid>
-      <pubDate>2010-10-15T00:00:00-04:00</pubDate>
+      <pubDate>Fri, 15 Oct 2010 00:00:00 -0400</pubDate>
       <category>fieldnotes</category>
       
       <content:encoded><![CDATA[<p>Object oriented JavaScript is everywhere today, and its the type of thing that takes a developer from someone tinkering with JavaScript on the path to becoming a JavaScript ninja. In this post I’m gonna discuss the basics of creating a JavaScript class, and a subclass which inherits methods from the superclass.</p>
@@ -447,7 +446,7 @@
       <link>http://jonrohan.codes/fieldnotes/text-rotation</link>
       <description>What I wanted to make was a clock. The basis of this project is using the -webkit-transform:rotate(0deg); css property. This allows you to rotate any object 360 degrees. So I began to wonder, if I have a line, and I setup a javascript timer can I rotate it every second?</description>
       <guid isPermaLink="true">http://jonrohan.codes/fieldnotes/text-rotation</guid>
-      <pubDate>2010-10-10T00:00:00-04:00</pubDate>
+      <pubDate>Sun, 10 Oct 2010 00:00:00 -0400</pubDate>
       <category>fieldnotes</category>
       
       <content:encoded><![CDATA[<p>I recently saw an <a href="http://snook.ca/archives/html_and_css/css-text-rotation">article</a> on CSS text rotation on the internets and decided to try my own experiement.</p>
@@ -587,7 +586,7 @@
       <link>http://jonrohan.codes/fieldnotes/dead-simple-git-workflow-for-agile-teams</link>
       <description>Recently I have had the privilege to work with a few excellent small agile teams. With each team, they have their own process, which works best for them. And there&#39;s nothing wrong with that, a team should work in it&#39;s most effective way. But I came across a team recently that had a workflow that really impressed me. To put it simply it&#39;s described as an extremely cool Git workflow.</description>
       <guid isPermaLink="true">http://jonrohan.codes/fieldnotes/dead-simple-git-workflow-for-agile-teams</guid>
-      <pubDate>2010-10-09T00:00:00-04:00</pubDate>
+      <pubDate>Sat, 09 Oct 2010 00:00:00 -0400</pubDate>
       <category>fieldnotes</category>
       
       <content:encoded><![CDATA[<p>Recently I have had the privilege to work with a few excellent small agile teams. With each team, they have their own process, which works best for them. And there’s nothing wrong with that, a team should work in it’s most effective way. But I came across a team recently that had a workflow that really impressed me. To put it simply it’s described as an extremely cool Git workflow.</p>
