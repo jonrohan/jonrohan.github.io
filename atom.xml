@@ -25,8 +25,6 @@
     
     <category term="html"/>
     
-    <category term="dom"/>
-    
     <category term="css"/>
     
     <summary type="html">With the rise of web standards we have seen the rise of the semantic web. This applies to the HTML elements selected as well as the class names chosen for the HTML. When choosing semantic elements and class names you want to pick a name considering the function or meaning of the element as it is on your page, not the position or style of the element.</summary>
@@ -77,6 +75,10 @@
     <link href="http://jonrohan.codes/fieldnotes/list-git-contributors"/>
     <category term="fieldnotes"/>
     
+    <category term="git"/>
+    
+    <category term="shell"/>
+    
     <summary type="html">Get a list of git contributors and sort by number of commits.</summary>
     <rights type="html">&amp;copy; Jon Rohan 2012. All rights reserved.</rights>
 
@@ -102,6 +104,8 @@
     <published>2011-07-12T00:00:00-04:00</published>
     <link href="http://jonrohan.codes/fieldnotes/font-face"/>
     <category term="fieldnotes"/>
+    
+    <category term="css"/>
     
     <summary type="html">Surprisingly embed-able opentype fonts have been included in Internet Explorer since version 4. But with the recent release of Firefox 3.5 and Safari, you can now embed Opentype and Truetype fonts across all major browsers. It&#39;s pretty simple and here&#39;s how it&#39;s done.</summary>
     <rights type="html">&amp;copy; Jon Rohan 2011. All rights reserved.</rights>
@@ -168,6 +172,8 @@
     <published>2011-01-20T00:00:00-05:00</published>
     <link href="http://jonrohan.codes/fieldnotes/clear-fixes"/>
     <category term="fieldnotes"/>
+    
+    <category term="css"/>
     
     <summary type="html">There is a common problem in front end engineering where, when you float an element it is actually removed from it&#39;s parents&#39; flow. This can cause the elements below the floating element to run into the floating elements.</summary>
     <rights type="html">&amp;copy; Jon Rohan 2011. All rights reserved.</rights>
@@ -259,9 +265,7 @@
     <link href="http://jonrohan.codes/fieldnotes/creating-triangles-in-css"/>
     <category term="fieldnotes"/>
     
-    <category term="howto"/>
-    
-    <category term="effects"/>
+    <category term="how to"/>
     
     <category term="css"/>
     
@@ -407,6 +411,8 @@
     <link href="http://jonrohan.codes/fieldnotes/classes-and-inheritance"/>
     <category term="fieldnotes"/>
     
+    <category term="javascript"/>
+    
     <summary type="html">Object oriented JavaScript is everywhere today, and its the type of thing that takes a developer from someone tinkering with JavaScript on the path to becoming a JavaScript ninja.</summary>
     <rights type="html">&amp;copy; Jon Rohan 2010. All rights reserved.</rights>
 
@@ -470,6 +476,8 @@
     <published>2010-10-10T00:00:00-04:00</published>
     <link href="http://jonrohan.codes/fieldnotes/text-rotation"/>
     <category term="fieldnotes"/>
+    
+    <category term="css"/>
     
     <summary type="html">What I wanted to make was a clock. The basis of this project is using the -webkit-transform:rotate(0deg); css property. This allows you to rotate any object 360 degrees. So I began to wonder, if I have a line, and I setup a javascript timer can I rotate it every second?</summary>
     <rights type="html">&amp;copy; Jon Rohan 2010. All rights reserved.</rights>
@@ -613,6 +621,8 @@
     <published>2010-10-09T00:00:00-04:00</published>
     <link href="http://jonrohan.codes/fieldnotes/dead-simple-git-workflow-for-agile-teams"/>
     <category term="fieldnotes"/>
+    
+    <category term="git"/>
     
     <summary type="html">Recently I have had the privilege to work with a few excellent small agile teams. With each team, they have their own process, which works best for them. And there&#39;s nothing wrong with that, a team should work in it&#39;s most effective way. But I came across a team recently that had a workflow that really impressed me. To put it simply it&#39;s described as an extremely cool Git workflow.</summary>
     <rights type="html">&amp;copy; Jon Rohan 2010. All rights reserved.</rights>

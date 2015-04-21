@@ -36,13 +36,16 @@
     <loc>/404.html</loc>
   </url>
   <url>
-    <loc>/fieldnotes/</loc>
+    <loc>/code/</loc>
   </url>
   <url>
     <loc>/appearances/</loc>
   </url>
   <url>
-    <loc>/code/</loc>
+    <loc>/fieldnotes/</loc>
+  </url>
+  <url>
+    <loc>/tags/</loc>
   </url>
   <url>
     <loc>/</loc>

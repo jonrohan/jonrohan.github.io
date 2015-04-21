@@ -21,8 +21,6 @@
       
       <category>html</category>
       
-      <category>dom</category>
-      
       <category>css</category>
       
       <content:encoded><![CDATA[<h3 id="the-semantic-web">The Semantic Web</h3>
@@ -70,6 +68,10 @@
       <pubDate>Sun, 15 Jan 2012 00:00:00 -0500</pubDate>
       <category>fieldnotes</category>
       
+      <category>git</category>
+      
+      <category>shell</category>
+      
       <content:encoded><![CDATA[<p>This is one of my favorite Git commands, I think mainly because I like to see where I am in a list of contributors.</p>
 
 <div class="highlight"><pre><code class="language-sh" data-lang="sh">git shortlog -s -n</code></pre></div>
@@ -92,6 +94,8 @@
       <guid isPermaLink="true">http://jonrohan.codes/fieldnotes/font-face</guid>
       <pubDate>Tue, 12 Jul 2011 00:00:00 -0400</pubDate>
       <category>fieldnotes</category>
+      
+      <category>css</category>
       
       <content:encoded><![CDATA[<p>Surprisingly embed-able opentype fonts have been included in Internet Explorer since version 4. But with the recent release of Firefox 3.5 and Safari, you can now embed Opentype and Truetype fonts across all major browsers. It’s pretty simple and here’s how it’s done.</p>
 
@@ -155,6 +159,8 @@
       <guid isPermaLink="true">http://jonrohan.codes/fieldnotes/clear-fixes</guid>
       <pubDate>Thu, 20 Jan 2011 00:00:00 -0500</pubDate>
       <category>fieldnotes</category>
+      
+      <category>css</category>
       
       <content:encoded><![CDATA[<p>There is a common problem in front end engineering where, when you float an element it is actually removed from it’s parents’ flow. This can cause the elements below the floating element to run into the floating elements. Like below. The green box is floating and it’s parent has the red border. The blue box is below the red border box.</p>
 
@@ -243,9 +249,7 @@
       <pubDate>Tue, 18 Jan 2011 00:00:00 -0500</pubDate>
       <category>fieldnotes</category>
       
-      <category>howto</category>
-      
-      <category>effects</category>
+      <category>how to</category>
       
       <category>css</category>
       
@@ -388,6 +392,8 @@
       <pubDate>Fri, 15 Oct 2010 00:00:00 -0400</pubDate>
       <category>fieldnotes</category>
       
+      <category>javascript</category>
+      
       <content:encoded><![CDATA[<p>Object oriented JavaScript is everywhere today, and its the type of thing that takes a developer from someone tinkering with JavaScript on the path to becoming a JavaScript ninja. In this post I’m gonna discuss the basics of creating a JavaScript class, and a subclass which inherits methods from the superclass.</p>
 
 <h3>A JavaScript Class</h3>
@@ -448,6 +454,8 @@
       <guid isPermaLink="true">http://jonrohan.codes/fieldnotes/text-rotation</guid>
       <pubDate>Sun, 10 Oct 2010 00:00:00 -0400</pubDate>
       <category>fieldnotes</category>
+      
+      <category>css</category>
       
       <content:encoded><![CDATA[<p>I recently saw an <a href="http://snook.ca/archives/html_and_css/css-text-rotation">article</a> on CSS text rotation on the internets and decided to try my own experiement.</p>
 
@@ -588,6 +596,8 @@
       <guid isPermaLink="true">http://jonrohan.codes/fieldnotes/dead-simple-git-workflow-for-agile-teams</guid>
       <pubDate>Sat, 09 Oct 2010 00:00:00 -0400</pubDate>
       <category>fieldnotes</category>
+      
+      <category>git</category>
       
       <content:encoded><![CDATA[<p>Recently I have had the privilege to work with a few excellent small agile teams. With each team, they have their own process, which works best for them. And there’s nothing wrong with that, a team should work in it’s most effective way. But I came across a team recently that had a workflow that really impressed me. To put it simply it’s described as an extremely cool Git workflow.</p>
 
