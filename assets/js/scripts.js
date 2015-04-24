@@ -21,7 +21,6 @@
     emd = ["j", "on", "@", "jonr", "ohan", ".me"];
     $('.js-em').attr("href", "mailto:" + (emd.join("")));
     if ($(".not-found-page").length) {
-      console.log("url(\"" + window.gifs[Math.floor(Math.random() * (window.gifs.length + 1))].location + "\")");
       return $(".not-found-page").css('background-image', "url(\"" + window.gifs[Math.floor(Math.random() * (window.gifs.length + 1))].location + "\")");
     }
   });
