@@ -413,6 +413,8 @@
     
     <category term="css"/>
     
+    <category term="javascript"/>
+    
     <summary type="html">What I wanted to make was a clock. The basis of this project is using the -webkit-transform:rotate(0deg); css property. This allows you to rotate any object 360 degrees. So I began to wonder, if I have a line, and I setup a javascript timer can I rotate it every second?</summary>
     <rights type="html">&amp;copy; Jon Rohan 2010. All rights reserved.</rights>
 
