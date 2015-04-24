@@ -1,4 +1,8 @@
 (function() {
+  $(".js-menu-toggle").on("click", function(event) {
+    return $(this).closest(".js-menu-container").toggleClass("open");
+  });
+
   $(".share-button").on("click", function(event) {
     $(this).closest(".menu-wrapper").toggleClass("open");
     return event.stopPropagation();
