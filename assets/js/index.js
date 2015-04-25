@@ -3,6 +3,16 @@
     return $(this).closest(".js-menu-container").toggleClass("open");
   });
 
+  $(".logo-head a").on("click", function() {
+    return $(this).addClass("clicked");
+  });
+
+  $(document).ready(function() {
+    var emd;
+    emd = ["j", "on", "@", "jonr", "ohan", ".me"];
+    return $('.js-em').attr("href", "mailto:" + (emd.join("")));
+  });
+
   $(".share-button").on("click", function(event) {
     $(this).closest(".menu-wrapper").toggleClass("open");
     return event.stopPropagation();
@@ -12,20 +22,7 @@
     return $(".menu-wrapper.open").toggleClass("open");
   });
 
-  $(".logo-head a").on("click", function() {
-    return $(this).addClass("clicked");
-  });
-
-  $(document).ready(function() {
-    var emd;
-    emd = ["j", "on", "@", "jonr", "ohan", ".me"];
-    $('.js-em').attr("href", "mailto:" + (emd.join("")));
-    if ($(".not-found-page").length) {
-      return $(".not-found-page").css('background-image', "url(\"/" + window.gifs[Math.floor(Math.random() * (window.gifs.length + 1))].location + "\")");
-    }
-  });
-
-  $(".js-ga-event-tracking").on("click", function() {
+  $(document).on("click", ".js-ga-event-tracking", function() {
     var gaevent;
     gaevent = {
       'hitType': 'event'
@@ -36,6 +33,12 @@
     gaevent['eventValue'] = $(this).data("ga-value");
     if (!(gaevent['eventCategory'] === null || gaevent['eventAction'] === null)) {
       return ga('send', gaevent);
+    }
+  });
+
+  $(document).ready(function() {
+    if ($(".not-found-page").length) {
+      return $(".not-found-page").css('background-image', "url(\"/" + window.gifs[Math.floor(Math.random() * (window.gifs.length + 1))].location + "\")");
     }
   });
 
