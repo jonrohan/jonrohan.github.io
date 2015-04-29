@@ -1,16 +1,10 @@
 (function() {
-  $(".js-menu-toggle").on("click", function(event) {
-    return $(this).closest(".js-menu-container").toggleClass("open");
-  });
-
-  $(".logo-head a").on("click", function() {
-    return $(this).addClass("clicked");
-  });
+  var hideModal;
 
   $(document).ready(function() {
-    var emd;
-    emd = ["j", "on", "@", "jonr", "ohan", ".me"];
-    return $('.js-em').attr("href", "mailto:" + (emd.join("")));
+    if ($(".not-found-page").length) {
+      return $(".not-found-page").css('background-image', "url(\"/" + window.gifs[Math.floor(Math.random() * (window.gifs.length + 1))].location + "\")");
+    }
   });
 
   $(".share-button").on("click", function(event) {
@@ -20,6 +14,12 @@
 
   $(document).on("click", function() {
     return $(".menu-wrapper.open").toggleClass("open");
+  });
+
+  $(document).ready(function() {
+    var emd;
+    emd = ["j", "on", "@", "jonr", "ohan", ".me"];
+    return $('.js-em').attr("href", "mailto:" + (emd.join("")));
   });
 
   $(document).on("click", ".js-ga-event-tracking", function() {
@@ -36,10 +36,34 @@
     }
   });
 
-  $(document).ready(function() {
-    if ($(".not-found-page").length) {
-      return $(".not-found-page").css('background-image', "url(\"/" + window.gifs[Math.floor(Math.random() * (window.gifs.length + 1))].location + "\")");
+  $(".js-menu-toggle").on("click", function(event) {
+    return $(this).closest(".js-menu-container").toggleClass("open");
+  });
+
+  $(".logo-head a").on("click", function() {
+    return $(this).addClass("clicked");
+  });
+
+  hideModal = function() {
+    $('.js-image-modal').addClass('hidden');
+    return $('.js-image-window').empty();
+  };
+
+  $(document).on('click, keyup', function(event) {
+    if (event.keyCode === 27) {
+      return hideModal();
     }
+  });
+
+  $(document).on('click', '.js-image-modal', function() {
+    return hideModal();
+  });
+
+  $(document).on('click', '.js-zoom-image', function() {
+    var img;
+    img = $("<img src='" + ($(this).attr('src')) + "'>");
+    $('.js-image-window').empty().append(img);
+    return $('.js-image-modal').toggleClass('hidden');
   });
 
 }).call(this);
