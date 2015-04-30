@@ -36,7 +36,7 @@
 
     <content type="html">&lt;p&gt;&lt;a href=&quot;http://primercss.io/&quot;&gt;Primer&lt;/a&gt; is GitHub’s internal styleguide and css toolkit. It is used as a way to share buttons, forms, grids, tooltips and more with all the internal and external properties of GitHub. For example &lt;a href=&quot;https://gist.github.com/&quot;&gt;Gist&lt;/a&gt;, &lt;a href=&quot;https://enterprise.github.com/&quot;&gt;Enterprise&lt;/a&gt; and &lt;a href=&quot;https://github.com/&quot;&gt;GitHub.com&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;We recently opensourced Primer, because we wanted to be tansparent with our styleguide and if anyone could get any use out of it we would like to share. The toolkit isn’t meant to be a full fledged CSS framework like Bootstrap.&lt;/p&gt;
+&lt;p&gt;We recently opensourced Primer, because we wanted to be transparent with our styleguide and if anyone could get any use out of it we would like to share. The toolkit isn’t meant to be a full fledged CSS framework like Bootstrap.&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -63,7 +63,7 @@
 
 &lt;h3 id=&quot;lets-open-source-it&quot;&gt;Lets open source it&lt;/h3&gt;
 
-&lt;p&gt;Primer went through a few iterations. It started as a rails gem, because bower.js wasn’t fully realized at the time. It wasn’t until recently that the work was begininng to look clean polished and ready for others to read and use.&lt;/p&gt;
+&lt;p&gt;Primer went through a few iterations. It started as a rails gem, because bower.js wasn’t fully realized at the time. It wasn’t until recently that the work was beginning to look clean polished and ready for others to read and use.&lt;/p&gt;
 
 &lt;p&gt;A lot of what primer is today, is due to the hard work &lt;a href=&quot;http://markdotto.com/2015/03/23/introducing-primer/&quot;&gt;@mdo&lt;/a&gt; has been putting into it. He got us ready to release it.&lt;/p&gt;
 
