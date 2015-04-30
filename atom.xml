@@ -7,7 +7,7 @@
   <link href="http://jonrohan.codes/"/>
   <icon>http://jonrohan.codes/assets/images/apple-touch-icon-72x72.png</icon>
   <logo>http://jonrohan.codes/assets/images/apple-touch-icon-72x72.png</logo>
-  <updated>2012-01-20T00:00:00-05:00</updated>
+  <updated>2015-03-23T00:00:00-04:00</updated>
   <id>http://jonrohan.codes/</id>
   <rights type="html">&amp;copy; Jon Rohan 2015. All rights reserved.</rights>
 
@@ -16,6 +16,60 @@
     <uri>http://jonrohan.codes</uri>
   </author>
 
+  
+  <entry>
+    <id>http://jonrohan.codes/fieldnotes/primer-css-styleguide</id>
+    <title>Primer CSS Styleguide</title>
+    <updated>2015-03-23T00:00:00-04:00</updated>
+    <published>2015-03-23T00:00:00-04:00</published>
+    <link href="http://jonrohan.codes/fieldnotes/primer-css-styleguide"/>
+    <category term="fieldnotes"/>
+    
+    <category term="css"/>
+    
+    <category term="primer"/>
+    
+    <category term="github"/>
+    
+    <summary type="html">We recently opensourced Primer, because we wanted to be tansparent with our styleguide and if anyone could get any use out of it we would like to share. The toolkit isn’t meant to be a full fledged CSS framework like Bootstrap.</summary>
+    <rights type="html">&amp;copy; Jon Rohan 2015. All rights reserved.</rights>
+
+    <content type="html">&lt;p&gt;&lt;a href=&quot;http://primercss.io/&quot;&gt;Primer&lt;/a&gt; is GitHub’s internal styleguide and css toolkit. It is used as a way to share buttons, forms, grids, tooltips and more with all the internal and external properties of GitHub. For example &lt;a href=&quot;https://gist.github.com/&quot;&gt;Gist&lt;/a&gt;, &lt;a href=&quot;https://enterprise.github.com/&quot;&gt;Enterprise&lt;/a&gt; and &lt;a href=&quot;https://github.com/&quot;&gt;GitHub.com&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;We recently opensourced Primer, because we wanted to be tansparent with our styleguide and if anyone could get any use out of it we would like to share. The toolkit isn’t meant to be a full fledged CSS framework like Bootstrap.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;lets-build-a-toolkit&quot;&gt;Lets build a toolkit&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I’ve been copying and pasting the stylesheets from github/github for new gist.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In 2012 it started becoming more apparent that we needed a toolkit that we could share between our other github properties. Until that year gist was and always had been a separate rails app combined with github.com.&lt;/p&gt;
+
+&lt;p&gt;Gist shared everything with github, because it lived in the same codebase. We &lt;a href=&quot;https://github.com/blog/1276-welcome-to-a-new-gist&quot;&gt;were working&lt;/a&gt; on a big initiative to upgrade the whole app and separate it into it’s own codebase.&lt;/p&gt;
+
+&lt;p&gt;During the process I was talking with the designer/developer working on the front-end, and we were tossing around the idea of building something to make it easier to share common styles (buttons, forms, text, syntax) between the properties. &lt;em&gt;“What have you been doing so far?”&lt;/em&gt; I said. &lt;em&gt;“I’ve been copying and pasting the stylesheets from github/github for new gist.”&lt;/em&gt; o_O &lt;em&gt;“Ok, so I’m going to create a repo tomorrow, lets start sharing stuff.”&lt;/em&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;post-image image-style-full&quot;&gt;
+  &lt;div class=&quot;video&quot;&gt;
+    &lt;iframe src=&quot;https://player.vimeo.com/video/123020478?color=ffffff&amp;amp;portrait=0&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+  &lt;/div&gt;
+  &lt;figcaption class=&quot;image-caption&quot;&gt;I performed a slam poem about &lt;a href=&quot;http://primercss.io/&quot;&gt;primercss.io&lt;/a&gt; at a GitHub summit on November 11, 2012. Sorry about the first half of the video being blacked out.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;lets-open-source-it&quot;&gt;Lets open source it&lt;/h3&gt;
+
+&lt;p&gt;Primer went through a few iterations. It started as a rails gem, because bower.js wasn’t fully realized at the time. It wasn’t until recently that the work was begininng to look clean polished and ready for others to read and use.&lt;/p&gt;
+
+&lt;p&gt;A lot of what primer is today, is due to the hard work &lt;a href=&quot;http://markdotto.com/2015/03/23/introducing-primer/&quot;&gt;@mdo&lt;/a&gt; has been putting into it. He got us ready to release it.&lt;/p&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;https://github.com/primer/primer&quot;&gt;source code&lt;/a&gt; or browse through the &lt;a href=&quot;http://primercss.io/&quot;&gt;docs&lt;/a&gt; on GitHub.&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <id>http://jonrohan.codes/fieldnotes/semantic-css-class-naming</id>

@@ -7,9 +7,60 @@
     <link>http://jonrohan.codes</link>
     <description><![CDATA[Web Designer & Developer]]></description>
     <language>en</language>
-    <lastBuildDate>Fri, 20 Jan 2012 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 23 Mar 2015 00:00:00 -0400</lastBuildDate>
     <copyright>Copyright Jon Rohan 2015. All rights reserved.</copyright>
 
+    
+    <item>
+      <title>Primer CSS Styleguide</title>
+      <link>http://jonrohan.codes/fieldnotes/primer-css-styleguide</link>
+      <description>We recently opensourced Primer, because we wanted to be tansparent with our styleguide and if anyone could get any use out of it we would like to share. The toolkit isn’t meant to be a full fledged CSS framework like Bootstrap.</description>
+      <guid isPermaLink="true">http://jonrohan.codes/fieldnotes/primer-css-styleguide</guid>
+      <pubDate>Mon, 23 Mar 2015 00:00:00 -0400</pubDate>
+      <category>fieldnotes</category>
+      
+      <category>css</category>
+      
+      <category>primer</category>
+      
+      <category>github</category>
+      
+      <content:encoded><![CDATA[<p><a href="http://primercss.io/">Primer</a> is GitHub’s internal styleguide and css toolkit. It is used as a way to share buttons, forms, grids, tooltips and more with all the internal and external properties of GitHub. For example <a href="https://gist.github.com/">Gist</a>, <a href="https://enterprise.github.com/">Enterprise</a> and <a href="https://github.com/">GitHub.com</a>.</p>
+
+<p>We recently opensourced Primer, because we wanted to be tansparent with our styleguide and if anyone could get any use out of it we would like to share. The toolkit isn’t meant to be a full fledged CSS framework like Bootstrap.</p>
+
+<hr />
+
+<h3 id="lets-build-a-toolkit">Lets build a toolkit</h3>
+
+<blockquote>
+  <p>I’ve been copying and pasting the stylesheets from github/github for new gist.</p>
+</blockquote>
+
+<p>In 2012 it started becoming more apparent that we needed a toolkit that we could share between our other github properties. Until that year gist was and always had been a separate rails app combined with github.com.</p>
+
+<p>Gist shared everything with github, because it lived in the same codebase. We <a href="https://github.com/blog/1276-welcome-to-a-new-gist">were working</a> on a big initiative to upgrade the whole app and separate it into it’s own codebase.</p>
+
+<p>During the process I was talking with the designer/developer working on the front-end, and we were tossing around the idea of building something to make it easier to share common styles (buttons, forms, text, syntax) between the properties. <em>“What have you been doing so far?”</em> I said. <em>“I’ve been copying and pasting the stylesheets from github/github for new gist.”</em> o_O <em>“Ok, so I’m going to create a repo tomorrow, lets start sharing stuff.”</em></p>
+
+<figure class="post-image image-style-full">
+  <div class="video">
+    <iframe src="https://player.vimeo.com/video/123020478?color=ffffff&amp;portrait=0" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+  <figcaption class="image-caption">I performed a slam poem about <a href="http://primercss.io/">primercss.io</a> at a GitHub summit on November 11, 2012. Sorry about the first half of the video being blacked out.</figcaption>
+</figure>
+
+<hr />
+
+<h3 id="lets-open-source-it">Lets open source it</h3>
+
+<p>Primer went through a few iterations. It started as a rails gem, because bower.js wasn’t fully realized at the time. It wasn’t until recently that the work was begininng to look clean polished and ready for others to read and use.</p>
+
+<p>A lot of what primer is today, is due to the hard work <a href="http://markdotto.com/2015/03/23/introducing-primer/">@mdo</a> has been putting into it. He got us ready to release it.</p>
+
+<p>Check out the <a href="https://github.com/primer/primer">source code</a> or browse through the <a href="http://primercss.io/">docs</a> on GitHub.</p>
+]]></content:encoded>
+    </item>
     
     <item>
       <title>Class Naming: Semantic Approach</title>
