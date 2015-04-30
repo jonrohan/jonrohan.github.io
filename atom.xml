@@ -36,7 +36,7 @@
 
     <content type="html">&lt;p&gt;&lt;a href=&quot;http://primercss.io/&quot;&gt;Primer&lt;/a&gt; is GitHub’s internal styleguide and css toolkit. It is used as a way to share buttons, forms, grids, tooltips and more with all the internal and external properties of GitHub. For example &lt;a href=&quot;https://gist.github.com/&quot;&gt;Gist&lt;/a&gt;, &lt;a href=&quot;https://enterprise.github.com/&quot;&gt;Enterprise&lt;/a&gt; and &lt;a href=&quot;https://github.com/&quot;&gt;GitHub.com&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;We recently opensourced Primer, because we wanted to be transparent with our styleguide and if anyone could get any use out of it we would like to share. The toolkit isn’t meant to be a full fledged CSS framework like Bootstrap.&lt;/p&gt;
+&lt;p&gt;We recently open sourced Primer, because we wanted to be transparent with our styleguide and if anyone could get any use out of it we would like to share. The toolkit isn’t meant to be a full fledged CSS framework like Bootstrap.&lt;/p&gt;
 
 &lt;hr /&gt;
 
