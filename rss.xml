@@ -651,6 +651,33 @@ git branch -d <span class="k">${</span><span class="nv">CURRENT</span><span clas
 ]]></content:encoded>
     </item>
     
+    <item>
+      <title>Building a deck of 20 cards and shuffling them</title>
+      <link>http://jonrohan.codes/fieldnotes/deck-of-cards</link>
+      <description>Was playing with making some cards, without using any images or such.</description>
+      <guid isPermaLink="true">http://jonrohan.codes/fieldnotes/deck-of-cards</guid>
+      <pubDate>Wed, 16 Jun 2010 00:00:00 -0400</pubDate>
+      <category>fieldnotes</category>
+      
+      <category>html</category>
+      
+      <category>javascript</category>
+      
+      <category>css</category>
+      
+      <category>lab</category>
+      
+      <content:encoded><![CDATA[<p>Working on my card tricks. I built a page to shuffle out a deck of cards, and then discard the top card. Doing it without any images. Check out the <a href="http://codepen.io/jonrohan/full/vOEJMy/">demo</a></p>
+
+<figure class="post-image image-style-full">
+  <img class="zoom-image js-zoom-image" src="http://jonrohan.codes/assets/images/posts/cards.gif" />
+  <figcaption class="image-caption">The cards get delt, then you can shuffle them or discard one.</figcaption>
+</figure>
+
+<p><a href="http://codepen.io/jonrohan/full/vOEJMy/">Demo</a></p>
+]]></content:encoded>
+    </item>
+    
 
   </channel>
 </rss>

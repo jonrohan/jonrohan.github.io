@@ -681,4 +681,34 @@ git branch -d &lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quo
 </content>
   </entry>
   
+  <entry>
+    <id>http://jonrohan.codes/fieldnotes/deck-of-cards</id>
+    <title>Building a deck of 20 cards and shuffling them</title>
+    <updated>2010-06-16T00:00:00-04:00</updated>
+    <published>2010-06-16T00:00:00-04:00</published>
+    <link href="http://jonrohan.codes/fieldnotes/deck-of-cards"/>
+    <category term="fieldnotes"/>
+    
+    <category term="html"/>
+    
+    <category term="javascript"/>
+    
+    <category term="css"/>
+    
+    <category term="lab"/>
+    
+    <summary type="html">Was playing with making some cards, without using any images or such.</summary>
+    <rights type="html">&amp;copy; Jon Rohan 2010. All rights reserved.</rights>
+
+    <content type="html">&lt;p&gt;Working on my card tricks. I built a page to shuffle out a deck of cards, and then discard the top card. Doing it without any images. Check out the &lt;a href=&quot;http://codepen.io/jonrohan/full/vOEJMy/&quot;&gt;demo&lt;/a&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;post-image image-style-full&quot;&gt;
+  &lt;img class=&quot;zoom-image js-zoom-image&quot; src=&quot;http://jonrohan.codes/assets/images/posts/cards.gif&quot; /&gt;
+  &lt;figcaption class=&quot;image-caption&quot;&gt;The cards get delt, then you can shuffle them or discard one.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://codepen.io/jonrohan/full/vOEJMy/&quot;&gt;Demo&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+  
 </feed>
