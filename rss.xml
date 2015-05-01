@@ -652,6 +652,33 @@ git branch -d <span class="k">${</span><span class="nv">CURRENT</span><span clas
     </item>
     
     <item>
+      <title>8-bit Kill Screen</title>
+      <link>http://jonrohan.codes/fieldnotes/8-bit-kill-screen</link>
+      <description>Using paralax scrolling and canvas to create a &#39;kill screen&#39; effect.</description>
+      <guid isPermaLink="true">http://jonrohan.codes/fieldnotes/8-bit-kill-screen</guid>
+      <pubDate>Mon, 04 Oct 2010 00:00:00 -0400</pubDate>
+      <category>fieldnotes</category>
+      
+      <category>html</category>
+      
+      <category>dom</category>
+      
+      <category>canvas</category>
+      
+      <category>lab</category>
+      
+      <content:encoded><![CDATA[<p>Drawing some 8-bit stars in canvas and using a paralax technique to make it look like a kill screen. Check out the <a href="http://codepen.io/jonrohan/full/BNyWRW/">demo</a>.</p>
+
+<figure class="post-image image-style-full">
+  <img class="zoom-image js-zoom-image" src="http://jonrohan.codes/assets/images/posts/space.gif" />
+  <figcaption class="image-caption">Your game is over</figcaption>
+</figure>
+
+<p><a href="http://codepen.io/jonrohan/full/BNyWRW/">Demo</a></p>
+]]></content:encoded>
+    </item>
+    
+    <item>
       <title>Building a deck of 20 cards and shuffling them</title>
       <link>http://jonrohan.codes/fieldnotes/deck-of-cards</link>
       <description>Was playing with making some cards, without using any images or such.</description>
