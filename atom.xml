@@ -7,7 +7,7 @@
   <link href="http://jonrohan.codes/"/>
   <icon>http://jonrohan.codes/assets/images/apple-touch-icon-72x72.png</icon>
   <logo>http://jonrohan.codes/assets/images/apple-touch-icon-72x72.png</logo>
-  <updated>2015-03-23T00:00:00-04:00</updated>
+  <updated>2015-05-02T00:00:00-04:00</updated>
   <id>http://jonrohan.codes/</id>
   <rights type="html">&amp;copy; Jon Rohan 2015. All rights reserved.</rights>
 
@@ -16,6 +16,63 @@
     <uri>http://jonrohan.codes</uri>
   </author>
 
+  
+  <entry>
+    <id>http://jonrohan.codes/fieldnotes/scale-box-by-ratio</id>
+    <title>Scale a block-level element in CSS</title>
+    <updated>2015-05-02T00:00:00-04:00</updated>
+    <published>2015-05-02T00:00:00-04:00</published>
+    <link href="http://jonrohan.codes/fieldnotes/scale-box-by-ratio"/>
+    <category term="fieldnotes"/>
+    
+    <category term="css"/>
+    
+    <summary type="html">Sometimes you want to scale an iframe window just like an image, but the iframe doesn&#39;t behave that way. A good example is when you embed a youtube video in your site.</summary>
+    <rights type="html">&amp;copy; Jon Rohan 2015. All rights reserved.</rights>
+
+    <content type="html">&lt;p&gt;Sometimes you want to scale an iframe window just like an image, but the iframe doesn’t behave that way. A good example is when you embed a youtube video in your site.&lt;/p&gt;
+
+&lt;figure class=&quot;post-image image-style-smallest&quot;&gt;
+  &lt;img class=&quot;zoom-image js-zoom-image&quot; src=&quot;http://jonrohan.codes/assets/images/posts/scaling.gif&quot; /&gt;
+  &lt;figcaption class=&quot;image-caption&quot;&gt;&quot;Chewie, we&#39;re home&quot;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;A threw together a &lt;a href=&quot;http://codepen.io/jonrohan/full/PqqdBz/&quot;&gt;little demo&lt;/a&gt; on codepen showing how to accomplish this with only CSS.&lt;/p&gt;
+
+&lt;p&gt;If you are building a responsive site like a news site, or blog. You will probably include some video content, and when you do you will want to have the video scale properly with the container of the site.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;breaking-it-down&quot;&gt;Breaking it down&lt;/h4&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data&amp;#45;lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;iframe&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;560&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;315&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://www.youtube.com/embed/wCc2v7izk8w?rel=0&amp;amp;amp;showinfo=0&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;frameborder=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;0&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;allowfullscreen&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/iframe&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;First thing you’ll have is a video, let’s say from youtube. By itself, the video will not scale. The actual video inside the &lt;code&gt;&amp;lt;iframe&amp;gt;&lt;/code&gt; is scaling to fit the iframe as best it can. But the iframe doesn’t have the knowledge of the size of the video inside it. That’s why you typically set the width and height on the iframe.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data&amp;#45;lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;scale-video&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;iframe&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;560&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;315&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://www.youtube.com/embed/wCc2v7izk8w?rel=0&amp;amp;amp;showinfo=0&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;frameborder=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;0&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;allowfullscreen&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/iframe&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Wrap the video in a &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;. We’re gonna be using this as the scaling container. The key is to add a &lt;code&gt;padding-top: n%&lt;/code&gt; with a &lt;code&gt;width: 100%;&lt;/code&gt; to the container. This makes the container scale when the parent container is scaled. The top padding percentage isn’t exact so you’ll need to play with a percentage until you get a good ratio for your video. For me that number was &lt;code&gt;57%&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data&amp;#45;lang=&quot;css&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.scale-video&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;padding-top&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;57%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;relative&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Then all you need to do is absolutely position the iframe and have it scale to fill the parent container.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data&amp;#45;lang=&quot;css&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.scale-video&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;iframe&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;absolute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;top&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+</content>
+  </entry>
   
   <entry>
     <id>http://jonrohan.codes/fieldnotes/primer-css-styleguide</id>
