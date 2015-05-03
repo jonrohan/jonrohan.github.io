@@ -7,7 +7,7 @@
   <link href="http://jonrohan.codes/"/>
   <icon>http://jonrohan.codes/assets/images/apple-touch-icon-72x72.png</icon>
   <logo>http://jonrohan.codes/assets/images/apple-touch-icon-72x72.png</logo>
-  <updated>2015-05-02T00:00:00-04:00</updated>
+  <updated>2015-05-03T00:00:00-04:00</updated>
   <id>http://jonrohan.codes/</id>
   <rights type="html">&amp;copy; Jon Rohan 2015. All rights reserved.</rights>
 
@@ -16,6 +16,96 @@
     <uri>http://jonrohan.codes</uri>
   </author>
 
+  
+  <entry>
+    <id>http://jonrohan.codes/fieldnotes/a-big-update-to-this-site</id>
+    <title>A big update to this site</title>
+    <updated>2015-05-03T00:00:00-04:00</updated>
+    <published>2015-05-03T00:00:00-04:00</published>
+    <link href="http://jonrohan.codes/fieldnotes/a-big-update-to-this-site"/>
+    <category term="fieldnotes"/>
+    
+    <category term="jekyll"/>
+    
+    <category term="github"/>
+    
+    <summary type="html">I recently updated this site. I wanted to share what I was using to build this site. With details on what each thing is good for.</summary>
+    <rights type="html">&amp;copy; Jon Rohan 2015. All rights reserved.</rights>
+
+    <content type="html">&lt;p&gt;Its been a &lt;a href=&quot;https://dribbble.com/shots/107376-Field-guide-take-2&quot;&gt;while&lt;/a&gt; since I’ve given any attention to my site. I felt like devoting this weekend to it felt right. So I’ve updated it to a new look. Its hosted on &lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub pages&lt;/a&gt; which fits perfectly into my daily workflow. The design was custom by me.&lt;/p&gt;
+
+&lt;figure class=&quot;post-image image-style-full&quot;&gt;
+  &lt;div class=&quot;image-wrap&quot;&gt;
+  &lt;img src=&quot;http://jonrohan.codes/assets/images/posts/site-shot.png&quot; /&gt;
+&lt;/div&gt;
+  &lt;figcaption class=&quot;image-caption&quot;&gt;That new homepage feel&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h3 id=&quot;tools&quot;&gt;Tools&lt;/h3&gt;
+
+&lt;p&gt;Heres a list of tools I’ve used in building this site.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#autoprefixer&quot;&gt;autoprefixer&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#bower&quot;&gt;bower&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#grunt&quot;&gt;grunt&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#ionicons&quot;&gt;ionicons&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#jekyll&quot;&gt;jekyll&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#normalize&quot;&gt;normalize&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#primer&quot;&gt;primer&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#time-elements&quot;&gt;time-elements&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#typekit&quot;&gt;typekit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;autoprefixer&quot;&gt;Autoprefixer&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/postcss/autoprefixer&quot;&gt;Autoprefixer&lt;/a&gt; is a great tool for normalizing all your prefixed css property. So instead of always remembering and writing the &lt;code&gt;-webkit-&lt;/code&gt; prefixes for different css3 properties that haven’t been fully supported yet. Autoprefixer just remembers those things for you.&lt;/p&gt;
+
+&lt;h4 id=&quot;bower&quot;&gt;Bower&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://bower.io/&quot;&gt;Bower.io&lt;/a&gt; is another package manager which is great for moving front end assets around like js/css libraries. You can checkout versions of jquery or d3.js and just have them and any bug updates automatcially included into your front end stack.&lt;/p&gt;
+
+&lt;h4 id=&quot;grunt&quot;&gt;Grunt&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://gruntjs.com/&quot;&gt;Gruntjs&lt;/a&gt; is like make, but for node. What makes grunt great is I can use it to hook in existing node and grunt packages to do tasks for me. I use it to update my bower libraries, build my jekyll site, and publish to gh-pages.&lt;/p&gt;
+
+&lt;h4 id=&quot;ionicons&quot;&gt;ionicons&lt;/h4&gt;
+
+&lt;p&gt;Most of the icons you see on the site are &lt;code&gt;svg&lt;/code&gt; images of &lt;a href=&quot;http://ionicons.com/&quot;&gt;ionicons&lt;/a&gt; I picked them because they were free and open source. And were really easy to drop into my designs.&lt;/p&gt;
+
+&lt;h4 id=&quot;jekyll&quot;&gt;jekyll&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; is the technology that is behind GitHub pages. It’s whole deal is it builds sites from html and markdown files and compiles them into plain old html. Then GitHub serves it. By computing the logic before you take out a lot of the processing time when a website is loaded.&lt;/p&gt;
+
+&lt;h4 id=&quot;normalize&quot;&gt;normalize&lt;/h4&gt;
+
+&lt;p&gt;Back in the day it was Eric Meyer’s css reset, but now you should really be using &lt;a href=&quot;http://necolas.github.io/normalize.css/&quot;&gt;normalize.css&lt;/a&gt; It takes out any of the discrepencies between browser’s default settings. Making all of the default styles the same.&lt;/p&gt;
+
+&lt;h4 id=&quot;primer&quot;&gt;Primer&lt;/h4&gt;
+
+&lt;p&gt;I’m using &lt;a href=&quot;http://primercss.io/&quot;&gt;primer’s&lt;/a&gt; grid and markdown styles. Because sometimes you don’t really need to re-invent something that is great.&lt;/p&gt;
+
+&lt;h4 id=&quot;time-elements&quot;&gt;time-elements&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/github/time-elements&quot;&gt;time-elements.js&lt;/a&gt; is a way to take a date &lt;code&gt;2014-04-01T16:30:00-08:00&lt;/code&gt; and turn it into something like &lt;code&gt;2 years ago&lt;/code&gt;. Jekyll doesn’t include this sort of date calculation, so I wanted to have something and this worked.&lt;/p&gt;
+
+&lt;h4 id=&quot;typekit&quot;&gt;typekit&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://typekit.com/&quot;&gt;Typekit&lt;/a&gt; is probably the best way to include some beautiful fonts on your site. On this site I’m using:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;‘Proxima Nova’ for the body&lt;/li&gt;
+  &lt;li&gt;‘Quatro Slab’ for the headings and logo&lt;/li&gt;
+  &lt;li&gt;‘Source Code Pro’ for the code snippets&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h5 id=&quot;more-to-come&quot;&gt;More to come…&lt;/h5&gt;
+
+&lt;p&gt;I’ll go into details in a later post on my gh-pages grunt build setup.&lt;/p&gt;
+</content>
+  </entry>
   
   <entry>
     <id>http://jonrohan.codes/fieldnotes/scale-box-by-ratio</id>
