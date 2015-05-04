@@ -31,7 +31,7 @@
     
     <summary type="html">I recently updated this site. I wanted to share what I was using to build this site. With details on what each thing is good for.</summary>
     <rights type="html">&amp;copy; Jon Rohan 2015. All rights reserved.</rights>
-    
+
     <content type="html">&lt;p&gt;Its been a &lt;a href=&quot;https://dribbble.com/shots/107376-Field-guide-take-2&quot;&gt;while&lt;/a&gt; since I’ve given any attention to my site. I felt like devoting this weekend to it felt right. So I’ve updated it to a new look. Its hosted on &lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub pages&lt;/a&gt; which fits perfectly into my daily workflow. The design was custom by me.&lt;/p&gt;
 
 &lt;figure class=&quot;post-image image-style-full&quot;&gt;
@@ -104,9 +104,7 @@
 &lt;h5 id=&quot;more-to-come&quot;&gt;More to come…&lt;/h5&gt;
 
 &lt;p&gt;I’ll go into details in a later post on my gh-pages grunt build setup.&lt;/p&gt;
-
-    &lt;img src=&quot;http://www.google-analytics.com/collect?v=1&amp;_v=j36&amp;a=1932508981&amp;t=pageview&amp;_s=1&amp;dl=http%3A%2F%2Fjonrohan.codes%2Fatom.xml&amp;ul=en-us&amp;de=UTF-8&amp;dt=atom.xml&amp;je=1&amp;fl=17.0%20r0&amp;_u=AACAAEABI~&amp;jid=&amp;cid=198907588.1430708348&amp;tid=UA-543420-18&amp;z=1227129844&quot;&gt;
-    </content>
+</content>
   </entry>
   
   <entry>
@@ -121,7 +119,7 @@
     
     <summary type="html">Sometimes you want to scale an iframe window just like an image, but the iframe doesn&#39;t behave that way. A good example is when you embed a youtube video in your site.</summary>
     <rights type="html">&amp;copy; Jon Rohan 2015. All rights reserved.</rights>
-    
+
     <content type="html">&lt;p&gt;Sometimes you want to scale an iframe window just like an image, but the iframe doesn’t behave that way. A good example is when you embed a youtube video in your site.&lt;/p&gt;
 
 &lt;figure class=&quot;post-image image-style-smallest&quot;&gt;
@@ -163,9 +161,7 @@
   &lt;span class=&quot;nl&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-
-    &lt;img src=&quot;http://www.google-analytics.com/collect?v=1&amp;_v=j36&amp;a=1932508981&amp;t=pageview&amp;_s=1&amp;dl=http%3A%2F%2Fjonrohan.codes%2Fatom.xml&amp;ul=en-us&amp;de=UTF-8&amp;dt=atom.xml&amp;je=1&amp;fl=17.0%20r0&amp;_u=AACAAEABI~&amp;jid=&amp;cid=198907588.1430708348&amp;tid=UA-543420-18&amp;z=1227129844&quot;&gt;
-    </content>
+</content>
   </entry>
   
   <entry>
@@ -184,7 +180,7 @@
     
     <summary type="html">We recently opensourced Primer, because we wanted to be tansparent with our styleguide and if anyone could get any use out of it we would like to share. The toolkit isn’t meant to be a full fledged CSS framework like Bootstrap.</summary>
     <rights type="html">&amp;copy; Jon Rohan 2015. All rights reserved.</rights>
-    
+
     <content type="html">&lt;p&gt;&lt;a href=&quot;http://primercss.io/&quot;&gt;Primer&lt;/a&gt; is GitHub’s internal styleguide and css toolkit. It is used as a way to share buttons, forms, grids, tooltips and more with all the internal and external properties of GitHub. For example &lt;a href=&quot;https://gist.github.com/&quot;&gt;Gist&lt;/a&gt;, &lt;a href=&quot;https://enterprise.github.com/&quot;&gt;Enterprise&lt;/a&gt; and &lt;a href=&quot;https://github.com/&quot;&gt;GitHub.com&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;We recently open sourced Primer, because we wanted to be transparent with our styleguide and if anyone could get any use out of it we would like to share. The toolkit isn’t meant to be a full fledged CSS framework like Bootstrap.&lt;/p&gt;
@@ -219,9 +215,7 @@
 &lt;p&gt;A lot of what primer is today, is due to the hard work &lt;a href=&quot;http://markdotto.com/2015/03/23/introducing-primer/&quot;&gt;@mdo&lt;/a&gt; has been putting into it. He got us ready to release it.&lt;/p&gt;
 
 &lt;p&gt;Check out the &lt;a href=&quot;https://github.com/primer/primer&quot;&gt;source code&lt;/a&gt; or browse through the &lt;a href=&quot;http://primercss.io/&quot;&gt;docs&lt;/a&gt; on GitHub.&lt;/p&gt;
-
-    &lt;img src=&quot;http://www.google-analytics.com/collect?v=1&amp;_v=j36&amp;a=1932508981&amp;t=pageview&amp;_s=1&amp;dl=http%3A%2F%2Fjonrohan.codes%2Fatom.xml&amp;ul=en-us&amp;de=UTF-8&amp;dt=atom.xml&amp;je=1&amp;fl=17.0%20r0&amp;_u=AACAAEABI~&amp;jid=&amp;cid=198907588.1430708348&amp;tid=UA-543420-18&amp;z=1227129844&quot;&gt;
-    </content>
+</content>
   </entry>
   
   <entry>
@@ -238,7 +232,7 @@
     
     <summary type="html">With the rise of web standards we have seen the rise of the semantic web. This applies to the HTML elements selected as well as the class names chosen for the HTML. When choosing semantic elements and class names you want to pick a name considering the function or meaning of the element as it is on your page, not the position or style of the element.</summary>
     <rights type="html">&amp;copy; Jon Rohan 2012. All rights reserved.</rights>
-    
+
     <content type="html">&lt;h3 id=&quot;the-semantic-web&quot;&gt;The Semantic Web&lt;/h3&gt;
 
 &lt;p&gt;With the rise of web standards we have seen the rise of the semantic web. This applies to the HTML elements selected as well as the class names chosen for the HTML. When choosing semantic elements and class names you want to pick a name considering the function or meaning of the element as it is on your page, not the position or style of the element.&lt;/p&gt;
@@ -273,9 +267,7 @@
 &lt;p&gt;You may ask, “What’s the big deal? It’s all gonna render the same in the browser anyways?” The benefits for semantic code translate into faster development time, javascript traversal becomes easier and it makes me happy. :)&lt;/p&gt;
 
 &lt;p&gt;Some more bad names that I have witnessed: &lt;code&gt;.padding5px&lt;/code&gt;, &lt;code&gt;.topBorderGreen&lt;/code&gt;, &lt;code&gt;.redErrorText&lt;/code&gt;. What happens if you want a padding of 4px, or suddenly the border becomes blue, or if the error text becomes yellow. Then you’ll need to go back through all your html and re-name classes. May I suggest names like &lt;code&gt;.content&lt;/code&gt;, &lt;code&gt;.important&lt;/code&gt;, or &lt;code&gt;.error&lt;/code&gt;.&lt;/p&gt;
-
-    &lt;img src=&quot;http://www.google-analytics.com/collect?v=1&amp;_v=j36&amp;a=1932508981&amp;t=pageview&amp;_s=1&amp;dl=http%3A%2F%2Fjonrohan.codes%2Fatom.xml&amp;ul=en-us&amp;de=UTF-8&amp;dt=atom.xml&amp;je=1&amp;fl=17.0%20r0&amp;_u=AACAAEABI~&amp;jid=&amp;cid=198907588.1430708348&amp;tid=UA-543420-18&amp;z=1227129844&quot;&gt;
-    </content>
+</content>
   </entry>
   
   <entry>
@@ -292,7 +284,7 @@
     
     <summary type="html">Get a list of git contributors and sort by number of commits.</summary>
     <rights type="html">&amp;copy; Jon Rohan 2012. All rights reserved.</rights>
-    
+
     <content type="html">&lt;p&gt;This is one of my favorite Git commands, I think mainly because I like to see where I am in a list of contributors.&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data&amp;#45;lang=&quot;sh&quot;&gt;git shortlog -s -n&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -305,9 +297,7 @@
 2 Fred Smith&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Go ahead and try it on your repo.&lt;/p&gt;
-
-    &lt;img src=&quot;http://www.google-analytics.com/collect?v=1&amp;_v=j36&amp;a=1932508981&amp;t=pageview&amp;_s=1&amp;dl=http%3A%2F%2Fjonrohan.codes%2Fatom.xml&amp;ul=en-us&amp;de=UTF-8&amp;dt=atom.xml&amp;je=1&amp;fl=17.0%20r0&amp;_u=AACAAEABI~&amp;jid=&amp;cid=198907588.1430708348&amp;tid=UA-543420-18&amp;z=1227129844&quot;&gt;
-    </content>
+</content>
   </entry>
   
   <entry>
@@ -322,7 +312,7 @@
     
     <summary type="html">There is a common problem in front end engineering where, when you float an element it is actually removed from it&#39;s parents&#39; flow. This can cause the elements below the floating element to run into the floating elements.</summary>
     <rights type="html">&amp;copy; Jon Rohan 2011. All rights reserved.</rights>
-    
+
     <content type="html">&lt;p&gt;There is a common problem in front end engineering where, when you float an element it is actually removed from it’s parents’ flow. This can cause the elements below the floating element to run into the floating elements. Like below. The green box is floating and it’s parent has the red border. The blue box is below the red border box.&lt;/p&gt;
 
 &lt;div style=&quot;overflow:hidden;&quot;&gt;
@@ -399,9 +389,7 @@
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;background-color:blue;width:50px;height:50px;&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Pretty simple! And it doesn’t require extra div tags. I’ve tested this in IE7, Firefox, Safari, and Chrome works in all.&lt;/p&gt;
-
-    &lt;img src=&quot;http://www.google-analytics.com/collect?v=1&amp;_v=j36&amp;a=1932508981&amp;t=pageview&amp;_s=1&amp;dl=http%3A%2F%2Fjonrohan.codes%2Fatom.xml&amp;ul=en-us&amp;de=UTF-8&amp;dt=atom.xml&amp;je=1&amp;fl=17.0%20r0&amp;_u=AACAAEABI~&amp;jid=&amp;cid=198907588.1430708348&amp;tid=UA-543420-18&amp;z=1227129844&quot;&gt;
-    </content>
+</content>
   </entry>
   
   <entry>
@@ -418,7 +406,7 @@
     
     <summary type="html">I&#39;ve come across a few techniques and tips in my career, while working at my last gig a co-worker pointed me to this technique. I believe this was originally discovered by the legendary Eric Meyer, but I couldn&#39;t find much documentation about it on the web so I thought I would describe it here.</summary>
     <rights type="html">&amp;copy; Jon Rohan 2011. All rights reserved.</rights>
-    
+
     <content type="html">&lt;p&gt;I’ve come across a few techniques and tips in my career, while working at my last gig a co-worker pointed me to this technique. I believe this was originally discovered by the legendary Eric Meyer, but I couldn’t find much documentation about it on the web so I thought I would describe it here.&lt;/p&gt;
 
 &lt;figure class=&quot;post-image image-style-bleed&quot;&gt;
@@ -542,9 +530,7 @@
   &lt;span class=&quot;py&quot;&gt;_filter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;chroma&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;pink&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-
-    &lt;img src=&quot;http://www.google-analytics.com/collect?v=1&amp;_v=j36&amp;a=1932508981&amp;t=pageview&amp;_s=1&amp;dl=http%3A%2F%2Fjonrohan.codes%2Fatom.xml&amp;ul=en-us&amp;de=UTF-8&amp;dt=atom.xml&amp;je=1&amp;fl=17.0%20r0&amp;_u=AACAAEABI~&amp;jid=&amp;cid=198907588.1430708348&amp;tid=UA-543420-18&amp;z=1227129844&quot;&gt;
-    </content>
+</content>
   </entry>
   
   <entry>
@@ -559,7 +545,7 @@
     
     <summary type="html">Object oriented JavaScript is everywhere today, and its the type of thing that takes a developer from someone tinkering with JavaScript on the path to becoming a JavaScript ninja.</summary>
     <rights type="html">&amp;copy; Jon Rohan 2010. All rights reserved.</rights>
-    
+
     <content type="html">&lt;p&gt;Object oriented JavaScript is everywhere today, and its the type of thing that takes a developer from someone tinkering with JavaScript on the path to becoming a JavaScript ninja. In this post I’m gonna discuss the basics of creating a JavaScript class, and a subclass which inherits methods from the superclass.&lt;/p&gt;
 
 &lt;h3&gt;A JavaScript Class&lt;/h3&gt;
@@ -610,9 +596,7 @@
 &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getSkills&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;, &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;This is the basic ideas behind Object Oriented Programming in JavaScript, I’ve only really scratched the surface in JavaScript OOP.&lt;/p&gt;
-
-    &lt;img src=&quot;http://www.google-analytics.com/collect?v=1&amp;_v=j36&amp;a=1932508981&amp;t=pageview&amp;_s=1&amp;dl=http%3A%2F%2Fjonrohan.codes%2Fatom.xml&amp;ul=en-us&amp;de=UTF-8&amp;dt=atom.xml&amp;je=1&amp;fl=17.0%20r0&amp;_u=AACAAEABI~&amp;jid=&amp;cid=198907588.1430708348&amp;tid=UA-543420-18&amp;z=1227129844&quot;&gt;
-    </content>
+</content>
   </entry>
   
   <entry>
@@ -629,7 +613,7 @@
     
     <summary type="html">What I wanted to make was a clock. The basis of this project is using the -webkit-transform:rotate(0deg); css property. This allows you to rotate any object 360 degrees. So I began to wonder, if I have a line, and I setup a javascript timer can I rotate it every second?</summary>
     <rights type="html">&amp;copy; Jon Rohan 2010. All rights reserved.</rights>
-    
+
     <content type="html">&lt;p&gt;I recently saw an &lt;a href=&quot;http://snook.ca/archives/html_and_css/css-text-rotation&quot;&gt;article&lt;/a&gt; on CSS text rotation on the internets and decided to try my own experiement.&lt;/p&gt;
 
 &lt;p&gt;What I wanted to make was a clock. The basis of this project is using the -webkit-transform:rotate(0deg); css property. This allows you to rotate any object 360 degrees. So I began to wonder, if I have a line, and I setup a javascript timer can I rotate it every second?&lt;/p&gt;
@@ -759,9 +743,7 @@
   &lt;span class=&quot;nx&quot;&gt;setInterval&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;tick&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;})();&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-
-    &lt;img src=&quot;http://www.google-analytics.com/collect?v=1&amp;_v=j36&amp;a=1932508981&amp;t=pageview&amp;_s=1&amp;dl=http%3A%2F%2Fjonrohan.codes%2Fatom.xml&amp;ul=en-us&amp;de=UTF-8&amp;dt=atom.xml&amp;je=1&amp;fl=17.0%20r0&amp;_u=AACAAEABI~&amp;jid=&amp;cid=198907588.1430708348&amp;tid=UA-543420-18&amp;z=1227129844&quot;&gt;
-    </content>
+</content>
   </entry>
   
   <entry>
@@ -776,7 +758,7 @@
     
     <summary type="html">Recently I have had the privilege to work with a few excellent small agile teams. With each team, they have their own process, which works best for them. And there&#39;s nothing wrong with that, a team should work in it&#39;s most effective way. But I came across a team recently that had a workflow that really impressed me. To put it simply it&#39;s described as an extremely cool Git workflow.</summary>
     <rights type="html">&amp;copy; Jon Rohan 2010. All rights reserved.</rights>
-    
+
     <content type="html">&lt;p&gt;Recently I have had the privilege to work with a few excellent small agile teams. With each team, they have their own process, which works best for them. And there’s nothing wrong with that, a team should work in it’s most effective way. But I came across a team recently that had a workflow that really impressed me. To put it simply it’s described as an extremely cool Git workflow.&lt;/p&gt;
 
 &lt;p&gt;I can’t take credit for coming up with this workflow, but I’m gonna do my best to re-describe it here so it can be shared. The basis for this post comes from reinh.com’s posts &lt;a href=&quot;http://reinh.com/blog/2009/03/02/a-git-workflow-for-agile-teams.html&quot;&gt;A git workflow for Agile Teams&lt;/a&gt; and &lt;a href=&quot;http://reinh.com/blog/2008/08/27/hack-and-and-ship.html&quot;&gt;Hack &amp;amp;&amp;amp; Ship&lt;/a&gt;. Also this workflow pulls alot from Josh Susser’s post on the &lt;a href=&quot;http://blog.hasmanythrough.com/2008/12/18/agile-git-and-the-story-branch-pattern&quot;&gt;story branch pattern&lt;/a&gt;.&lt;/p&gt;
@@ -838,9 +820,7 @@ git branch -d &lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quo
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data&amp;#45;lang=&quot;sh&quot;&gt;&lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;hsd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;hack &amp;amp;&amp;amp; ship &amp;amp;&amp;amp; dwf&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Pretty awesome! I’m sure there are hundreds of awesome workflows out there. What do you guys use on your projects?&lt;/p&gt;
-
-    &lt;img src=&quot;http://www.google-analytics.com/collect?v=1&amp;_v=j36&amp;a=1932508981&amp;t=pageview&amp;_s=1&amp;dl=http%3A%2F%2Fjonrohan.codes%2Fatom.xml&amp;ul=en-us&amp;de=UTF-8&amp;dt=atom.xml&amp;je=1&amp;fl=17.0%20r0&amp;_u=AACAAEABI~&amp;jid=&amp;cid=198907588.1430708348&amp;tid=UA-543420-18&amp;z=1227129844&quot;&gt;
-    </content>
+</content>
   </entry>
   
   <entry>
@@ -861,7 +841,7 @@ git branch -d &lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quo
     
     <summary type="html">Using paralax scrolling and canvas to create a &#39;kill screen&#39; effect.</summary>
     <rights type="html">&amp;copy; Jon Rohan 2010. All rights reserved.</rights>
-    
+
     <content type="html">&lt;p&gt;Drawing some 8-bit stars in canvas and using a paralax technique to make it look like a kill screen. Check out the &lt;a href=&quot;http://codepen.io/jonrohan/full/BNyWRW/&quot;&gt;demo&lt;/a&gt;.&lt;/p&gt;
 
 &lt;figure class=&quot;post-image image-style-full&quot;&gt;
@@ -870,9 +850,7 @@ git branch -d &lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quo
 &lt;/figure&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://codepen.io/jonrohan/full/BNyWRW/&quot;&gt;Demo&lt;/a&gt;&lt;/p&gt;
-
-    &lt;img src=&quot;http://www.google-analytics.com/collect?v=1&amp;_v=j36&amp;a=1932508981&amp;t=pageview&amp;_s=1&amp;dl=http%3A%2F%2Fjonrohan.codes%2Fatom.xml&amp;ul=en-us&amp;de=UTF-8&amp;dt=atom.xml&amp;je=1&amp;fl=17.0%20r0&amp;_u=AACAAEABI~&amp;jid=&amp;cid=198907588.1430708348&amp;tid=UA-543420-18&amp;z=1227129844&quot;&gt;
-    </content>
+</content>
   </entry>
   
   <entry>
@@ -893,7 +871,7 @@ git branch -d &lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quo
     
     <summary type="html">Was playing with making some cards, without using any images or such.</summary>
     <rights type="html">&amp;copy; Jon Rohan 2010. All rights reserved.</rights>
-    
+
     <content type="html">&lt;p&gt;Working on my card tricks. I built a page to shuffle out a deck of cards, and then discard the top card. Doing it without any images. Check out the &lt;a href=&quot;http://codepen.io/jonrohan/full/vOEJMy/&quot;&gt;demo&lt;/a&gt;&lt;/p&gt;
 
 &lt;figure class=&quot;post-image image-style-full&quot;&gt;
@@ -902,9 +880,7 @@ git branch -d &lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quo
 &lt;/figure&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://codepen.io/jonrohan/full/vOEJMy/&quot;&gt;Demo&lt;/a&gt;&lt;/p&gt;
-
-    &lt;img src=&quot;http://www.google-analytics.com/collect?v=1&amp;_v=j36&amp;a=1932508981&amp;t=pageview&amp;_s=1&amp;dl=http%3A%2F%2Fjonrohan.codes%2Fatom.xml&amp;ul=en-us&amp;de=UTF-8&amp;dt=atom.xml&amp;je=1&amp;fl=17.0%20r0&amp;_u=AACAAEABI~&amp;jid=&amp;cid=198907588.1430708348&amp;tid=UA-543420-18&amp;z=1227129844&quot;&gt;
-    </content>
+</content>
   </entry>
   
 </feed>
