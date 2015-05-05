@@ -23,6 +23,16 @@
       
       <category>github</category>
       
+      <category>bower</category>
+      
+      <category>autoprefixer</category>
+      
+      <category>javascript</category>
+      
+      <category>design</category>
+      
+      <category>css</category>
+      
       <content:encoded><![CDATA[<p>Its been a <a href="https://dribbble.com/shots/107376-Field-guide-take-2">while</a> since I’ve given any attention to my site. I felt like devoting this weekend to it felt right. So I’ve updated it to a new look. Its hosted on <a href="https://pages.github.com/">GitHub pages</a> which fits perfectly into my daily workflow. The design was custom by me.</p>
 
 <figure class="post-image image-style-full">
@@ -211,8 +221,6 @@
       <pubDate>Fri, 20 Jan 2012 00:00:00 -0500</pubDate>
       <category>fieldnotes</category>
       
-      <category>html</category>
-      
       <category>css</category>
       
       <content:encoded><![CDATA[<h3 id="the-semantic-web">The Semantic Web</h3>
@@ -288,6 +296,8 @@
       <category>fieldnotes</category>
       
       <category>css</category>
+      
+      <category>hack</category>
       
       <content:encoded><![CDATA[<p>There is a common problem in front end engineering where, when you float an element it is actually removed from it’s parents’ flow. This can cause the elements below the floating element to run into the floating elements. Like below. The green box is floating and it’s parent has the red border. The blue box is below the red border box.</p>
 
@@ -376,9 +386,9 @@
       <pubDate>Tue, 18 Jan 2011 00:00:00 -0500</pubDate>
       <category>fieldnotes</category>
       
-      <category>how to</category>
-      
       <category>css</category>
+      
+      <category>hack</category>
       
       <content:encoded><![CDATA[<p>I’ve come across a few techniques and tips in my career, while working at my last gig a co-worker pointed me to this technique. I believe this was originally discovered by the legendary Eric Meyer, but I couldn’t find much documentation about it on the web so I thought I would describe it here.</p>
 
@@ -515,6 +525,8 @@
       <category>fieldnotes</category>
       
       <category>javascript</category>
+      
+      <category>oop</category>
       
       <content:encoded><![CDATA[<p>Object oriented JavaScript is everywhere today, and its the type of thing that takes a developer from someone tinkering with JavaScript on the path to becoming a JavaScript ninja. In this post I’m gonna discuss the basics of creating a JavaScript class, and a subclass which inherits methods from the superclass.</p>
 
@@ -723,6 +735,12 @@
       
       <category>git</category>
       
+      <category>github</category>
+      
+      <category>pivotal-tracker</category>
+      
+      <category>shell</category>
+      
       <content:encoded><![CDATA[<p>Recently I have had the privilege to work with a few excellent small agile teams. With each team, they have their own process, which works best for them. And there’s nothing wrong with that, a team should work in it’s most effective way. But I came across a team recently that had a workflow that really impressed me. To put it simply it’s described as an extremely cool Git workflow.</p>
 
 <p>I can’t take credit for coming up with this workflow, but I’m gonna do my best to re-describe it here so it can be shared. The basis for this post comes from reinh.com’s posts <a href="http://reinh.com/blog/2009/03/02/a-git-workflow-for-agile-teams.html">A git workflow for Agile Teams</a> and <a href="http://reinh.com/blog/2008/08/27/hack-and-and-ship.html">Hack &amp;&amp; Ship</a>. Also this workflow pulls alot from Josh Susser’s post on the <a href="http://blog.hasmanythrough.com/2008/12/18/agile-git-and-the-story-branch-pattern">story branch pattern</a>.</p>
@@ -795,13 +813,11 @@ git branch -d <span class="k">${</span><span class="nv">CURRENT</span><span clas
       <pubDate>Mon, 04 Oct 2010 00:00:00 -0400</pubDate>
       <category>fieldnotes</category>
       
-      <category>html</category>
-      
-      <category>dom</category>
-      
       <category>canvas</category>
       
-      <category>lab</category>
+      <category>javascript</category>
+      
+      <category>css</category>
       
       <content:encoded><![CDATA[<p>Drawing some 8-bit stars in canvas and using a paralax technique to make it look like a kill screen. Check out the <a href="http://codepen.io/jonrohan/full/BNyWRW/">demo</a>.</p>
 
@@ -822,13 +838,9 @@ git branch -d <span class="k">${</span><span class="nv">CURRENT</span><span clas
       <pubDate>Wed, 16 Jun 2010 00:00:00 -0400</pubDate>
       <category>fieldnotes</category>
       
-      <category>html</category>
-      
       <category>javascript</category>
       
       <category>css</category>
-      
-      <category>lab</category>
       
       <content:encoded><![CDATA[<p>Working on my card tricks. I built a page to shuffle out a deck of cards, and then discard the top card. Doing it without any images. Check out the <a href="http://codepen.io/jonrohan/full/vOEJMy/">demo</a></p>
 

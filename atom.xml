@@ -29,6 +29,16 @@
     
     <category term="github"/>
     
+    <category term="bower"/>
+    
+    <category term="autoprefixer"/>
+    
+    <category term="javascript"/>
+    
+    <category term="design"/>
+    
+    <category term="css"/>
+    
     <summary type="html">I recently updated this site. I wanted to share what I was using to build this site. With details on what each thing is good for.</summary>
     <rights type="html">&amp;copy; Jon Rohan 2015. All rights reserved.</rights>
 
@@ -226,8 +236,6 @@
     <link href="http://jonrohan.codes/fieldnotes/semantic-css-class-naming"/>
     <category term="fieldnotes"/>
     
-    <category term="html"/>
-    
     <category term="css"/>
     
     <summary type="html">With the rise of web standards we have seen the rise of the semantic web. This applies to the HTML elements selected as well as the class names chosen for the HTML. When choosing semantic elements and class names you want to pick a name considering the function or meaning of the element as it is on your page, not the position or style of the element.</summary>
@@ -309,6 +317,8 @@
     <category term="fieldnotes"/>
     
     <category term="css"/>
+    
+    <category term="hack"/>
     
     <summary type="html">There is a common problem in front end engineering where, when you float an element it is actually removed from it&#39;s parents&#39; flow. This can cause the elements below the floating element to run into the floating elements.</summary>
     <rights type="html">&amp;copy; Jon Rohan 2011. All rights reserved.</rights>
@@ -400,9 +410,9 @@
     <link href="http://jonrohan.codes/fieldnotes/creating-triangles-in-css"/>
     <category term="fieldnotes"/>
     
-    <category term="how to"/>
-    
     <category term="css"/>
+    
+    <category term="hack"/>
     
     <summary type="html">I&#39;ve come across a few techniques and tips in my career, while working at my last gig a co-worker pointed me to this technique. I believe this was originally discovered by the legendary Eric Meyer, but I couldn&#39;t find much documentation about it on the web so I thought I would describe it here.</summary>
     <rights type="html">&amp;copy; Jon Rohan 2011. All rights reserved.</rights>
@@ -542,6 +552,8 @@
     <category term="fieldnotes"/>
     
     <category term="javascript"/>
+    
+    <category term="oop"/>
     
     <summary type="html">Object oriented JavaScript is everywhere today, and its the type of thing that takes a developer from someone tinkering with JavaScript on the path to becoming a JavaScript ninja.</summary>
     <rights type="html">&amp;copy; Jon Rohan 2010. All rights reserved.</rights>
@@ -756,6 +768,12 @@
     
     <category term="git"/>
     
+    <category term="github"/>
+    
+    <category term="pivotal-tracker"/>
+    
+    <category term="shell"/>
+    
     <summary type="html">Recently I have had the privilege to work with a few excellent small agile teams. With each team, they have their own process, which works best for them. And there&#39;s nothing wrong with that, a team should work in it&#39;s most effective way. But I came across a team recently that had a workflow that really impressed me. To put it simply it&#39;s described as an extremely cool Git workflow.</summary>
     <rights type="html">&amp;copy; Jon Rohan 2010. All rights reserved.</rights>
 
@@ -831,13 +849,11 @@ git branch -d &lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quo
     <link href="http://jonrohan.codes/fieldnotes/8-bit-kill-screen"/>
     <category term="fieldnotes"/>
     
-    <category term="html"/>
-    
-    <category term="dom"/>
-    
     <category term="canvas"/>
     
-    <category term="lab"/>
+    <category term="javascript"/>
+    
+    <category term="css"/>
     
     <summary type="html">Using paralax scrolling and canvas to create a &#39;kill screen&#39; effect.</summary>
     <rights type="html">&amp;copy; Jon Rohan 2010. All rights reserved.</rights>
@@ -861,13 +877,9 @@ git branch -d &lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quo
     <link href="http://jonrohan.codes/fieldnotes/deck-of-cards"/>
     <category term="fieldnotes"/>
     
-    <category term="html"/>
-    
     <category term="javascript"/>
     
     <category term="css"/>
-    
-    <category term="lab"/>
     
     <summary type="html">Was playing with making some cards, without using any images or such.</summary>
     <rights type="html">&amp;copy; Jon Rohan 2010. All rights reserved.</rights>
