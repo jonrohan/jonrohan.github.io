@@ -22,7 +22,7 @@
     <title>How to vertically center a clipped image with CSS</title>
     <updated>2015-05-08T00:00:00-04:00</updated>
     <published>2015-05-08T00:00:00-04:00</published>
-    <link href="http://jonrohan.codes/fieldnotes/vertically-center-clipped-image"/>
+    <link href="http://jonrohan.codes/fieldnotes/vertically-center-clipped-image?utm_source=feed&utm_medium=atom&utm_campaign=how-to-vertically-center-a-clipped-image-with-css"/>
     <category term="fieldnotes"/>
     
     <category term="css"/>
@@ -106,7 +106,7 @@
     <title>A big update to this site</title>
     <updated>2015-05-03T00:00:00-04:00</updated>
     <published>2015-05-03T00:00:00-04:00</published>
-    <link href="http://jonrohan.codes/fieldnotes/a-big-update-to-this-site"/>
+    <link href="http://jonrohan.codes/fieldnotes/a-big-update-to-this-site?utm_source=feed&utm_medium=atom&utm_campaign=a-big-update-to-this-site"/>
     <category term="fieldnotes"/>
     
     <category term="jekyll"/>
@@ -212,7 +212,7 @@
     <title>Scale a block-level element in CSS</title>
     <updated>2015-05-02T00:00:00-04:00</updated>
     <published>2015-05-02T00:00:00-04:00</published>
-    <link href="http://jonrohan.codes/fieldnotes/scale-box-by-ratio"/>
+    <link href="http://jonrohan.codes/fieldnotes/scale-box-by-ratio?utm_source=feed&utm_medium=atom&utm_campaign=scale-a-block-level-element-in-css"/>
     <category term="fieldnotes"/>
     
     <category term="css"/>
@@ -275,7 +275,7 @@
     <title>Primer CSS Styleguide</title>
     <updated>2015-03-23T00:00:00-04:00</updated>
     <published>2015-03-23T00:00:00-04:00</published>
-    <link href="http://jonrohan.codes/fieldnotes/primer-css-styleguide"/>
+    <link href="http://jonrohan.codes/fieldnotes/primer-css-styleguide?utm_source=feed&utm_medium=atom&utm_campaign=primer-css-styleguide"/>
     <category term="fieldnotes"/>
     
     <category term="css"/>
@@ -335,7 +335,7 @@
     <title>Class Naming: Semantic Approach</title>
     <updated>2012-01-20T00:00:00-05:00</updated>
     <published>2012-01-20T00:00:00-05:00</published>
-    <link href="http://jonrohan.codes/fieldnotes/semantic-css-class-naming"/>
+    <link href="http://jonrohan.codes/fieldnotes/semantic-css-class-naming?utm_source=feed&utm_medium=atom&utm_campaign=class-naming-semantic-approach"/>
     <category term="fieldnotes"/>
     
     <category term="css"/>
@@ -391,7 +391,7 @@
     <title>List of Git Contributors</title>
     <updated>2012-01-15T00:00:00-05:00</updated>
     <published>2012-01-15T00:00:00-05:00</published>
-    <link href="http://jonrohan.codes/fieldnotes/list-git-contributors"/>
+    <link href="http://jonrohan.codes/fieldnotes/list-git-contributors?utm_source=feed&utm_medium=atom&utm_campaign=list-of-git-contributors"/>
     <category term="fieldnotes"/>
     
     <category term="git"/>
@@ -427,7 +427,7 @@
     <title>Clear Fixes</title>
     <updated>2011-01-20T00:00:00-05:00</updated>
     <published>2011-01-20T00:00:00-05:00</published>
-    <link href="http://jonrohan.codes/fieldnotes/clear-fixes"/>
+    <link href="http://jonrohan.codes/fieldnotes/clear-fixes?utm_source=feed&utm_medium=atom&utm_campaign=clear-fixes"/>
     <category term="fieldnotes"/>
     
     <category term="css"/>
@@ -527,7 +527,7 @@
     <title>Creating Triangles in CSS</title>
     <updated>2011-01-18T00:00:00-05:00</updated>
     <published>2011-01-18T00:00:00-05:00</published>
-    <link href="http://jonrohan.codes/fieldnotes/creating-triangles-in-css"/>
+    <link href="http://jonrohan.codes/fieldnotes/creating-triangles-in-css?utm_source=feed&utm_medium=atom&utm_campaign=creating-triangles-in-css"/>
     <category term="fieldnotes"/>
     
     <category term="css"/>
@@ -674,7 +674,7 @@
     <title>Classes and Inheritance</title>
     <updated>2010-10-15T00:00:00-04:00</updated>
     <published>2010-10-15T00:00:00-04:00</published>
-    <link href="http://jonrohan.codes/fieldnotes/classes-and-inheritance"/>
+    <link href="http://jonrohan.codes/fieldnotes/classes-and-inheritance?utm_source=feed&utm_medium=atom&utm_campaign=classes-and-inheritance"/>
     <category term="fieldnotes"/>
     
     <category term="javascript"/>
@@ -748,7 +748,7 @@
     <title>Text Rotation</title>
     <updated>2010-10-10T00:00:00-04:00</updated>
     <published>2010-10-10T00:00:00-04:00</published>
-    <link href="http://jonrohan.codes/fieldnotes/text-rotation"/>
+    <link href="http://jonrohan.codes/fieldnotes/text-rotation?utm_source=feed&utm_medium=atom&utm_campaign=text-rotation"/>
     <category term="fieldnotes"/>
     
     <category term="css"/>
@@ -901,7 +901,7 @@
     <title>Dead Simple Git Workflow</title>
     <updated>2010-10-09T00:00:00-04:00</updated>
     <published>2010-10-09T00:00:00-04:00</published>
-    <link href="http://jonrohan.codes/fieldnotes/dead-simple-git-workflow-for-agile-teams"/>
+    <link href="http://jonrohan.codes/fieldnotes/dead-simple-git-workflow-for-agile-teams?utm_source=feed&utm_medium=atom&utm_campaign=dead-simple-git-workflow"/>
     <category term="fieldnotes"/>
     
     <category term="git"/>
@@ -990,7 +990,7 @@ git branch -d &lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quo
     <title>8-bit Kill Screen</title>
     <updated>2010-10-04T00:00:00-04:00</updated>
     <published>2010-10-04T00:00:00-04:00</published>
-    <link href="http://jonrohan.codes/fieldnotes/8-bit-kill-screen"/>
+    <link href="http://jonrohan.codes/fieldnotes/8-bit-kill-screen?utm_source=feed&utm_medium=atom&utm_campaign=8-bit-kill-screen"/>
     <category term="fieldnotes"/>
     
     <category term="canvas"/>
@@ -1024,7 +1024,7 @@ git branch -d &lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quo
     <title>Building a deck of 20 cards and shuffling them</title>
     <updated>2010-06-16T00:00:00-04:00</updated>
     <published>2010-06-16T00:00:00-04:00</published>
-    <link href="http://jonrohan.codes/fieldnotes/deck-of-cards"/>
+    <link href="http://jonrohan.codes/fieldnotes/deck-of-cards?utm_source=feed&utm_medium=atom&utm_campaign=building-a-deck-of-20-cards-and-shuffling-them"/>
     <category term="fieldnotes"/>
     
     <category term="javascript"/>
