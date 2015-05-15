@@ -21,7 +21,8 @@
       
       <category>css</category>
       
-      <content:encoded><![CDATA[<p>Sometimes you need to clip an image to a certain height, even though the image may be taller. Except when you do this, you end up getting just the top or bottom portion of the image, which probably isn’t useful.</p>
+      <content:encoded><![CDATA[
+        <p>Sometimes you need to clip an image to a certain height, even though the image may be taller. Except when you do this, you end up getting just the top or bottom portion of the image, which probably isn’t useful.</p>
 
 <p>Here’s how you vertically align the image inside of a clipping window.</p>
 
@@ -83,7 +84,11 @@
 <p>I threw together an example on <a href="http://codepen.io/jonrohan/full/vOLENV/">codepen</a>. The example is similar to an image reveal you might find in a social timeline. Click the photo to see more of the image.</p>
 
 <p data-height="360" data-theme-id="14162" data-slug-hash="vOLENV" data-default-tab="result" data-user="jonrohan" class="codepen">See the Pen <a href="http://codepen.io/jonrohan/pen/vOLENV/">Vertically center image</a> by Jon Rohan (<a href="http://codepen.io/jonrohan">@jonrohan</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-]]></content:encoded>
+
+        
+        <img src="http://www.google-analytics.com/collect?v=1&t=pageview&dl=http%3A%2F%2Fjonrohan.codes%2Frss%2Ffieldnotes%2Fvertically-center-clipped-image&ul=en-us&de=UTF-8&dt=How%20to%20vertically%20center%20a%20clipped%20image%20with%20CSS&cid=198907588.1430708348&tid=UA-543420-18">"
+
+      ]]></content:encoded>
     </item>
     
     <item>
@@ -108,7 +113,8 @@
       
       <category>css</category>
       
-      <content:encoded><![CDATA[<p>Its been a <a href="https://dribbble.com/shots/107376-Field-guide-take-2">while</a> since I’ve given any attention to my site. I felt like devoting this weekend to it felt right. So I’ve updated it to a new look. Its hosted on <a href="https://pages.github.com/">GitHub pages</a> which fits perfectly into my daily workflow. The design was custom by me.</p>
+      <content:encoded><![CDATA[
+        <p>Its been a <a href="https://dribbble.com/shots/107376-Field-guide-take-2">while</a> since I’ve given any attention to my site. I felt like devoting this weekend to it felt right. So I’ve updated it to a new look. Its hosted on <a href="https://pages.github.com/">GitHub pages</a> which fits perfectly into my daily workflow. The design was custom by me.</p>
 
 <figure class="post-image image-style-full">
   <div class="image-wrap">
@@ -180,7 +186,11 @@
 <h5 id="more-to-come">More to come…</h5>
 
 <p>I’ll go into details in a later post on my gh-pages grunt build setup.</p>
-]]></content:encoded>
+
+        
+        <img src="http://www.google-analytics.com/collect?v=1&t=pageview&dl=http%3A%2F%2Fjonrohan.codes%2Frss%2Ffieldnotes%2Fa-big-update-to-this-site&ul=en-us&de=UTF-8&dt=A%20big%20update%20to%20this%20site&cid=198907588.1430708348&tid=UA-543420-18">"
+
+      ]]></content:encoded>
     </item>
     
     <item>
@@ -193,7 +203,8 @@
       
       <category>css</category>
       
-      <content:encoded><![CDATA[<p>Sometimes you want to scale an iframe window just like an image, but the iframe doesn’t behave that way. A good example is when you embed a youtube video in your site.</p>
+      <content:encoded><![CDATA[
+        <p>Sometimes you want to scale an iframe window just like an image, but the iframe doesn’t behave that way. A good example is when you embed a youtube video in your site.</p>
 
 <figure class="post-image image-style-smallest">
   <img class="zoom-image js-zoom-image" src="http://jonrohan.codes/assets/images/posts/scaling.gif" />
@@ -234,7 +245,11 @@
   <span class="nl">height</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
 <span class="p">}</span></code></pre></div>
 
-]]></content:encoded>
+
+        
+        <img src="http://www.google-analytics.com/collect?v=1&t=pageview&dl=http%3A%2F%2Fjonrohan.codes%2Frss%2Ffieldnotes%2Fscale-box-by-ratio&ul=en-us&de=UTF-8&dt=Scale%20a%20block-level%20element%20in%20CSS&cid=198907588.1430708348&tid=UA-543420-18">"
+
+      ]]></content:encoded>
     </item>
     
     <item>
@@ -251,7 +266,8 @@
       
       <category>github</category>
       
-      <content:encoded><![CDATA[<p><a href="http://primercss.io/">Primer</a> is GitHub’s internal styleguide and css toolkit. It is used as a way to share buttons, forms, grids, tooltips and more with all the internal and external properties of GitHub. For example <a href="https://gist.github.com/">Gist</a>, <a href="https://enterprise.github.com/">Enterprise</a> and <a href="https://github.com/">GitHub.com</a>.</p>
+      <content:encoded><![CDATA[
+        <p><a href="http://primercss.io/">Primer</a> is GitHub’s internal styleguide and css toolkit. It is used as a way to share buttons, forms, grids, tooltips and more with all the internal and external properties of GitHub. For example <a href="https://gist.github.com/">Gist</a>, <a href="https://enterprise.github.com/">Enterprise</a> and <a href="https://github.com/">GitHub.com</a>.</p>
 
 <p>We recently open sourced Primer, because we wanted to be transparent with our styleguide and if anyone could get any use out of it we would like to share. The toolkit isn’t meant to be a full fledged CSS framework like Bootstrap.</p>
 
@@ -285,7 +301,11 @@
 <p>A lot of what primer is today, is due to the hard work <a href="http://markdotto.com/2015/03/23/introducing-primer/">@mdo</a> has been putting into it. He got us ready to release it.</p>
 
 <p>Check out the <a href="https://github.com/primer/primer">source code</a> or browse through the <a href="http://primercss.io/">docs</a> on GitHub.</p>
-]]></content:encoded>
+
+        
+        <img src="http://www.google-analytics.com/collect?v=1&t=pageview&dl=http%3A%2F%2Fjonrohan.codes%2Frss%2Ffieldnotes%2Fprimer-css-styleguide&ul=en-us&de=UTF-8&dt=Primer%20CSS%20Styleguide&cid=198907588.1430708348&tid=UA-543420-18">"
+
+      ]]></content:encoded>
     </item>
     
     <item>
@@ -298,7 +318,8 @@
       
       <category>css</category>
       
-      <content:encoded><![CDATA[<h3 id="the-semantic-web">The Semantic Web</h3>
+      <content:encoded><![CDATA[
+        <h3 id="the-semantic-web">The Semantic Web</h3>
 
 <p>With the rise of web standards we have seen the rise of the semantic web. This applies to the HTML elements selected as well as the class names chosen for the HTML. When choosing semantic elements and class names you want to pick a name considering the function or meaning of the element as it is on your page, not the position or style of the element.</p>
 
@@ -332,7 +353,11 @@
 <p>You may ask, “What’s the big deal? It’s all gonna render the same in the browser anyways?” The benefits for semantic code translate into faster development time, javascript traversal becomes easier and it makes me happy. :)</p>
 
 <p>Some more bad names that I have witnessed: <code>.padding5px</code>, <code>.topBorderGreen</code>, <code>.redErrorText</code>. What happens if you want a padding of 4px, or suddenly the border becomes blue, or if the error text becomes yellow. Then you’ll need to go back through all your html and re-name classes. May I suggest names like <code>.content</code>, <code>.important</code>, or <code>.error</code>.</p>
-]]></content:encoded>
+
+        
+        <img src="http://www.google-analytics.com/collect?v=1&t=pageview&dl=http%3A%2F%2Fjonrohan.codes%2Frss%2Ffieldnotes%2Fsemantic-css-class-naming&ul=en-us&de=UTF-8&dt=Class%20Naming%3A%20Semantic%20Approach&cid=198907588.1430708348&tid=UA-543420-18">"
+
+      ]]></content:encoded>
     </item>
     
     <item>
@@ -347,7 +372,8 @@
       
       <category>shell</category>
       
-      <content:encoded><![CDATA[<p>This is one of my favorite Git commands, I think mainly because I like to see where I am in a list of contributors.</p>
+      <content:encoded><![CDATA[
+        <p>This is one of my favorite Git commands, I think mainly because I like to see where I am in a list of contributors.</p>
 
 <div class="highlight"><pre><code class="language-sh" data-lang="sh">git shortlog -s -n</code></pre></div>
 
@@ -359,7 +385,11 @@
 2 Fred Smith</code></pre></div>
 
 <p>Go ahead and try it on your repo.</p>
-]]></content:encoded>
+
+        
+        <img src="http://www.google-analytics.com/collect?v=1&t=pageview&dl=http%3A%2F%2Fjonrohan.codes%2Frss%2Ffieldnotes%2Flist-git-contributors&ul=en-us&de=UTF-8&dt=List%20of%20Git%20Contributors&cid=198907588.1430708348&tid=UA-543420-18">"
+
+      ]]></content:encoded>
     </item>
     
     <item>
@@ -374,7 +404,8 @@
       
       <category>hack</category>
       
-      <content:encoded><![CDATA[<p>There is a common problem in front end engineering where, when you float an element it is actually removed from it’s parents’ flow. This can cause the elements below the floating element to run into the floating elements. Like below. The green box is floating and it’s parent has the red border. The blue box is below the red border box.</p>
+      <content:encoded><![CDATA[
+        <p>There is a common problem in front end engineering where, when you float an element it is actually removed from it’s parents’ flow. This can cause the elements below the floating element to run into the floating elements. Like below. The green box is floating and it’s parent has the red border. The blue box is below the red border box.</p>
 
 <div style="overflow:hidden;">
   <div style="border:1px solid red;">
@@ -450,7 +481,11 @@
 <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"background-color:blue;width:50px;height:50px;"</span><span class="nt">&gt;&lt;/div&gt;</span></code></pre></div>
 
 <p>Pretty simple! And it doesn’t require extra div tags. I’ve tested this in IE7, Firefox, Safari, and Chrome works in all.</p>
-]]></content:encoded>
+
+        
+        <img src="http://www.google-analytics.com/collect?v=1&t=pageview&dl=http%3A%2F%2Fjonrohan.codes%2Frss%2Ffieldnotes%2Fclear-fixes&ul=en-us&de=UTF-8&dt=Clear%20Fixes&cid=198907588.1430708348&tid=UA-543420-18">"
+
+      ]]></content:encoded>
     </item>
     
     <item>
@@ -465,7 +500,8 @@
       
       <category>hack</category>
       
-      <content:encoded><![CDATA[<p>I’ve come across a few techniques and tips in my career, while working at my last gig a co-worker pointed me to this technique. I believe this was originally discovered by the legendary Eric Meyer, but I couldn’t find much documentation about it on the web so I thought I would describe it here.</p>
+      <content:encoded><![CDATA[
+        <p>I’ve come across a few techniques and tips in my career, while working at my last gig a co-worker pointed me to this technique. I believe this was originally discovered by the legendary Eric Meyer, but I couldn’t find much documentation about it on the web so I thought I would describe it here.</p>
 
 <figure class="post-image image-style-bleed">
   <div class="image-wrap">
@@ -588,7 +624,11 @@
   <span class="py">_filter</span><span class="p">:</span> <span class="n">chroma</span><span class="p">(</span><span class="n">color</span><span class="err">=</span><span class="no">pink</span><span class="p">);</span>
 <span class="p">}</span></code></pre></div>
 
-]]></content:encoded>
+
+        
+        <img src="http://www.google-analytics.com/collect?v=1&t=pageview&dl=http%3A%2F%2Fjonrohan.codes%2Frss%2Ffieldnotes%2Fcreating-triangles-in-css&ul=en-us&de=UTF-8&dt=Creating%20Triangles%20in%20CSS&cid=198907588.1430708348&tid=UA-543420-18">"
+
+      ]]></content:encoded>
     </item>
     
     <item>
@@ -603,7 +643,8 @@
       
       <category>oop</category>
       
-      <content:encoded><![CDATA[<p>Object oriented JavaScript is everywhere today, and its the type of thing that takes a developer from someone tinkering with JavaScript on the path to becoming a JavaScript ninja. In this post I’m gonna discuss the basics of creating a JavaScript class, and a subclass which inherits methods from the superclass.</p>
+      <content:encoded><![CDATA[
+        <p>Object oriented JavaScript is everywhere today, and its the type of thing that takes a developer from someone tinkering with JavaScript on the path to becoming a JavaScript ninja. In this post I’m gonna discuss the basics of creating a JavaScript class, and a subclass which inherits methods from the superclass.</p>
 
 <h3>A JavaScript Class</h3>
 
@@ -653,7 +694,11 @@
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">d</span><span class="p">.</span><span class="nx">getSkills</span><span class="p">().</span><span class="nx">join</span><span class="p">(</span><span class="s2">", "</span><span class="p">));</span></code></pre></div>
 
 <p>This is the basic ideas behind Object Oriented Programming in JavaScript, I’ve only really scratched the surface in JavaScript OOP.</p>
-]]></content:encoded>
+
+        
+        <img src="http://www.google-analytics.com/collect?v=1&t=pageview&dl=http%3A%2F%2Fjonrohan.codes%2Frss%2Ffieldnotes%2Fclasses-and-inheritance&ul=en-us&de=UTF-8&dt=Classes%20and%20Inheritance&cid=198907588.1430708348&tid=UA-543420-18">"
+
+      ]]></content:encoded>
     </item>
     
     <item>
@@ -668,7 +713,8 @@
       
       <category>javascript</category>
       
-      <content:encoded><![CDATA[<p>I recently saw an <a href="http://snook.ca/archives/html_and_css/css-text-rotation">article</a> on CSS text rotation on the internets and decided to try my own experiement.</p>
+      <content:encoded><![CDATA[
+        <p>I recently saw an <a href="http://snook.ca/archives/html_and_css/css-text-rotation">article</a> on CSS text rotation on the internets and decided to try my own experiement.</p>
 
 <p>What I wanted to make was a clock. The basis of this project is using the -webkit-transform:rotate(0deg); css property. This allows you to rotate any object 360 degrees. So I began to wonder, if I have a line, and I setup a javascript timer can I rotate it every second?</p>
 
@@ -797,7 +843,11 @@
   <span class="nx">setInterval</span><span class="p">(</span><span class="nx">tick</span><span class="p">,</span><span class="mi">1000</span><span class="p">);</span>
 <span class="p">})();</span></code></pre></div>
 
-]]></content:encoded>
+
+        
+        <img src="http://www.google-analytics.com/collect?v=1&t=pageview&dl=http%3A%2F%2Fjonrohan.codes%2Frss%2Ffieldnotes%2Ftext-rotation&ul=en-us&de=UTF-8&dt=Text%20Rotation&cid=198907588.1430708348&tid=UA-543420-18">"
+
+      ]]></content:encoded>
     </item>
     
     <item>
@@ -816,7 +866,8 @@
       
       <category>shell</category>
       
-      <content:encoded><![CDATA[<p>Recently I have had the privilege to work with a few excellent small agile teams. With each team, they have their own process, which works best for them. And there’s nothing wrong with that, a team should work in it’s most effective way. But I came across a team recently that had a workflow that really impressed me. To put it simply it’s described as an extremely cool Git workflow.</p>
+      <content:encoded><![CDATA[
+        <p>Recently I have had the privilege to work with a few excellent small agile teams. With each team, they have their own process, which works best for them. And there’s nothing wrong with that, a team should work in it’s most effective way. But I came across a team recently that had a workflow that really impressed me. To put it simply it’s described as an extremely cool Git workflow.</p>
 
 <p>I can’t take credit for coming up with this workflow, but I’m gonna do my best to re-describe it here so it can be shared. The basis for this post comes from reinh.com’s posts <a href="http://reinh.com/blog/2009/03/02/a-git-workflow-for-agile-teams.html">A git workflow for Agile Teams</a> and <a href="http://reinh.com/blog/2008/08/27/hack-and-and-ship.html">Hack &amp;&amp; Ship</a>. Also this workflow pulls alot from Josh Susser’s post on the <a href="http://blog.hasmanythrough.com/2008/12/18/agile-git-and-the-story-branch-pattern">story branch pattern</a>.</p>
 
@@ -877,7 +928,11 @@ git branch -d <span class="k">${</span><span class="nv">CURRENT</span><span clas
 <div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nb">alias </span><span class="nv">hsd</span><span class="o">=</span><span class="s2">"hack &amp;&amp; ship &amp;&amp; dwf"</span></code></pre></div>
 
 <p>Pretty awesome! I’m sure there are hundreds of awesome workflows out there. What do you guys use on your projects?</p>
-]]></content:encoded>
+
+        
+        <img src="http://www.google-analytics.com/collect?v=1&t=pageview&dl=http%3A%2F%2Fjonrohan.codes%2Frss%2Ffieldnotes%2Fdead-simple-git-workflow-for-agile-teams&ul=en-us&de=UTF-8&dt=Dead%20Simple%20Git%20Workflow&cid=198907588.1430708348&tid=UA-543420-18">"
+
+      ]]></content:encoded>
     </item>
     
     <item>
@@ -894,7 +949,8 @@ git branch -d <span class="k">${</span><span class="nv">CURRENT</span><span clas
       
       <category>css</category>
       
-      <content:encoded><![CDATA[<p>Drawing some 8-bit stars in canvas and using a paralax technique to make it look like a kill screen. Check out the <a href="http://codepen.io/jonrohan/full/BNyWRW/">demo</a>.</p>
+      <content:encoded><![CDATA[
+        <p>Drawing some 8-bit stars in canvas and using a paralax technique to make it look like a kill screen. Check out the <a href="http://codepen.io/jonrohan/full/BNyWRW/">demo</a>.</p>
 
 <figure class="post-image image-style-full">
   <img class="zoom-image js-zoom-image" src="http://jonrohan.codes/assets/images/posts/space.gif" />
@@ -902,7 +958,11 @@ git branch -d <span class="k">${</span><span class="nv">CURRENT</span><span clas
 </figure>
 
 <p><a href="http://codepen.io/jonrohan/full/BNyWRW/">Demo</a></p>
-]]></content:encoded>
+
+        
+        <img src="http://www.google-analytics.com/collect?v=1&t=pageview&dl=http%3A%2F%2Fjonrohan.codes%2Frss%2Ffieldnotes%2F8-bit-kill-screen&ul=en-us&de=UTF-8&dt=8-bit%20Kill%20Screen&cid=198907588.1430708348&tid=UA-543420-18">"
+
+      ]]></content:encoded>
     </item>
     
     <item>
@@ -917,7 +977,8 @@ git branch -d <span class="k">${</span><span class="nv">CURRENT</span><span clas
       
       <category>css</category>
       
-      <content:encoded><![CDATA[<p>Working on my card tricks. I built a page to shuffle out a deck of cards, and then discard the top card. Doing it without any images. Check out the <a href="http://codepen.io/jonrohan/full/vOEJMy/">demo</a></p>
+      <content:encoded><![CDATA[
+        <p>Working on my card tricks. I built a page to shuffle out a deck of cards, and then discard the top card. Doing it without any images. Check out the <a href="http://codepen.io/jonrohan/full/vOEJMy/">demo</a></p>
 
 <figure class="post-image image-style-full">
   <img class="zoom-image js-zoom-image" src="http://jonrohan.codes/assets/images/posts/cards.gif" />
@@ -925,7 +986,11 @@ git branch -d <span class="k">${</span><span class="nv">CURRENT</span><span clas
 </figure>
 
 <p><a href="http://codepen.io/jonrohan/full/vOEJMy/">Demo</a></p>
-]]></content:encoded>
+
+        
+        <img src="http://www.google-analytics.com/collect?v=1&t=pageview&dl=http%3A%2F%2Fjonrohan.codes%2Frss%2Ffieldnotes%2Fdeck-of-cards&ul=en-us&de=UTF-8&dt=Building%20a%20deck%20of%2020%20cards%20and%20shuffling%20them&cid=198907588.1430708348&tid=UA-543420-18">"
+
+      ]]></content:encoded>
     </item>
     
 
