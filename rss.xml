@@ -13,7 +13,7 @@
     
     <item>
       <title>How to vertically center a clipped image with CSS</title>
-      <link>http://jonrohan.codes/fieldnotes/vertically-center-clipped-image?utm_source=feed&utm_medium=rss&utm_campaign=how-to-vertically-center-a-clipped-image-with-css</link>
+      <link>http://jonrohan.codes/fieldnotes/vertically-center-clipped-image?utm_source=feed&amp;utm_medium=rss&amp;utm_campaign=how-to-vertically-center-a-clipped-image-with-css</link>
       <description>Sometimes you need to clip an image to a certain height, even though the image may be taller. This article shows you how to clip the image and center it vertically.</description>
       <guid isPermaLink="true">http://jonrohan.codes/fieldnotes/vertically-center-clipped-image</guid>
       <pubDate>Fri, 08 May 2015 00:00:00 -0400</pubDate>
@@ -93,7 +93,7 @@
     
     <item>
       <title>A big update to this site</title>
-      <link>http://jonrohan.codes/fieldnotes/a-big-update-to-this-site?utm_source=feed&utm_medium=rss&utm_campaign=a-big-update-to-this-site</link>
+      <link>http://jonrohan.codes/fieldnotes/a-big-update-to-this-site?utm_source=feed&amp;utm_medium=rss&amp;utm_campaign=a-big-update-to-this-site</link>
       <description>I recently updated this site. I wanted to share what I was using to build this site. With details on what each thing is good for.</description>
       <guid isPermaLink="true">http://jonrohan.codes/fieldnotes/a-big-update-to-this-site</guid>
       <pubDate>Sun, 03 May 2015 00:00:00 -0400</pubDate>
@@ -195,7 +195,7 @@
     
     <item>
       <title>Scale a block-level element in CSS</title>
-      <link>http://jonrohan.codes/fieldnotes/scale-box-by-ratio?utm_source=feed&utm_medium=rss&utm_campaign=scale-a-block-level-element-in-css</link>
+      <link>http://jonrohan.codes/fieldnotes/scale-box-by-ratio?utm_source=feed&amp;utm_medium=rss&amp;utm_campaign=scale-a-block-level-element-in-css</link>
       <description>Sometimes you want to scale an iframe window just like an image, but the iframe doesn&#39;t behave that way. A good example is when you embed a youtube video in your site.</description>
       <guid isPermaLink="true">http://jonrohan.codes/fieldnotes/scale-box-by-ratio</guid>
       <pubDate>Sat, 02 May 2015 00:00:00 -0400</pubDate>
@@ -254,7 +254,7 @@
     
     <item>
       <title>Primer CSS Styleguide</title>
-      <link>http://jonrohan.codes/fieldnotes/primer-css-styleguide?utm_source=feed&utm_medium=rss&utm_campaign=primer-css-styleguide</link>
+      <link>http://jonrohan.codes/fieldnotes/primer-css-styleguide?utm_source=feed&amp;utm_medium=rss&amp;utm_campaign=primer-css-styleguide</link>
       <description>We recently opensourced Primer, because we wanted to be tansparent with our styleguide and if anyone could get any use out of it we would like to share. The toolkit isn’t meant to be a full fledged CSS framework like Bootstrap.</description>
       <guid isPermaLink="true">http://jonrohan.codes/fieldnotes/primer-css-styleguide</guid>
       <pubDate>Mon, 23 Mar 2015 00:00:00 -0400</pubDate>
@@ -310,7 +310,7 @@
     
     <item>
       <title>Class Naming: Semantic Approach</title>
-      <link>http://jonrohan.codes/fieldnotes/semantic-css-class-naming?utm_source=feed&utm_medium=rss&utm_campaign=class-naming-semantic-approach</link>
+      <link>http://jonrohan.codes/fieldnotes/semantic-css-class-naming?utm_source=feed&amp;utm_medium=rss&amp;utm_campaign=class-naming-semantic-approach</link>
       <description>With the rise of web standards we have seen the rise of the semantic web. This applies to the HTML elements selected as well as the class names chosen for the HTML. When choosing semantic elements and class names you want to pick a name considering the function or meaning of the element as it is on your page, not the position or style of the element.</description>
       <guid isPermaLink="true">http://jonrohan.codes/fieldnotes/semantic-css-class-naming</guid>
       <pubDate>Fri, 20 Jan 2012 00:00:00 -0500</pubDate>
@@ -362,7 +362,7 @@
     
     <item>
       <title>List of Git Contributors</title>
-      <link>http://jonrohan.codes/fieldnotes/list-git-contributors?utm_source=feed&utm_medium=rss&utm_campaign=list-of-git-contributors</link>
+      <link>http://jonrohan.codes/fieldnotes/list-git-contributors?utm_source=feed&amp;utm_medium=rss&amp;utm_campaign=list-of-git-contributors</link>
       <description>Get a list of git contributors and sort by number of commits.</description>
       <guid isPermaLink="true">http://jonrohan.codes/fieldnotes/list-git-contributors</guid>
       <pubDate>Sun, 15 Jan 2012 00:00:00 -0500</pubDate>
@@ -394,7 +394,7 @@
     
     <item>
       <title>Clear Fixes</title>
-      <link>http://jonrohan.codes/fieldnotes/clear-fixes?utm_source=feed&utm_medium=rss&utm_campaign=clear-fixes</link>
+      <link>http://jonrohan.codes/fieldnotes/clear-fixes?utm_source=feed&amp;utm_medium=rss&amp;utm_campaign=clear-fixes</link>
       <description>There is a common problem in front end engineering where, when you float an element it is actually removed from it&#39;s parents&#39; flow. This can cause the elements below the floating element to run into the floating elements.</description>
       <guid isPermaLink="true">http://jonrohan.codes/fieldnotes/clear-fixes</guid>
       <pubDate>Thu, 20 Jan 2011 00:00:00 -0500</pubDate>
@@ -490,7 +490,7 @@
     
     <item>
       <title>Creating Triangles in CSS</title>
-      <link>http://jonrohan.codes/fieldnotes/creating-triangles-in-css?utm_source=feed&utm_medium=rss&utm_campaign=creating-triangles-in-css</link>
+      <link>http://jonrohan.codes/fieldnotes/creating-triangles-in-css?utm_source=feed&amp;utm_medium=rss&amp;utm_campaign=creating-triangles-in-css</link>
       <description>I&#39;ve come across a few techniques and tips in my career, while working at my last gig a co-worker pointed me to this technique. I believe this was originally discovered by the legendary Eric Meyer, but I couldn&#39;t find much documentation about it on the web so I thought I would describe it here.</description>
       <guid isPermaLink="true">http://jonrohan.codes/fieldnotes/creating-triangles-in-css</guid>
       <pubDate>Tue, 18 Jan 2011 00:00:00 -0500</pubDate>
@@ -633,7 +633,7 @@
     
     <item>
       <title>Classes and Inheritance</title>
-      <link>http://jonrohan.codes/fieldnotes/classes-and-inheritance?utm_source=feed&utm_medium=rss&utm_campaign=classes-and-inheritance</link>
+      <link>http://jonrohan.codes/fieldnotes/classes-and-inheritance?utm_source=feed&amp;utm_medium=rss&amp;utm_campaign=classes-and-inheritance</link>
       <description>Object oriented JavaScript is everywhere today, and its the type of thing that takes a developer from someone tinkering with JavaScript on the path to becoming a JavaScript ninja.</description>
       <guid isPermaLink="true">http://jonrohan.codes/fieldnotes/classes-and-inheritance</guid>
       <pubDate>Fri, 15 Oct 2010 00:00:00 -0400</pubDate>
@@ -703,7 +703,7 @@
     
     <item>
       <title>Text Rotation</title>
-      <link>http://jonrohan.codes/fieldnotes/text-rotation?utm_source=feed&utm_medium=rss&utm_campaign=text-rotation</link>
+      <link>http://jonrohan.codes/fieldnotes/text-rotation?utm_source=feed&amp;utm_medium=rss&amp;utm_campaign=text-rotation</link>
       <description>What I wanted to make was a clock. The basis of this project is using the -webkit-transform:rotate(0deg); css property. This allows you to rotate any object 360 degrees. So I began to wonder, if I have a line, and I setup a javascript timer can I rotate it every second?</description>
       <guid isPermaLink="true">http://jonrohan.codes/fieldnotes/text-rotation</guid>
       <pubDate>Sun, 10 Oct 2010 00:00:00 -0400</pubDate>
@@ -852,7 +852,7 @@
     
     <item>
       <title>Dead Simple Git Workflow</title>
-      <link>http://jonrohan.codes/fieldnotes/dead-simple-git-workflow-for-agile-teams?utm_source=feed&utm_medium=rss&utm_campaign=dead-simple-git-workflow</link>
+      <link>http://jonrohan.codes/fieldnotes/dead-simple-git-workflow-for-agile-teams?utm_source=feed&amp;utm_medium=rss&amp;utm_campaign=dead-simple-git-workflow</link>
       <description>Recently I have had the privilege to work with a few excellent small agile teams. With each team, they have their own process, which works best for them. And there&#39;s nothing wrong with that, a team should work in it&#39;s most effective way. But I came across a team recently that had a workflow that really impressed me. To put it simply it&#39;s described as an extremely cool Git workflow.</description>
       <guid isPermaLink="true">http://jonrohan.codes/fieldnotes/dead-simple-git-workflow-for-agile-teams</guid>
       <pubDate>Sat, 09 Oct 2010 00:00:00 -0400</pubDate>
@@ -937,7 +937,7 @@ git branch -d <span class="k">${</span><span class="nv">CURRENT</span><span clas
     
     <item>
       <title>8-bit Kill Screen</title>
-      <link>http://jonrohan.codes/fieldnotes/8-bit-kill-screen?utm_source=feed&utm_medium=rss&utm_campaign=8-bit-kill-screen</link>
+      <link>http://jonrohan.codes/fieldnotes/8-bit-kill-screen?utm_source=feed&amp;utm_medium=rss&amp;utm_campaign=8-bit-kill-screen</link>
       <description>Using paralax scrolling and canvas to create a &#39;kill screen&#39; effect.</description>
       <guid isPermaLink="true">http://jonrohan.codes/fieldnotes/8-bit-kill-screen</guid>
       <pubDate>Mon, 04 Oct 2010 00:00:00 -0400</pubDate>
@@ -967,7 +967,7 @@ git branch -d <span class="k">${</span><span class="nv">CURRENT</span><span clas
     
     <item>
       <title>Building a deck of 20 cards and shuffling them</title>
-      <link>http://jonrohan.codes/fieldnotes/deck-of-cards?utm_source=feed&utm_medium=rss&utm_campaign=building-a-deck-of-20-cards-and-shuffling-them</link>
+      <link>http://jonrohan.codes/fieldnotes/deck-of-cards?utm_source=feed&amp;utm_medium=rss&amp;utm_campaign=building-a-deck-of-20-cards-and-shuffling-them</link>
       <description>Was playing with making some cards, without using any images or such.</description>
       <guid isPermaLink="true">http://jonrohan.codes/fieldnotes/deck-of-cards</guid>
       <pubDate>Wed, 16 Jun 2010 00:00:00 -0400</pubDate>
