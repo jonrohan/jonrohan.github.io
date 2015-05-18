@@ -402,8 +402,6 @@
       
       <category>css</category>
       
-      <category>hack</category>
-      
       <content:encoded><![CDATA[
         <p>There is a common problem in front end engineering where, when you float an element it is actually removed from it’s parents’ flow. This can cause the elements below the floating element to run into the floating elements. Like below. The green box is floating and it’s parent has the red border. The blue box is below the red border box.</p>
 
@@ -640,8 +638,6 @@
       <category>fieldnotes</category>
       
       <category>javascript</category>
-      
-      <category>oop</category>
       
       <content:encoded><![CDATA[
         <p>Object oriented JavaScript is everywhere today, and its the type of thing that takes a developer from someone tinkering with JavaScript on the path to becoming a JavaScript ninja. In this post I’m gonna discuss the basics of creating a JavaScript class, and a subclass which inherits methods from the superclass.</p>

@@ -432,8 +432,6 @@
     
     <category term="css"/>
     
-    <category term="hack"/>
-    
     <summary type="html">There is a common problem in front end engineering where, when you float an element it is actually removed from it&#39;s parents&#39; flow. This can cause the elements below the floating element to run into the floating elements.</summary>
     <rights type="html">&amp;copy; Jon Rohan 2011. All rights reserved.</rights>
 
@@ -678,8 +676,6 @@
     <category term="fieldnotes"/>
     
     <category term="javascript"/>
-    
-    <category term="oop"/>
     
     <summary type="html">Object oriented JavaScript is everywhere today, and its the type of thing that takes a developer from someone tinkering with JavaScript on the path to becoming a JavaScript ninja.</summary>
     <rights type="html">&amp;copy; Jon Rohan 2010. All rights reserved.</rights>
