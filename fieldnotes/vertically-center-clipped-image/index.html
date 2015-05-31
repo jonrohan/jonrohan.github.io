@@ -169,7 +169,7 @@
 
   </p>
   <section class="markdown-body clearfix" itemprop="articleBody">
-    <p>Sometimes you need to clip an image to a certain height, even though the image may be taller. Except when you do this, you end up getting just the top or bottom portion of the image, which probably isn’t useful.</p>
+    <p>Sometimes you need to clip an image to a certain height, even though the image may be taller. Except when you do this, you end up getting only the top or bottom portion of the image, which probably isn’t useful.</p>
 
 <p>Here’s how you vertically align the image inside of a clipping window.</p>
 
@@ -186,7 +186,7 @@
 
 <h4 id="calculating-the-offset">Calculating the offset</h4>
 
-<p>This is tricky because you need to calculate the amount of vertical offset based on the height of the image and the height of the wrapper. For example this image is <code>600px</code> and the window is <code>100px</code> <code>(600 - 100) / 2 = 250px</code>. So we’ll need to bump image up vertically <code>250px</code> It is impractical to calculate for all your images, or costly to use JavaScript.</p>
+<p>This is tricky because you need to calculate the amount of vertical offset based on the height of the image and the height of the wrapper. For example this image is <code>600px</code> and the window is <code>100px</code> <code>(600 - 100) / 2 = 250px</code>. We’ll need to bump image up vertically <code>250px</code> It is impractical to calculate for all your images, or costly to use JavaScript.</p>
 
 <p>If we use some algebra to move our equation around, we end up with <code>a * 0.5 + b * -0.5</code> where <code>a = wrapper height</code> and <code>b = image height</code>.</p>
 
@@ -198,12 +198,12 @@
   <li>
     <h5 id="top"><code>top</code></h5>
 
-    <p>top calculates based on the wrapper. So if we’re moving the <code>img { top: 50%; }</code> it moves the image down 50% of the wrapper height.</p>
+    <p>top calculates based on the wrapper. If we’re moving the <code>img { top: 50%; }</code> it moves the image down 50% of the wrapper height.</p>
   </li>
   <li>
     <h5 id="translatey"><code>translateY</code></h5>
 
-    <p>translateY calculates based on the height of the object. So when we’re applying it to the <code>img { transform: translateY(-50%); }</code> That moves the image back up, 50% of the image height.</p>
+    <p>translateY calculates based on the height of the object. When we’re applying it to the <code>img { transform: translateY(-50%); }</code> That moves the image back up, 50% of the image height.</p>
   </li>
 </ul>
 
@@ -339,12 +339,12 @@
 
 <a href="http://jonrohan.codes/fieldnotes/scale-box-by-ratio/#post" class="next-post">
   <h3>Scale a block-level element in CSS</h3>
-  Sometimes you want to scale an iframe window just like an image, but the iframe doesn't behave that way. A good example is when you embed a youtube video in your site.
+  Sometimes you want to scale an iframe window like an image, but the iframe doesn't behave that way. A good example is when you embed a youtube video in your site.
 </a>
 
 <a href="http://jonrohan.codes/fieldnotes/primer-css-styleguide/#post" class="next-post">
   <h3>Primer CSS Styleguide</h3>
-  We recently opensourced Primer, because we wanted to be tansparent with our styleguide and if anyone could get any use out of it we would like to share. The toolkit isn’t meant to be a full fledged CSS framework like Bootstrap.
+  We recently open sourced Primer, because we wanted to be transparent with our styleguide and if anyone could get any use out of it we would like to share. The toolkit isn’t meant to be a full fledged CSS framework like Bootstrap.
 </a>
 
 

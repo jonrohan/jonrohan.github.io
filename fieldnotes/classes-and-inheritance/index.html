@@ -184,7 +184,7 @@
   <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">;</span>
 <span class="p">}</span></code></pre></div>
 
-<p>So in the above example I created a Person class with a name attribute and a function to retrieve the name. Now I’ll create a new person, “Jon Rohan”.</p>
+<p>In the above example I created a Person class with a name attribute and a function to retrieve the name. Now I’ll create a new person, “Jon Rohan”.</p>
 
 <div class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">p</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s2">"Jon Rohan"</span><span class="p">);</span>
 <span class="c1">// output: Jon Rohan</span>
@@ -194,7 +194,7 @@
 
 <h3>Prototype Chain</h3>
 
-<p>Now we bring in the prototype chain. The chain is like an inheritance chain. Developer inherits → from Person. So we are defining a Developer as a Person, cause developers are people too. ;-) The developer takes the name attribute like Person, and an array of skills. The first line of the Developer class is to &lt;pre&gt;call&lt;/pre&gt; the Person class. This calls the Person’s constructor. The Developer class also has a new method getSkills, because a Person is too general to have skills, but as a Developer, there are skills that they have.</p>
+<p>Now we bring in the prototype chain. The chain is like an inheritance chain. Developer inherits → from Person. We are defining a Developer as a Person, cause developers are people too. ;-) The developer takes the name attribute like Person, and an array of skills. The first line of the Developer class is to &lt;pre&gt;call&lt;/pre&gt; the Person class. This calls the Person’s constructor. The Developer class also has a new method getSkills, because a Person is too general to have skills, but as a Developer, there are skills that they have.</p>
 
 <p>We also need to set Developer.prototype to the Person’s prototype, by creating a new Person. Now we set the Developer’s constructor to the Developer. And we have successfully created a prototype chain from Developer to Person.</p>
 
@@ -275,7 +275,7 @@
 
 <a href="http://jonrohan.codes/fieldnotes/text-rotation/#post" class="next-post">
   <h3>Text Rotation</h3>
-  What I wanted to make was a clock. The basis of this project is using the -webkit-transform:rotate(0deg); css property. This allows you to rotate any object 360 degrees. So I began to wonder, if I have a line, and I setup a javascript timer can I rotate it every second?
+  What I wanted to make was a clock. The basis of this project is using the -webkit-transform:rotate(0deg); css property. This allows you to rotate any object 360 degrees. I began to wonder, if I have a line, and I setup a javascript timer can I rotate it every second?
 </a>
 
 <a href="http://jonrohan.codes/fieldnotes/8-bit-kill-screen/#post" class="next-post">

@@ -20,7 +20,7 @@
   </title>
   <meta name="description" content="
   
-    What I wanted to make was a clock. The basis of this project is using the -webkit-transform:rotate(0deg); css property. This allows you to rotate any object 360 degrees. So I began to wonder, if I have a line, and I setup a javascript timer can I rotate it every second?
+    What I wanted to make was a clock. The basis of this project is using the -webkit-transform:rotate(0deg); css property. This allows you to rotate any object 360 degrees. I began to wonder, if I have a line, and I setup a javascript timer can I rotate it every second?
   
   ">
 
@@ -36,7 +36,7 @@
   ">
   <meta property="og:description" content="
   
-    What I wanted to make was a clock. The basis of this project is using the -webkit-transform:rotate(0deg); css property. This allows you to rotate any object 360 degrees. So I began to wonder, if I have a line, and I setup a javascript timer can I rotate it every second?
+    What I wanted to make was a clock. The basis of this project is using the -webkit-transform:rotate(0deg); css property. This allows you to rotate any object 360 degrees. I began to wonder, if I have a line, and I setup a javascript timer can I rotate it every second?
   
   ">
   <meta property="og:url" content="http://jonrohan.codes/fieldnotes/text-rotation">
@@ -59,7 +59,7 @@
   <meta name="twitter:image" content="http://jonrohan.codes/images/avatar.png" >
   <meta name="twitter:description" content="
   
-    What I wanted to make was a clock. The basis of this project is using the -webkit-transform:rotate(0deg); css property. This allows you to rotate any object 360 degrees. So I began to wonder, if I have a line, and I setup a javascript timer can I rotate it every second?
+    What I wanted to make was a clock. The basis of this project is using the -webkit-transform:rotate(0deg); css property. This allows you to rotate any object 360 degrees. I began to wonder, if I have a line, and I setup a javascript timer can I rotate it every second?
   
   " >
   <meta name="twitter:url" content="http://jonrohan.codes/fieldnotes/text-rotation" >
@@ -169,21 +169,21 @@
 
   </p>
   <section class="markdown-body clearfix" itemprop="articleBody">
-    <p>I recently saw an <a href="http://snook.ca/archives/html_and_css/css-text-rotation">article</a> on CSS text rotation on the internets and decided to try my own experiement.</p>
+    <p>I recently saw an <a href="http://snook.ca/archives/html_and_css/css-text-rotation">article</a> on CSS text rotation on the internets and decided to try my own experiment.</p>
 
-<p>What I wanted to make was a clock. The basis of this project is using the -webkit-transform:rotate(0deg); css property. This allows you to rotate any object 360 degrees. So I began to wonder, if I have a line, and I setup a javascript timer can I rotate it every second?</p>
+<p>What I wanted to make was a clock. The basis of this project is using the -webkit-transform:rotate(0deg); css property. This allows you to rotate any object 360 degrees. I began to wonder, if I have a line, and I setup a javascript timer can I rotate it every second?</p>
 
 <p data-height="309" data-theme-id="14162" data-slug-hash="VYoqwj" data-default-tab="result" data-user="jonrohan" class="codepen">See the Pen <a href="http://codepen.io/jonrohan/pen/VYoqwj/">VYoqwj</a> by Jon Rohan (<a href="http://codepen.io/jonrohan">@jonrohan</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 
 <p>The design is inspired by @<a href="https://twitter.com/eston">eston</a>’s <a href="http://www.flickr.com/photos/eston/3799958463/">Sarai</a> desktop.</p>
 
-<p>This clock won’t work in IE. There is an IE rotate property, but it only rotates at 0, 90, 180, 270. So that won’t work for this clock. Here’s the IE rotate property anyways</p>
+<p>This clock won’t work in IE. There is an IE rotate property, but it only rotates at 0, 90, 180, 270. That won’t work for this clock, because we need more than only four angles. Here’s the IE rotate property anyways</p>
 
 <div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">filter</span><span class="o">:</span> <span class="nt">progid</span><span class="nd">:DXImageTransform</span><span class="nc">.Microsoft.BasicImage</span><span class="o">(</span><span class="nt">rotation</span><span class="o">=</span><span class="nt">3</span><span class="o">);</span></code></pre></div>
 
-<h3>So How did I do it?</h3>
+<h3>How did I do it?</h3>
 
-<p>I started with an external div for the clock. Giving it a width and height of 100px and position relative (so I can position the clock hands)</p>
+<p>I started with an external div for the clock. Giving it a width and height of 100px and position relative. This is to position the clock hands.</p>
 
 <div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nf">#clock</span> <span class="p">{</span>
   <span class="nl">width</span><span class="p">:</span><span class="m">208px</span><span class="p">;</span>
@@ -191,7 +191,7 @@
   <span class="nl">position</span><span class="p">:</span><span class="nb">relative</span><span class="p">;</span>
 <span class="p">}</span></code></pre></div>
 
-<p>After getting the clock, I need a second hand, a minute hand and an hour hand. Originally I just used a side border on the hands, but realized that the rotate property rotates the object at it’s center, and not at it’s end. So to create the hands, I gave them a border top equal to the length of the hand, then a height to offset the border, and some margin to vertically align.</p>
+<p>After getting the clock, I need a second hand, a minute hand and an hour hand. Originally I used a side border on the hands, but realized that the rotate property rotates the object at it’s center, and not at it’s end. To create the hands, I gave them a border top equal to the length of the hand, then a height to offset the border, and some margin to vertically align.</p>
 
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"clock"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ten_min"</span> <span class="na">style=</span><span class="s">"-moz-transform:rotate(0deg);-webkit-transform:rotate(0deg);"</span><span class="nt">&gt;&lt;/div&gt;</span>

@@ -31,7 +31,7 @@
     <rights type="html">&amp;copy; Jon Rohan 2015. All rights reserved.</rights>
 
     <content type="html">
-      &lt;p&gt;Sometimes you need to clip an image to a certain height, even though the image may be taller. Except when you do this, you end up getting just the top or bottom portion of the image, which probably isn’t useful.&lt;/p&gt;
+      &lt;p&gt;Sometimes you need to clip an image to a certain height, even though the image may be taller. Except when you do this, you end up getting only the top or bottom portion of the image, which probably isn’t useful.&lt;/p&gt;
 
 &lt;p&gt;Here’s how you vertically align the image inside of a clipping window.&lt;/p&gt;
 
@@ -48,7 +48,7 @@
 
 &lt;h4 id=&quot;calculating-the-offset&quot;&gt;Calculating the offset&lt;/h4&gt;
 
-&lt;p&gt;This is tricky because you need to calculate the amount of vertical offset based on the height of the image and the height of the wrapper. For example this image is &lt;code&gt;600px&lt;/code&gt; and the window is &lt;code&gt;100px&lt;/code&gt; &lt;code&gt;(600 - 100) / 2 = 250px&lt;/code&gt;. So we’ll need to bump image up vertically &lt;code&gt;250px&lt;/code&gt; It is impractical to calculate for all your images, or costly to use JavaScript.&lt;/p&gt;
+&lt;p&gt;This is tricky because you need to calculate the amount of vertical offset based on the height of the image and the height of the wrapper. For example this image is &lt;code&gt;600px&lt;/code&gt; and the window is &lt;code&gt;100px&lt;/code&gt; &lt;code&gt;(600 - 100) / 2 = 250px&lt;/code&gt;. We’ll need to bump image up vertically &lt;code&gt;250px&lt;/code&gt; It is impractical to calculate for all your images, or costly to use JavaScript.&lt;/p&gt;
 
 &lt;p&gt;If we use some algebra to move our equation around, we end up with &lt;code&gt;a * 0.5 + b * -0.5&lt;/code&gt; where &lt;code&gt;a = wrapper height&lt;/code&gt; and &lt;code&gt;b = image height&lt;/code&gt;.&lt;/p&gt;
 
@@ -60,12 +60,12 @@
   &lt;li&gt;
     &lt;h5 id=&quot;top&quot;&gt;&lt;code&gt;top&lt;/code&gt;&lt;/h5&gt;
 
-    &lt;p&gt;top calculates based on the wrapper. So if we’re moving the &lt;code&gt;img { top: 50%; }&lt;/code&gt; it moves the image down 50% of the wrapper height.&lt;/p&gt;
+    &lt;p&gt;top calculates based on the wrapper. If we’re moving the &lt;code&gt;img { top: 50%; }&lt;/code&gt; it moves the image down 50% of the wrapper height.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;h5 id=&quot;translatey&quot;&gt;&lt;code&gt;translateY&lt;/code&gt;&lt;/h5&gt;
 
-    &lt;p&gt;translateY calculates based on the height of the object. So when we’re applying it to the &lt;code&gt;img { transform: translateY(-50%); }&lt;/code&gt; That moves the image back up, 50% of the image height.&lt;/p&gt;
+    &lt;p&gt;translateY calculates based on the height of the object. When we’re applying it to the &lt;code&gt;img { transform: translateY(-50%); }&lt;/code&gt; That moves the image back up, 50% of the image height.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -127,7 +127,7 @@
     <rights type="html">&amp;copy; Jon Rohan 2015. All rights reserved.</rights>
 
     <content type="html">
-      &lt;p&gt;Its been a &lt;a href=&quot;https://dribbble.com/shots/107376-Field-guide-take-2&quot;&gt;while&lt;/a&gt; since I’ve given any attention to my site. I felt like devoting this weekend to it felt right. So I’ve updated it to a new look. Its hosted on &lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub pages&lt;/a&gt; which fits perfectly into my daily workflow. The design was custom by me.&lt;/p&gt;
+      &lt;p&gt;Its been a &lt;a href=&quot;https://dribbble.com/shots/107376-Field-guide-take-2&quot;&gt;while&lt;/a&gt; since I’ve given any attention to my site. I felt like devoting this weekend to it felt right. I’ve updated it to a new look. Its hosted on &lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub pages&lt;/a&gt; which fits perfectly into my daily workflow. The design was custom by me.&lt;/p&gt;
 
 &lt;figure class=&quot;post-image image-style-full&quot;&gt;
   &lt;div class=&quot;image-wrap&quot;&gt;
@@ -154,11 +154,11 @@
 
 &lt;h4 id=&quot;autoprefixer&quot;&gt;Autoprefixer&lt;/h4&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/postcss/autoprefixer&quot;&gt;Autoprefixer&lt;/a&gt; is a great tool for normalizing all your prefixed css property. So instead of always remembering and writing the &lt;code&gt;-webkit-&lt;/code&gt; prefixes for different css3 properties that haven’t been fully supported yet. Autoprefixer just remembers those things for you.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/postcss/autoprefixer&quot;&gt;Autoprefixer&lt;/a&gt; is a great tool for normalizing all your prefixed css property. Instead of always remembering and writing the &lt;code&gt;-webkit-&lt;/code&gt; prefixes for different css3 properties that haven’t been fully supported yet. Autoprefixer remembers those things for you.&lt;/p&gt;
 
 &lt;h4 id=&quot;bower&quot;&gt;Bower&lt;/h4&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://bower.io/&quot;&gt;Bower.io&lt;/a&gt; is another package manager which is great for moving front end assets around like js/css libraries. You can checkout versions of jquery or d3.js and just have them and any bug updates automatcially included into your front end stack.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://bower.io/&quot;&gt;Bower.io&lt;/a&gt; is another package manager which is great for moving front end assets around like js/css libraries. You can checkout versions of jquery or d3.js and have them and any bug updates automatically included into your front end stack.&lt;/p&gt;
 
 &lt;h4 id=&quot;grunt&quot;&gt;Grunt&lt;/h4&gt;
 
@@ -174,7 +174,7 @@
 
 &lt;h4 id=&quot;normalize&quot;&gt;normalize&lt;/h4&gt;
 
-&lt;p&gt;Back in the day it was Eric Meyer’s css reset, but now you should really be using &lt;a href=&quot;http://necolas.github.io/normalize.css/&quot;&gt;normalize.css&lt;/a&gt; It takes out any of the discrepencies between browser’s default settings. Making all of the default styles the same.&lt;/p&gt;
+&lt;p&gt;Back in the day it was Eric Meyer’s css reset, but now you should really be using &lt;a href=&quot;http://necolas.github.io/normalize.css/&quot;&gt;normalize.css&lt;/a&gt; It takes out any of the discrepancies between browser’s default settings. Making all of the default styles the same.&lt;/p&gt;
 
 &lt;h4 id=&quot;primer&quot;&gt;Primer&lt;/h4&gt;
 
@@ -182,7 +182,7 @@
 
 &lt;h4 id=&quot;time-elements&quot;&gt;time-elements&lt;/h4&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/github/time-elements&quot;&gt;time-elements.js&lt;/a&gt; is a way to take a date &lt;code&gt;2014-04-01T16:30:00-08:00&lt;/code&gt; and turn it into something like &lt;code&gt;2 years ago&lt;/code&gt;. Jekyll doesn’t include this sort of date calculation, so I wanted to have something and this worked.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/github/time-elements&quot;&gt;time-elements.js&lt;/a&gt; is a way to take a date &lt;code&gt;2014-04-01T16:30:00-08:00&lt;/code&gt; and turn it into something like &lt;code&gt;2 years ago&lt;/code&gt;. Jekyll doesn’t include this sort of date calculation, but I wanted to have something and this worked.&lt;/p&gt;
 
 &lt;h4 id=&quot;typekit&quot;&gt;typekit&lt;/h4&gt;
 
@@ -217,11 +217,11 @@
     
     <category term="css"/>
     
-    <summary type="html">Sometimes you want to scale an iframe window just like an image, but the iframe doesn&#39;t behave that way. A good example is when you embed a youtube video in your site.</summary>
+    <summary type="html">Sometimes you want to scale an iframe window like an image, but the iframe doesn&#39;t behave that way. A good example is when you embed a youtube video in your site.</summary>
     <rights type="html">&amp;copy; Jon Rohan 2015. All rights reserved.</rights>
 
     <content type="html">
-      &lt;p&gt;Sometimes you want to scale an iframe window just like an image, but the iframe doesn’t behave that way. A good example is when you embed a youtube video in your site.&lt;/p&gt;
+      &lt;p&gt;Sometimes you want to scale an iframe window like an image, but the iframe doesn’t behave that way. A good example is when you embed a youtube video in your site.&lt;/p&gt;
 
 &lt;figure class=&quot;post-image image-style-smallest&quot;&gt;
   &lt;img class=&quot;zoom-image js-zoom-image&quot; src=&quot;http://jonrohan.codes/assets/images/posts/scaling.gif&quot; /&gt;
@@ -284,7 +284,7 @@
     
     <category term="github"/>
     
-    <summary type="html">We recently opensourced Primer, because we wanted to be tansparent with our styleguide and if anyone could get any use out of it we would like to share. The toolkit isn’t meant to be a full fledged CSS framework like Bootstrap.</summary>
+    <summary type="html">We recently open sourced Primer, because we wanted to be transparent with our styleguide and if anyone could get any use out of it we would like to share. The toolkit isn’t meant to be a full fledged CSS framework like Bootstrap.</summary>
     <rights type="html">&amp;copy; Jon Rohan 2015. All rights reserved.</rights>
 
     <content type="html">
@@ -304,7 +304,7 @@
 
 &lt;p&gt;Gist shared everything with github, because it lived in the same codebase. We &lt;a href=&quot;https://github.com/blog/1276-welcome-to-a-new-gist&quot;&gt;were working&lt;/a&gt; on a big initiative to upgrade the whole app and separate it into it’s own codebase.&lt;/p&gt;
 
-&lt;p&gt;During the process I was talking with the designer/developer working on the front-end, and we were tossing around the idea of building something to make it easier to share common styles (buttons, forms, text, syntax) between the properties. &lt;em&gt;“What have you been doing so far?”&lt;/em&gt; I said. &lt;em&gt;“I’ve been copying and pasting the stylesheets from github/github for new gist.”&lt;/em&gt; o_O &lt;em&gt;“Ok, so I’m going to create a repo tomorrow, lets start sharing stuff.”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;During the process I was talking with the designer/developer working on the front-end, and we were tossing around the idea of building something to make it easier to share common styles (buttons, forms, text, syntax) between the properties. &lt;em&gt;“How have you been using the styles?”&lt;/em&gt; I said. &lt;em&gt;“I’ve been copying and pasting the stylesheets from github/github for new gist.”&lt;/em&gt; o_O &lt;em&gt;“Ok, I’m going to create a repo tomorrow, lets start sharing stuff.”&lt;/em&gt;&lt;/p&gt;
 
 &lt;figure class=&quot;post-image image-style-full&quot;&gt;
   &lt;div class=&quot;video&quot;&gt;
@@ -451,7 +451,7 @@
 
 &lt;h3 id=&quot;clearboth&quot;&gt;clear:both&lt;/h3&gt;
 
-&lt;p&gt;This is the most common that I’ve found, and the one I’ve used the most. The style in this code is inline, but typically you can just create a class called .clear and apply these styles.&lt;/p&gt;
+&lt;p&gt;This is the most common that I’ve found, and the one I’ve used the most. The style in this code is inline, but typically you can create a class called .clear and apply these styles.&lt;/p&gt;
 
 &lt;div style=&quot;border:1px solid red;&quot;&gt;
   &lt;div style=&quot;background-color:green;float:left;width:20px;height:20px;&quot;&gt;&lt;/div&gt;
@@ -530,11 +530,11 @@
     
     <category term="css"/>
     
-    <summary type="html">I&#39;ve come across a few techniques and tips in my career, while working at my last gig a co-worker pointed me to this technique. I believe this was originally discovered by the legendary Eric Meyer, but I couldn&#39;t find much documentation about it on the web so I thought I would describe it here.</summary>
+    <summary type="html">I&#39;ve come across a few techniques and tips in my career, while working at my last gig a co-worker pointed me to this technique. I believe this was originally discovered by the legendary Eric Meyer, but I couldn&#39;t find much documentation about it on the web. Which is why I am sharing it here.</summary>
     <rights type="html">&amp;copy; Jon Rohan 2011. All rights reserved.</rights>
 
     <content type="html">
-      &lt;p&gt;I’ve come across a few techniques and tips in my career, while working at my last gig a co-worker pointed me to this technique. I believe this was originally discovered by the legendary Eric Meyer, but I couldn’t find much documentation about it on the web so I thought I would describe it here.&lt;/p&gt;
+      &lt;p&gt;I’ve come across a few techniques and tips in my career, while working at my last gig a co-worker pointed me to this technique. I believe this was originally discovered by the legendary Eric Meyer, but I couldn’t find much documentation about it on the web. Which is why I am sharing it here.&lt;/p&gt;
 
 &lt;figure class=&quot;post-image image-style-bleed&quot;&gt;
   &lt;div class=&quot;image-wrap&quot;&gt;
@@ -694,7 +694,7 @@
   &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;So in the above example I created a Person class with a name attribute and a function to retrieve the name. Now I’ll create a new person, “Jon Rohan”.&lt;/p&gt;
+&lt;p&gt;In the above example I created a Person class with a name attribute and a function to retrieve the name. Now I’ll create a new person, “Jon Rohan”.&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data&amp;#45;lang=&quot;js&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Person&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Jon Rohan&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;// output: Jon Rohan&lt;/span&gt;
@@ -704,7 +704,7 @@
 
 &lt;h3&gt;Prototype Chain&lt;/h3&gt;
 
-&lt;p&gt;Now we bring in the prototype chain. The chain is like an inheritance chain. Developer inherits → from Person. So we are defining a Developer as a Person, cause developers are people too. ;-) The developer takes the name attribute like Person, and an array of skills. The first line of the Developer class is to &amp;lt;pre&amp;gt;call&amp;lt;/pre&amp;gt; the Person class. This calls the Person’s constructor. The Developer class also has a new method getSkills, because a Person is too general to have skills, but as a Developer, there are skills that they have.&lt;/p&gt;
+&lt;p&gt;Now we bring in the prototype chain. The chain is like an inheritance chain. Developer inherits → from Person. We are defining a Developer as a Person, cause developers are people too. ;-) The developer takes the name attribute like Person, and an array of skills. The first line of the Developer class is to &amp;lt;pre&amp;gt;call&amp;lt;/pre&amp;gt; the Person class. This calls the Person’s constructor. The Developer class also has a new method getSkills, because a Person is too general to have skills, but as a Developer, there are skills that they have.&lt;/p&gt;
 
 &lt;p&gt;We also need to set Developer.prototype to the Person’s prototype, by creating a new Person. Now we set the Developer’s constructor to the Developer. And we have successfully created a prototype chain from Developer to Person.&lt;/p&gt;
 
@@ -749,25 +749,25 @@
     
     <category term="javascript"/>
     
-    <summary type="html">What I wanted to make was a clock. The basis of this project is using the -webkit-transform:rotate(0deg); css property. This allows you to rotate any object 360 degrees. So I began to wonder, if I have a line, and I setup a javascript timer can I rotate it every second?</summary>
+    <summary type="html">What I wanted to make was a clock. The basis of this project is using the -webkit-transform:rotate(0deg); css property. This allows you to rotate any object 360 degrees. I began to wonder, if I have a line, and I setup a javascript timer can I rotate it every second?</summary>
     <rights type="html">&amp;copy; Jon Rohan 2010. All rights reserved.</rights>
 
     <content type="html">
-      &lt;p&gt;I recently saw an &lt;a href=&quot;http://snook.ca/archives/html_and_css/css-text-rotation&quot;&gt;article&lt;/a&gt; on CSS text rotation on the internets and decided to try my own experiement.&lt;/p&gt;
+      &lt;p&gt;I recently saw an &lt;a href=&quot;http://snook.ca/archives/html_and_css/css-text-rotation&quot;&gt;article&lt;/a&gt; on CSS text rotation on the internets and decided to try my own experiment.&lt;/p&gt;
 
-&lt;p&gt;What I wanted to make was a clock. The basis of this project is using the -webkit-transform:rotate(0deg); css property. This allows you to rotate any object 360 degrees. So I began to wonder, if I have a line, and I setup a javascript timer can I rotate it every second?&lt;/p&gt;
+&lt;p&gt;What I wanted to make was a clock. The basis of this project is using the -webkit-transform:rotate(0deg); css property. This allows you to rotate any object 360 degrees. I began to wonder, if I have a line, and I setup a javascript timer can I rotate it every second?&lt;/p&gt;
 
 &lt;p data&amp;#45;height=&quot;309&quot; data&amp;#45;theme-id=&quot;14162&quot; data&amp;#45;slug-hash=&quot;VYoqwj&quot; data&amp;#45;default-tab=&quot;result&quot; data&amp;#45;user=&quot;jonrohan&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/jonrohan/pen/VYoqwj/&quot;&gt;VYoqwj&lt;/a&gt; by Jon Rohan (&lt;a href=&quot;http://codepen.io/jonrohan&quot;&gt;@jonrohan&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;The design is inspired by @&lt;a href=&quot;https://twitter.com/eston&quot;&gt;eston&lt;/a&gt;’s &lt;a href=&quot;http://www.flickr.com/photos/eston/3799958463/&quot;&gt;Sarai&lt;/a&gt; desktop.&lt;/p&gt;
 
-&lt;p&gt;This clock won’t work in IE. There is an IE rotate property, but it only rotates at 0, 90, 180, 270. So that won’t work for this clock. Here’s the IE rotate property anyways&lt;/p&gt;
+&lt;p&gt;This clock won’t work in IE. There is an IE rotate property, but it only rotates at 0, 90, 180, 270. That won’t work for this clock, because we need more than only four angles. Here’s the IE rotate property anyways&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data&amp;#45;lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;progid&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:DXImageTransform&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.Microsoft.BasicImage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;rotation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;h3&gt;So How did I do it?&lt;/h3&gt;
+&lt;h3&gt;How did I do it?&lt;/h3&gt;
 
-&lt;p&gt;I started with an external div for the clock. Giving it a width and height of 100px and position relative (so I can position the clock hands)&lt;/p&gt;
+&lt;p&gt;I started with an external div for the clock. Giving it a width and height of 100px and position relative. This is to position the clock hands.&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data&amp;#45;lang=&quot;css&quot;&gt;&lt;span class=&quot;nf&quot;&gt;#clock&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;208px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
@@ -775,7 +775,7 @@
   &lt;span class=&quot;nl&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;relative&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;After getting the clock, I need a second hand, a minute hand and an hour hand. Originally I just used a side border on the hands, but realized that the rotate property rotates the object at it’s center, and not at it’s end. So to create the hands, I gave them a border top equal to the length of the hand, then a height to offset the border, and some margin to vertically align.&lt;/p&gt;
+&lt;p&gt;After getting the clock, I need a second hand, a minute hand and an hour hand. Originally I used a side border on the hands, but realized that the rotate property rotates the object at it’s center, and not at it’s end. To create the hands, I gave them a border top equal to the length of the hand, then a height to offset the border, and some margin to vertically align.&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data&amp;#45;lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;clock&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
   &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;ten_min&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;-moz-transform:rotate(0deg);-webkit-transform:rotate(0deg);&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
@@ -906,25 +906,25 @@
     
     <category term="shell"/>
     
-    <summary type="html">Recently I have had the privilege to work with a few excellent small agile teams. With each team, they have their own process, which works best for them. And there&#39;s nothing wrong with that, a team should work in it&#39;s most effective way. But I came across a team recently that had a workflow that really impressed me. To put it simply it&#39;s described as an extremely cool Git workflow.</summary>
+    <summary type="html">Recently I have had the privilege to work with a few excellent small agile teams. With each team, they have their own process, which works best for them. And there&#39;s nothing wrong with that, a team should work in it&#39;s most effective way. But I came across a team recently that had a workflow that really impressed me. It is described as an extremely cool Git workflow.</summary>
     <rights type="html">&amp;copy; Jon Rohan 2010. All rights reserved.</rights>
 
     <content type="html">
-      &lt;p&gt;Recently I have had the privilege to work with a few excellent small agile teams. With each team, they have their own process, which works best for them. And there’s nothing wrong with that, a team should work in it’s most effective way. But I came across a team recently that had a workflow that really impressed me. To put it simply it’s described as an extremely cool Git workflow.&lt;/p&gt;
+      &lt;p&gt;Recently I have had the privilege to work with a few excellent small agile teams. With each team, they have their own process, which works best for them. And there’s nothing wrong with that, a team should work in it’s most effective way. But I came across a team recently that had a workflow that really impressed me. It is described as an extremely cool Git workflow.&lt;/p&gt;
 
-&lt;p&gt;I can’t take credit for coming up with this workflow, but I’m gonna do my best to re-describe it here so it can be shared. The basis for this post comes from reinh.com’s posts &lt;a href=&quot;http://reinh.com/blog/2009/03/02/a-git-workflow-for-agile-teams.html&quot;&gt;A git workflow for Agile Teams&lt;/a&gt; and &lt;a href=&quot;http://reinh.com/blog/2008/08/27/hack-and-and-ship.html&quot;&gt;Hack &amp;amp;&amp;amp; Ship&lt;/a&gt;. Also this workflow pulls alot from Josh Susser’s post on the &lt;a href=&quot;http://blog.hasmanythrough.com/2008/12/18/agile-git-and-the-story-branch-pattern&quot;&gt;story branch pattern&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I can’t take credit for coming up with this workflow, but I’m gonna do my best to re-describe it here to be shared. The basis for this post comes from reinh.com’s posts &lt;a href=&quot;http://reinh.com/blog/2009/03/02/a-git-workflow-for-agile-teams.html&quot;&gt;A git workflow for Agile Teams&lt;/a&gt; and &lt;a href=&quot;http://reinh.com/blog/2008/08/27/hack-and-and-ship.html&quot;&gt;Hack &amp;amp;&amp;amp; Ship&lt;/a&gt;. Also this workflow pulls alot from Josh Susser’s post on the &lt;a href=&quot;http://blog.hasmanythrough.com/2008/12/18/agile-git-and-the-story-branch-pattern&quot;&gt;story branch pattern&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Let’s start by summarizing Josh’s post. In his post he describes a 7 step process that begins with &lt;a href=&quot;http://www.pivotaltracker.com&quot;&gt;Pivotal Tracker&lt;/a&gt;. The idea being you locate a story on pivotal tracker, like a bug, or feature, or chore. Then you update your working master by pulling from the origin, and create a whole branch just for that bug. Once you’ve fixed the bug, commited it to your branch, you then merge your branch with the master and push it all back up to the origin. Then just remove the old branch and you’re done.&lt;/p&gt;
+&lt;p&gt;Let’s start by summarizing Josh’s post. In his post he describes a 7 step process that begins with &lt;a href=&quot;http://www.pivotaltracker.com&quot;&gt;Pivotal Tracker&lt;/a&gt;. The idea being you locate a story on pivotal tracker, like a bug, or feature, or chore. Then you update your working master by pulling from the origin, and create a whole branch for that bug. Once you’ve fixed the bug, commited it to your branch, you then merge your branch with the master and push it all back up to the origin. Then remove the old branch and you’re done.&lt;/p&gt;
 
 &lt;p&gt;That’s the basic workflow, but there is alot of automation that can be done. The first is the creation of the branch. This isn’t terribly long command ‘git checkout -b’ but I went ahead and created a shell alias ‘gcb’.&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data&amp;#45;lang=&quot;sh&quot;&gt;&lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;gcb&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;git checkout -b&#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;So now when creating my branch for working on my bug I just type&lt;/p&gt;
+&lt;p&gt;Now when creating my branch for working on my bug I type&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sh&quot; data&amp;#45;lang=&quot;sh&quot;&gt;gcb fix_ie_bug_Story123456&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;After creating my branch I would work on it normally doing ‘git commits’ when needed. Then when I’m ready comes the cool part. Hack &amp;amp; Ship. Hack is what it’s called when you pull the lastest code from the origin and merge it with your branch. It’s a good idea to do this often, just to keep everything up to date. To not have to type and remember the few commands for accomplishing this, I use a shell script.&lt;/p&gt;
+&lt;p&gt;After creating my branch I would work on it normally doing ‘git commits’ when needed. Then when I’m ready comes the cool part. Hack &amp;amp; Ship. Hack is what it’s called when you pull the lastest code from the origin and merge it with your branch. It’s a good idea to do this often, to keep everything up to date. To not have to type and remember the few commands for accomplishing this, I use a shell script.&lt;/p&gt;
 
 &lt;p&gt;hack.sh&lt;/p&gt;
 
@@ -937,7 +937,7 @@ git pull origin master
 git checkout &lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;CURRENT&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;
 git rebase master&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;So during my coding, I can at anytime just type the command hack. And my branch is updated!&lt;/p&gt;
+&lt;p&gt;When I am coding, I can at anytime type the command hack. And my branch is updated!&lt;/p&gt;
 
 &lt;p&gt;Once I’ve finished my bug and I’m ready to send it back to the origin I do one more ‘hack’, make sure it’s all updated. And then I ship. This will checkout the master merge my branch with it, and then push it to the origin. Once again I use a shell script for this.&lt;/p&gt;
 
@@ -1033,7 +1033,7 @@ git branch -d &lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quo
 
 &lt;figure class=&quot;post-image image-style-full&quot;&gt;
   &lt;img class=&quot;zoom-image js-zoom-image&quot; src=&quot;http://jonrohan.codes/assets/images/posts/cards.gif&quot; /&gt;
-  &lt;figcaption class=&quot;image-caption&quot;&gt;The cards get delt, then you can shuffle them or discard one.&lt;/figcaption&gt;
+  &lt;figcaption class=&quot;image-caption&quot;&gt;The cards get dealt, then you can shuffle them or discard one.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://codepen.io/jonrohan/full/vOEJMy/&quot;&gt;Demo&lt;/a&gt;&lt;/p&gt;

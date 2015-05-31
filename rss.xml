@@ -22,7 +22,7 @@
       <category>css</category>
       
       <content:encoded><![CDATA[
-        <p>Sometimes you need to clip an image to a certain height, even though the image may be taller. Except when you do this, you end up getting just the top or bottom portion of the image, which probably isn’t useful.</p>
+        <p>Sometimes you need to clip an image to a certain height, even though the image may be taller. Except when you do this, you end up getting only the top or bottom portion of the image, which probably isn’t useful.</p>
 
 <p>Here’s how you vertically align the image inside of a clipping window.</p>
 
@@ -39,7 +39,7 @@
 
 <h4 id="calculating-the-offset">Calculating the offset</h4>
 
-<p>This is tricky because you need to calculate the amount of vertical offset based on the height of the image and the height of the wrapper. For example this image is <code>600px</code> and the window is <code>100px</code> <code>(600 - 100) / 2 = 250px</code>. So we’ll need to bump image up vertically <code>250px</code> It is impractical to calculate for all your images, or costly to use JavaScript.</p>
+<p>This is tricky because you need to calculate the amount of vertical offset based on the height of the image and the height of the wrapper. For example this image is <code>600px</code> and the window is <code>100px</code> <code>(600 - 100) / 2 = 250px</code>. We’ll need to bump image up vertically <code>250px</code> It is impractical to calculate for all your images, or costly to use JavaScript.</p>
 
 <p>If we use some algebra to move our equation around, we end up with <code>a * 0.5 + b * -0.5</code> where <code>a = wrapper height</code> and <code>b = image height</code>.</p>
 
@@ -51,12 +51,12 @@
   <li>
     <h5 id="top"><code>top</code></h5>
 
-    <p>top calculates based on the wrapper. So if we’re moving the <code>img { top: 50%; }</code> it moves the image down 50% of the wrapper height.</p>
+    <p>top calculates based on the wrapper. If we’re moving the <code>img { top: 50%; }</code> it moves the image down 50% of the wrapper height.</p>
   </li>
   <li>
     <h5 id="translatey"><code>translateY</code></h5>
 
-    <p>translateY calculates based on the height of the object. So when we’re applying it to the <code>img { transform: translateY(-50%); }</code> That moves the image back up, 50% of the image height.</p>
+    <p>translateY calculates based on the height of the object. When we’re applying it to the <code>img { transform: translateY(-50%); }</code> That moves the image back up, 50% of the image height.</p>
   </li>
 </ul>
 
@@ -114,7 +114,7 @@
       <category>css</category>
       
       <content:encoded><![CDATA[
-        <p>Its been a <a href="https://dribbble.com/shots/107376-Field-guide-take-2">while</a> since I’ve given any attention to my site. I felt like devoting this weekend to it felt right. So I’ve updated it to a new look. Its hosted on <a href="https://pages.github.com/">GitHub pages</a> which fits perfectly into my daily workflow. The design was custom by me.</p>
+        <p>Its been a <a href="https://dribbble.com/shots/107376-Field-guide-take-2">while</a> since I’ve given any attention to my site. I felt like devoting this weekend to it felt right. I’ve updated it to a new look. Its hosted on <a href="https://pages.github.com/">GitHub pages</a> which fits perfectly into my daily workflow. The design was custom by me.</p>
 
 <figure class="post-image image-style-full">
   <div class="image-wrap">
@@ -141,11 +141,11 @@
 
 <h4 id="autoprefixer">Autoprefixer</h4>
 
-<p><a href="https://github.com/postcss/autoprefixer">Autoprefixer</a> is a great tool for normalizing all your prefixed css property. So instead of always remembering and writing the <code>-webkit-</code> prefixes for different css3 properties that haven’t been fully supported yet. Autoprefixer just remembers those things for you.</p>
+<p><a href="https://github.com/postcss/autoprefixer">Autoprefixer</a> is a great tool for normalizing all your prefixed css property. Instead of always remembering and writing the <code>-webkit-</code> prefixes for different css3 properties that haven’t been fully supported yet. Autoprefixer remembers those things for you.</p>
 
 <h4 id="bower">Bower</h4>
 
-<p><a href="http://bower.io/">Bower.io</a> is another package manager which is great for moving front end assets around like js/css libraries. You can checkout versions of jquery or d3.js and just have them and any bug updates automatcially included into your front end stack.</p>
+<p><a href="http://bower.io/">Bower.io</a> is another package manager which is great for moving front end assets around like js/css libraries. You can checkout versions of jquery or d3.js and have them and any bug updates automatically included into your front end stack.</p>
 
 <h4 id="grunt">Grunt</h4>
 
@@ -161,7 +161,7 @@
 
 <h4 id="normalize">normalize</h4>
 
-<p>Back in the day it was Eric Meyer’s css reset, but now you should really be using <a href="http://necolas.github.io/normalize.css/">normalize.css</a> It takes out any of the discrepencies between browser’s default settings. Making all of the default styles the same.</p>
+<p>Back in the day it was Eric Meyer’s css reset, but now you should really be using <a href="http://necolas.github.io/normalize.css/">normalize.css</a> It takes out any of the discrepancies between browser’s default settings. Making all of the default styles the same.</p>
 
 <h4 id="primer">Primer</h4>
 
@@ -169,7 +169,7 @@
 
 <h4 id="time-elements">time-elements</h4>
 
-<p><a href="https://github.com/github/time-elements">time-elements.js</a> is a way to take a date <code>2014-04-01T16:30:00-08:00</code> and turn it into something like <code>2 years ago</code>. Jekyll doesn’t include this sort of date calculation, so I wanted to have something and this worked.</p>
+<p><a href="https://github.com/github/time-elements">time-elements.js</a> is a way to take a date <code>2014-04-01T16:30:00-08:00</code> and turn it into something like <code>2 years ago</code>. Jekyll doesn’t include this sort of date calculation, but I wanted to have something and this worked.</p>
 
 <h4 id="typekit">typekit</h4>
 
@@ -196,7 +196,7 @@
     <item>
       <title>Scale a block-level element in CSS</title>
       <link>http://jonrohan.codes/fieldnotes/scale-box-by-ratio?utm_source=feed&amp;utm_medium=rss&amp;utm_campaign=scale-a-block-level-element-in-css</link>
-      <description>Sometimes you want to scale an iframe window just like an image, but the iframe doesn&#39;t behave that way. A good example is when you embed a youtube video in your site.</description>
+      <description>Sometimes you want to scale an iframe window like an image, but the iframe doesn&#39;t behave that way. A good example is when you embed a youtube video in your site.</description>
       <guid isPermaLink="true">http://jonrohan.codes/fieldnotes/scale-box-by-ratio</guid>
       <pubDate>Sat, 02 May 2015 00:00:00 -0400</pubDate>
       <category>fieldnotes</category>
@@ -204,7 +204,7 @@
       <category>css</category>
       
       <content:encoded><![CDATA[
-        <p>Sometimes you want to scale an iframe window just like an image, but the iframe doesn’t behave that way. A good example is when you embed a youtube video in your site.</p>
+        <p>Sometimes you want to scale an iframe window like an image, but the iframe doesn’t behave that way. A good example is when you embed a youtube video in your site.</p>
 
 <figure class="post-image image-style-smallest">
   <img class="zoom-image js-zoom-image" src="http://jonrohan.codes/assets/images/posts/scaling.gif" />
@@ -255,7 +255,7 @@
     <item>
       <title>Primer CSS Styleguide</title>
       <link>http://jonrohan.codes/fieldnotes/primer-css-styleguide?utm_source=feed&amp;utm_medium=rss&amp;utm_campaign=primer-css-styleguide</link>
-      <description>We recently opensourced Primer, because we wanted to be tansparent with our styleguide and if anyone could get any use out of it we would like to share. The toolkit isn’t meant to be a full fledged CSS framework like Bootstrap.</description>
+      <description>We recently open sourced Primer, because we wanted to be transparent with our styleguide and if anyone could get any use out of it we would like to share. The toolkit isn’t meant to be a full fledged CSS framework like Bootstrap.</description>
       <guid isPermaLink="true">http://jonrohan.codes/fieldnotes/primer-css-styleguide</guid>
       <pubDate>Mon, 23 Mar 2015 00:00:00 -0400</pubDate>
       <category>fieldnotes</category>
@@ -283,7 +283,7 @@
 
 <p>Gist shared everything with github, because it lived in the same codebase. We <a href="https://github.com/blog/1276-welcome-to-a-new-gist">were working</a> on a big initiative to upgrade the whole app and separate it into it’s own codebase.</p>
 
-<p>During the process I was talking with the designer/developer working on the front-end, and we were tossing around the idea of building something to make it easier to share common styles (buttons, forms, text, syntax) between the properties. <em>“What have you been doing so far?”</em> I said. <em>“I’ve been copying and pasting the stylesheets from github/github for new gist.”</em> o_O <em>“Ok, so I’m going to create a repo tomorrow, lets start sharing stuff.”</em></p>
+<p>During the process I was talking with the designer/developer working on the front-end, and we were tossing around the idea of building something to make it easier to share common styles (buttons, forms, text, syntax) between the properties. <em>“How have you been using the styles?”</em> I said. <em>“I’ve been copying and pasting the stylesheets from github/github for new gist.”</em> o_O <em>“Ok, I’m going to create a repo tomorrow, lets start sharing stuff.”</em></p>
 
 <figure class="post-image image-style-full">
   <div class="video">
@@ -418,7 +418,7 @@
 
 <h3 id="clearboth">clear:both</h3>
 
-<p>This is the most common that I’ve found, and the one I’ve used the most. The style in this code is inline, but typically you can just create a class called .clear and apply these styles.</p>
+<p>This is the most common that I’ve found, and the one I’ve used the most. The style in this code is inline, but typically you can create a class called .clear and apply these styles.</p>
 
 <div style="border:1px solid red;">
   <div style="background-color:green;float:left;width:20px;height:20px;"></div>
@@ -489,7 +489,7 @@
     <item>
       <title>Creating Triangles in CSS</title>
       <link>http://jonrohan.codes/fieldnotes/creating-triangles-in-css?utm_source=feed&amp;utm_medium=rss&amp;utm_campaign=creating-triangles-in-css</link>
-      <description>I&#39;ve come across a few techniques and tips in my career, while working at my last gig a co-worker pointed me to this technique. I believe this was originally discovered by the legendary Eric Meyer, but I couldn&#39;t find much documentation about it on the web so I thought I would describe it here.</description>
+      <description>I&#39;ve come across a few techniques and tips in my career, while working at my last gig a co-worker pointed me to this technique. I believe this was originally discovered by the legendary Eric Meyer, but I couldn&#39;t find much documentation about it on the web. Which is why I am sharing it here.</description>
       <guid isPermaLink="true">http://jonrohan.codes/fieldnotes/creating-triangles-in-css</guid>
       <pubDate>Tue, 18 Jan 2011 00:00:00 -0500</pubDate>
       <category>fieldnotes</category>
@@ -497,7 +497,7 @@
       <category>css</category>
       
       <content:encoded><![CDATA[
-        <p>I’ve come across a few techniques and tips in my career, while working at my last gig a co-worker pointed me to this technique. I believe this was originally discovered by the legendary Eric Meyer, but I couldn’t find much documentation about it on the web so I thought I would describe it here.</p>
+        <p>I’ve come across a few techniques and tips in my career, while working at my last gig a co-worker pointed me to this technique. I believe this was originally discovered by the legendary Eric Meyer, but I couldn’t find much documentation about it on the web. Which is why I am sharing it here.</p>
 
 <figure class="post-image image-style-bleed">
   <div class="image-wrap">
@@ -653,7 +653,7 @@
   <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">;</span>
 <span class="p">}</span></code></pre></div>
 
-<p>So in the above example I created a Person class with a name attribute and a function to retrieve the name. Now I’ll create a new person, “Jon Rohan”.</p>
+<p>In the above example I created a Person class with a name attribute and a function to retrieve the name. Now I’ll create a new person, “Jon Rohan”.</p>
 
 <div class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">p</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s2">"Jon Rohan"</span><span class="p">);</span>
 <span class="c1">// output: Jon Rohan</span>
@@ -663,7 +663,7 @@
 
 <h3>Prototype Chain</h3>
 
-<p>Now we bring in the prototype chain. The chain is like an inheritance chain. Developer inherits → from Person. So we are defining a Developer as a Person, cause developers are people too. ;-) The developer takes the name attribute like Person, and an array of skills. The first line of the Developer class is to &lt;pre&gt;call&lt;/pre&gt; the Person class. This calls the Person’s constructor. The Developer class also has a new method getSkills, because a Person is too general to have skills, but as a Developer, there are skills that they have.</p>
+<p>Now we bring in the prototype chain. The chain is like an inheritance chain. Developer inherits → from Person. We are defining a Developer as a Person, cause developers are people too. ;-) The developer takes the name attribute like Person, and an array of skills. The first line of the Developer class is to &lt;pre&gt;call&lt;/pre&gt; the Person class. This calls the Person’s constructor. The Developer class also has a new method getSkills, because a Person is too general to have skills, but as a Developer, there are skills that they have.</p>
 
 <p>We also need to set Developer.prototype to the Person’s prototype, by creating a new Person. Now we set the Developer’s constructor to the Developer. And we have successfully created a prototype chain from Developer to Person.</p>
 
@@ -698,7 +698,7 @@
     <item>
       <title>Text Rotation</title>
       <link>http://jonrohan.codes/fieldnotes/text-rotation?utm_source=feed&amp;utm_medium=rss&amp;utm_campaign=text-rotation</link>
-      <description>What I wanted to make was a clock. The basis of this project is using the -webkit-transform:rotate(0deg); css property. This allows you to rotate any object 360 degrees. So I began to wonder, if I have a line, and I setup a javascript timer can I rotate it every second?</description>
+      <description>What I wanted to make was a clock. The basis of this project is using the -webkit-transform:rotate(0deg); css property. This allows you to rotate any object 360 degrees. I began to wonder, if I have a line, and I setup a javascript timer can I rotate it every second?</description>
       <guid isPermaLink="true">http://jonrohan.codes/fieldnotes/text-rotation</guid>
       <pubDate>Sun, 10 Oct 2010 00:00:00 -0400</pubDate>
       <category>fieldnotes</category>
@@ -708,21 +708,21 @@
       <category>javascript</category>
       
       <content:encoded><![CDATA[
-        <p>I recently saw an <a href="http://snook.ca/archives/html_and_css/css-text-rotation">article</a> on CSS text rotation on the internets and decided to try my own experiement.</p>
+        <p>I recently saw an <a href="http://snook.ca/archives/html_and_css/css-text-rotation">article</a> on CSS text rotation on the internets and decided to try my own experiment.</p>
 
-<p>What I wanted to make was a clock. The basis of this project is using the -webkit-transform:rotate(0deg); css property. This allows you to rotate any object 360 degrees. So I began to wonder, if I have a line, and I setup a javascript timer can I rotate it every second?</p>
+<p>What I wanted to make was a clock. The basis of this project is using the -webkit-transform:rotate(0deg); css property. This allows you to rotate any object 360 degrees. I began to wonder, if I have a line, and I setup a javascript timer can I rotate it every second?</p>
 
 <p data-height="309" data-theme-id="14162" data-slug-hash="VYoqwj" data-default-tab="result" data-user="jonrohan" class="codepen">See the Pen <a href="http://codepen.io/jonrohan/pen/VYoqwj/">VYoqwj</a> by Jon Rohan (<a href="http://codepen.io/jonrohan">@jonrohan</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 
 <p>The design is inspired by @<a href="https://twitter.com/eston">eston</a>’s <a href="http://www.flickr.com/photos/eston/3799958463/">Sarai</a> desktop.</p>
 
-<p>This clock won’t work in IE. There is an IE rotate property, but it only rotates at 0, 90, 180, 270. So that won’t work for this clock. Here’s the IE rotate property anyways</p>
+<p>This clock won’t work in IE. There is an IE rotate property, but it only rotates at 0, 90, 180, 270. That won’t work for this clock, because we need more than only four angles. Here’s the IE rotate property anyways</p>
 
 <div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">filter</span><span class="o">:</span> <span class="nt">progid</span><span class="nd">:DXImageTransform</span><span class="nc">.Microsoft.BasicImage</span><span class="o">(</span><span class="nt">rotation</span><span class="o">=</span><span class="nt">3</span><span class="o">);</span></code></pre></div>
 
-<h3>So How did I do it?</h3>
+<h3>How did I do it?</h3>
 
-<p>I started with an external div for the clock. Giving it a width and height of 100px and position relative (so I can position the clock hands)</p>
+<p>I started with an external div for the clock. Giving it a width and height of 100px and position relative. This is to position the clock hands.</p>
 
 <div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nf">#clock</span> <span class="p">{</span>
   <span class="nl">width</span><span class="p">:</span><span class="m">208px</span><span class="p">;</span>
@@ -730,7 +730,7 @@
   <span class="nl">position</span><span class="p">:</span><span class="nb">relative</span><span class="p">;</span>
 <span class="p">}</span></code></pre></div>
 
-<p>After getting the clock, I need a second hand, a minute hand and an hour hand. Originally I just used a side border on the hands, but realized that the rotate property rotates the object at it’s center, and not at it’s end. So to create the hands, I gave them a border top equal to the length of the hand, then a height to offset the border, and some margin to vertically align.</p>
+<p>After getting the clock, I need a second hand, a minute hand and an hour hand. Originally I used a side border on the hands, but realized that the rotate property rotates the object at it’s center, and not at it’s end. To create the hands, I gave them a border top equal to the length of the hand, then a height to offset the border, and some margin to vertically align.</p>
 
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"clock"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ten_min"</span> <span class="na">style=</span><span class="s">"-moz-transform:rotate(0deg);-webkit-transform:rotate(0deg);"</span><span class="nt">&gt;&lt;/div&gt;</span>
@@ -847,7 +847,7 @@
     <item>
       <title>Dead Simple Git Workflow</title>
       <link>http://jonrohan.codes/fieldnotes/dead-simple-git-workflow-for-agile-teams?utm_source=feed&amp;utm_medium=rss&amp;utm_campaign=dead-simple-git-workflow</link>
-      <description>Recently I have had the privilege to work with a few excellent small agile teams. With each team, they have their own process, which works best for them. And there&#39;s nothing wrong with that, a team should work in it&#39;s most effective way. But I came across a team recently that had a workflow that really impressed me. To put it simply it&#39;s described as an extremely cool Git workflow.</description>
+      <description>Recently I have had the privilege to work with a few excellent small agile teams. With each team, they have their own process, which works best for them. And there&#39;s nothing wrong with that, a team should work in it&#39;s most effective way. But I came across a team recently that had a workflow that really impressed me. It is described as an extremely cool Git workflow.</description>
       <guid isPermaLink="true">http://jonrohan.codes/fieldnotes/dead-simple-git-workflow-for-agile-teams</guid>
       <pubDate>Sat, 09 Oct 2010 00:00:00 -0400</pubDate>
       <category>fieldnotes</category>
@@ -861,21 +861,21 @@
       <category>shell</category>
       
       <content:encoded><![CDATA[
-        <p>Recently I have had the privilege to work with a few excellent small agile teams. With each team, they have their own process, which works best for them. And there’s nothing wrong with that, a team should work in it’s most effective way. But I came across a team recently that had a workflow that really impressed me. To put it simply it’s described as an extremely cool Git workflow.</p>
+        <p>Recently I have had the privilege to work with a few excellent small agile teams. With each team, they have their own process, which works best for them. And there’s nothing wrong with that, a team should work in it’s most effective way. But I came across a team recently that had a workflow that really impressed me. It is described as an extremely cool Git workflow.</p>
 
-<p>I can’t take credit for coming up with this workflow, but I’m gonna do my best to re-describe it here so it can be shared. The basis for this post comes from reinh.com’s posts <a href="http://reinh.com/blog/2009/03/02/a-git-workflow-for-agile-teams.html">A git workflow for Agile Teams</a> and <a href="http://reinh.com/blog/2008/08/27/hack-and-and-ship.html">Hack &amp;&amp; Ship</a>. Also this workflow pulls alot from Josh Susser’s post on the <a href="http://blog.hasmanythrough.com/2008/12/18/agile-git-and-the-story-branch-pattern">story branch pattern</a>.</p>
+<p>I can’t take credit for coming up with this workflow, but I’m gonna do my best to re-describe it here to be shared. The basis for this post comes from reinh.com’s posts <a href="http://reinh.com/blog/2009/03/02/a-git-workflow-for-agile-teams.html">A git workflow for Agile Teams</a> and <a href="http://reinh.com/blog/2008/08/27/hack-and-and-ship.html">Hack &amp;&amp; Ship</a>. Also this workflow pulls alot from Josh Susser’s post on the <a href="http://blog.hasmanythrough.com/2008/12/18/agile-git-and-the-story-branch-pattern">story branch pattern</a>.</p>
 
-<p>Let’s start by summarizing Josh’s post. In his post he describes a 7 step process that begins with <a href="http://www.pivotaltracker.com">Pivotal Tracker</a>. The idea being you locate a story on pivotal tracker, like a bug, or feature, or chore. Then you update your working master by pulling from the origin, and create a whole branch just for that bug. Once you’ve fixed the bug, commited it to your branch, you then merge your branch with the master and push it all back up to the origin. Then just remove the old branch and you’re done.</p>
+<p>Let’s start by summarizing Josh’s post. In his post he describes a 7 step process that begins with <a href="http://www.pivotaltracker.com">Pivotal Tracker</a>. The idea being you locate a story on pivotal tracker, like a bug, or feature, or chore. Then you update your working master by pulling from the origin, and create a whole branch for that bug. Once you’ve fixed the bug, commited it to your branch, you then merge your branch with the master and push it all back up to the origin. Then remove the old branch and you’re done.</p>
 
 <p>That’s the basic workflow, but there is alot of automation that can be done. The first is the creation of the branch. This isn’t terribly long command ‘git checkout -b’ but I went ahead and created a shell alias ‘gcb’.</p>
 
 <div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nb">alias </span><span class="nv">gcb</span><span class="o">=</span><span class="s1">'git checkout -b'</span></code></pre></div>
 
-<p>So now when creating my branch for working on my bug I just type</p>
+<p>Now when creating my branch for working on my bug I type</p>
 
 <div class="highlight"><pre><code class="language-sh" data-lang="sh">gcb fix_ie_bug_Story123456</code></pre></div>
 
-<p>After creating my branch I would work on it normally doing ‘git commits’ when needed. Then when I’m ready comes the cool part. Hack &amp; Ship. Hack is what it’s called when you pull the lastest code from the origin and merge it with your branch. It’s a good idea to do this often, just to keep everything up to date. To not have to type and remember the few commands for accomplishing this, I use a shell script.</p>
+<p>After creating my branch I would work on it normally doing ‘git commits’ when needed. Then when I’m ready comes the cool part. Hack &amp; Ship. Hack is what it’s called when you pull the lastest code from the origin and merge it with your branch. It’s a good idea to do this often, to keep everything up to date. To not have to type and remember the few commands for accomplishing this, I use a shell script.</p>
 
 <p>hack.sh</p>
 
@@ -888,7 +888,7 @@ git pull origin master
 git checkout <span class="k">${</span><span class="nv">CURRENT</span><span class="k">}</span>
 git rebase master</code></pre></div>
 
-<p>So during my coding, I can at anytime just type the command hack. And my branch is updated!</p>
+<p>When I am coding, I can at anytime type the command hack. And my branch is updated!</p>
 
 <p>Once I’ve finished my bug and I’m ready to send it back to the origin I do one more ‘hack’, make sure it’s all updated. And then I ship. This will checkout the master merge my branch with it, and then push it to the origin. Once again I use a shell script for this.</p>
 
@@ -976,7 +976,7 @@ git branch -d <span class="k">${</span><span class="nv">CURRENT</span><span clas
 
 <figure class="post-image image-style-full">
   <img class="zoom-image js-zoom-image" src="http://jonrohan.codes/assets/images/posts/cards.gif" />
-  <figcaption class="image-caption">The cards get delt, then you can shuffle them or discard one.</figcaption>
+  <figcaption class="image-caption">The cards get dealt, then you can shuffle them or discard one.</figcaption>
 </figure>
 
 <p><a href="http://codepen.io/jonrohan/full/vOEJMy/">Demo</a></p>
