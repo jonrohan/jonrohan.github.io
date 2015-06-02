@@ -12,8 +12,8 @@
 
     
     <item>
-      <title>Implementing all CSS tooltips</title>
-      <link>http://jonrohan.codes/fieldnotes/implementing-an-all-css-tooltip?utm_source=feed&amp;utm_medium=rss&amp;utm_campaign=implementing-all-css-tooltips</link>
+      <title>Implementing an all CSS tooltip</title>
+      <link>http://jonrohan.codes/fieldnotes/implementing-an-all-css-tooltip?utm_source=feed&amp;utm_medium=rss&amp;utm_campaign=implementing-an-all-css-tooltip</link>
       <description>GitHub&#39;s UI is a complex system of actions, notes and complex meanings. As a result, we&#39;ve leaned pretty hard on tooltips. Since the site first launched we used a tooltip plugin called tipsy. Performance troubles led us to build CSS tooltips.</description>
       <guid isPermaLink="true">http://jonrohan.codes/fieldnotes/implementing-an-all-css-tooltip</guid>
       <pubDate>Tue, 02 Jun 2015 00:00:00 -0400</pubDate>
@@ -194,7 +194,7 @@
 <p>The graphs looked GREAT! When we turned on the css tooltips, slow mouseover js events went from around 30,000 an hour to almost 0.</p>
 
         
-        <img src="http://www.google-analytics.com/collect?v=1&t=pageview&dl=http%3A%2F%2Fjonrohan.codes%2Frss%2Ffieldnotes%2Fimplementing-an-all-css-tooltip&ul=en-us&de=UTF-8&dt=Implementing%20all%20CSS%20tooltips&cid=198907588.1430708348&tid=UA-543420-18">
+        <img src="http://www.google-analytics.com/collect?v=1&t=pageview&dl=http%3A%2F%2Fjonrohan.codes%2Frss%2Ffieldnotes%2Fimplementing-an-all-css-tooltip&ul=en-us&de=UTF-8&dt=Implementing%20an%20all%20CSS%20tooltip&cid=198907588.1430708348&tid=UA-543420-18">
 
       ]]></content:encoded>
     </item>
