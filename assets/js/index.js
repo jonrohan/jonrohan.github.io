@@ -7,6 +7,14 @@
     }
   });
 
+  $(document).ready(function() {
+    anchors.options = {
+      placement: 'left',
+      icon: '#'
+    };
+    return anchors.add('.markdown-body h1, .markdown-body h2, .markdown-body h3,' + ' .markdown-body h4, .markdown-body h5, .markdown-body h6');
+  });
+
   $(".share-button").on("click", function(event) {
     $(this).closest(".menu-wrapper").toggleClass("open");
     return event.stopPropagation();

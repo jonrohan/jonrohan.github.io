@@ -7,7 +7,7 @@
   <link href="http://jonrohan.codes/"/>
   <icon>http://jonrohan.codes/assets/images/apple-touch-icon-72x72.png</icon>
   <logo>http://jonrohan.codes/assets/images/apple-touch-icon-72x72.png</logo>
-  <updated>2015-05-08T00:00:00-04:00</updated>
+  <updated>2015-06-02T00:00:00-04:00</updated>
   <id>http://jonrohan.codes/</id>
   <rights type="html">&amp;copy; Jon Rohan 2015. All rights reserved.</rights>
 
@@ -18,11 +18,203 @@
 
   
   <entry>
+    <id>http://jonrohan.codes/fieldnotes/implementing-an-all-css-tooltip</id>
+    <title>Implementing all CSS tooltips</title>
+    <updated>2015-06-02T00:00:00-04:00</updated>
+    <published>2015-06-02T00:00:00-04:00</published>
+    <link href="http://jonrohan.codes/fieldnotes/implementing-an-all-css-tooltip?utm_source=feed&amp;utm_medium=atom&amp;utm_campaign=implementing-all-css-tooltips"/>
+    <category term="fieldnotes"/>
+    
+    <category term="css"/>
+    
+    <category term="github"/>
+    
+    <summary type="html">GitHub&#39;s UI is a complex system of actions, notes and complex meanings. As a result, we&#39;ve leaned pretty hard on tooltips. Since the site first launched we used a tooltip plugin called tipsy. Performance troubles led us to build CSS tooltips.</summary>
+    <rights type="html">&amp;copy; Jon Rohan 2015. All rights reserved.</rights>
+
+    <content type="html">
+      
+&lt;p&gt;GitHub’s UI is a complex system of actions, notes and complex meanings. As a result, we’ve leaned pretty hard on tooltips. Since the site first launched we used a tooltip plugin called &lt;a href=&quot;https://github.com/jaz303/tipsy&quot;&gt;tipsy&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;tipsy&quot;&gt;Tipsy&lt;/h3&gt;
+
+&lt;p&gt;Tipsy, &lt;em&gt;now unmaintained&lt;/em&gt;, was a jQuery plugin to replicate Facebook’s tooltip styles. Back then it was simple to add to the site, we dropped it in, and kept it around for a while.&lt;/p&gt;
+
+&lt;p&gt;Last year I began to turn a &lt;img class=&quot;emoji&quot; title=&quot;:mag:&quot; alt=&quot;:mag:&quot; src=&quot;https://assets.github.com/images/icons/emoji/unicode/1f50d.png&quot; height=&quot;20&quot; width=&quot;20&quot; align=&quot;absmiddle&quot; /&gt; critical eye to tipsy. We were focusing on front-end performance and were trimming all excess javascript events. What I found was we were firing sometimes hundreds of &lt;code&gt;mouseover&lt;/code&gt; &amp;amp; &lt;code&gt;mouseout&lt;/code&gt; events on pages that had a lot of tooltips.&lt;/p&gt;
+
+&lt;p&gt;We knew then that we wanted to kill tipsy from our site, but the only hope we had was to make a fully CSS solution.&lt;/p&gt;
+
+&lt;h3 id=&quot;hintcss&quot;&gt;Hint.css&lt;/h3&gt;
+
+&lt;p&gt;It was about this time that a library was released on GitHub. &lt;a href=&quot;http://kushagragour.in/lab/hint/&quot;&gt;Hint.css&lt;/a&gt;, is &lt;em&gt;”..a tooltip library written in SASS which uses only HTML/CSS to create simple tooltips.”&lt;/em&gt; This was a very interesting development and perfect timing because we were considering a tooltip replacement. Hint promised to be everything we wanted.&lt;/p&gt;
+
+&lt;p&gt;We investigated and found that Hint.css is a very elegant solution, but didn’t match our tooltip style. More specifically, we wanted tooltips that centered on content.&lt;/p&gt;
+
+&lt;h3 id=&quot;hint-vs-tipsy&quot;&gt;Hint vs Tipsy&lt;/h3&gt;
+
+&lt;p&gt;I didn’t want to have to redesign our tooltips or figure out how they fit on all the different places we scattered them. The fact that Hint.css, &lt;em&gt;at the time&lt;/em&gt;, only showed tooltips from the top left or bottom left made using it a non-starter.&lt;/p&gt;
+
+&lt;figure class=&quot;post-image image-style-full&quot;&gt;
+  &lt;div class=&quot;image-wrap&quot;&gt;
+  &lt;img src=&quot;http://jonrohan.codes/assets/images/posts/css-tooltips/hintvstipsy.png&quot; /&gt;&lt;/div&gt;
+&lt;/figure&gt;
+
+&lt;h3 id=&quot;primercss-tooltips&quot;&gt;Primer.css tooltips&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;“I was tinkering around and found a way we can replace tipsy with all css tooltips. I’ve already seen a couple of downside and upsides, but I will create a pull request with the advantages and disadvantages here. We can have a thread on if we really want to do this or not.”&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;That’s how I started a pull request off where I had been working out a way to rebuild our tooltips with CSS. The breakthrough happened when I read about &lt;code&gt;translateX&lt;/code&gt; which has pretty good &lt;a href=&quot;#browser-support&quot;&gt;browser support&lt;/a&gt; now. Translate calculates the position based on the &lt;a href=&quot;http://jonrohan.codes/fieldnotes/vertically-center-clipped-image/#a-fist-full-of-properties&quot;&gt;object’s size&lt;/a&gt;. The difficulty before was, we don’t know how wide the tooltips are going to be. We can’t position them in the old fashion where we offset with &lt;code&gt;margin-left: -50px;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;What we &lt;a href=&quot;https://github.com/primer/primer/blob/f266ae3bd95137c0a0cf4f6703c61335721cfa56/scss/_tooltips.scss&quot;&gt;ended up with&lt;/a&gt;, was a hybrid of Hint and Tipsy.&lt;/p&gt;
+
+&lt;h3 id=&quot;replacing-717-tooltips&quot;&gt;Replacing 717 tooltips&lt;/h3&gt;
+
+&lt;p&gt;I’m not exaggerating when I say &lt;strong&gt;I replaced 717 tooltips&lt;/strong&gt; across our codebase. This didn’t happen in one big swoop. And it wasn’t released to non-staff for a few weeks.&lt;/p&gt;
+
+&lt;p&gt;The approach I took was to start out by making the new &lt;a href=&quot;https://github.com/primer/primer/blob/f266ae3bd95137c0a0cf4f6703c61335721cfa56/scss/_tooltips.scss&quot;&gt;Primer tooltips&lt;/a&gt; and tipsy work side by side. To do this, I added a class to the body for all non-staff. &lt;code&gt;tipsy-tooltips&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-coffee&quot;&gt;$.observe &#39;.tipsy-tooltips .tooltipped&#39;,
+  init:   -&amp;gt;
+    el = $(this)
+    el.attr(&#39;aria-label&#39;, el.attr(&#39;title&#39;)) unless el.attr(&#39;aria-label&#39;)
+    el.tipsy {
+      gravity: gravity
+      title: &#39;aria-label&#39;
+    }
+  add:    -&amp;gt; $(this).tipsy &#39;enable&#39;
+  remove: -&amp;gt;
+    $(this).tipsy &#39;disable&#39;
+    $.fn.tipsy.revalidate()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Doing this would turn on tipsy tooltips for anyone who had the &lt;code&gt;tipsy-tooltips&lt;/code&gt; class.&lt;/p&gt;
+
+&lt;p&gt;For GitHub staff, I had a conditional around the tooltip stylesheet bundle. Which would only add the css to the page if the user was staff.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-erb&quot;&gt;&amp;lt;%= stylesheet_bundle &#39;tooltipped&#39; if css_tooltips_enabled? %&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The strategy behind this was to give us the ability to find the bugs with the new system before shipping it to the public.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;advantages&quot;&gt;Advantages&lt;/h3&gt;
+
+&lt;p&gt;There were going to be trade-offs in going from a JS based tooltip solution to a CSS based solution. I wanted to list the advantages and disadvantages to see if the benefits outweighed the trade-offs.&lt;/p&gt;
+
+&lt;h4 id=&quot;performance&quot;&gt;Performance&lt;/h4&gt;
+
+&lt;p&gt;This was the first question in my head, because we’re doing a bunch of transformations and transitions with the css version it’s unclear that it’s really a win. But early diagnostics look good! Here’s the mouse hovering over the collapsed repository sidebar tipsy vs. primer css tooltips.&lt;/p&gt;
+
+&lt;figure class=&quot;post-image image-style-full&quot;&gt;
+  &lt;div class=&quot;image-wrap&quot;&gt;
+  &lt;img class=&quot;zoom-image js-zoom-image&quot; alt=&quot;Tipsy repaints in the Chrome devtools event timeline&quot; src=&quot;http://jonrohan.codes/assets/images/posts/css-tooltips/repaint-before.png&quot; /&gt;&lt;/div&gt;
+  &lt;figcaption class=&quot;image-caption&quot;&gt;Tipsy repaints in the Chrome devtools event timeline&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;In the tipsy timeline, you can see at the top there are spikes that are shooting into the 30fps range. This causes &lt;a href=&quot;http://jankfree.org/&quot;&gt;jank&lt;/a&gt; hovering and scrolling on some of our larger pages.&lt;/p&gt;
+
+&lt;p&gt;Notice also the yellow bar that occurs at the beginning of the event waterfall. This is the time it takes for the JS mouseover event to fire and move the tooltip into position.&lt;/p&gt;
+
+&lt;figure class=&quot;post-image image-style-full&quot;&gt;
+  &lt;div class=&quot;image-wrap&quot;&gt;
+  &lt;img class=&quot;zoom-image js-zoom-image&quot; alt=&quot;Primer css tooltip repaints in the Chrome devtools event timeline&quot; src=&quot;http://jonrohan.codes/assets/images/posts/css-tooltips/repaint-after.png&quot; /&gt;&lt;/div&gt;
+  &lt;figcaption class=&quot;image-caption&quot;&gt;Primer css tooltip repaints in the Chrome devtools event timeline&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;For comparison here is the Primer.css tooltip timeline. All of the actions remain in the 60fps &lt;img class=&quot;emoji&quot; title=&quot;:sparkles:&quot; alt=&quot;:sparkles:&quot; src=&quot;https://assets.github.com/images/icons/emoji/unicode/2728.png&quot; height=&quot;20&quot; width=&quot;20&quot; align=&quot;absmiddle&quot; /&gt;.&lt;/p&gt;
+
+&lt;p&gt;I was also looking into the paint rectangles that happen when tipsy was fired, versus primer.css tooltips.&lt;/p&gt;
+
+&lt;figure class=&quot;post-image image-style-full&quot;&gt;
+  &lt;div class=&quot;image-wrap&quot;&gt;
+  &lt;img src=&quot;http://jonrohan.codes/assets/images/posts/css-tooltips/paint-calcs-before.png&quot; /&gt;&lt;/div&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Tipsy’s paint triangle was the whole screen. I believe because the tooltip is moved off screen and repositioned after every hover.&lt;/p&gt;
+
+&lt;figure class=&quot;post-image image-style-full&quot;&gt;
+  &lt;div class=&quot;image-wrap&quot;&gt;
+  &lt;img src=&quot;http://jonrohan.codes/assets/images/posts/css-tooltips/paint-calcs-after.png&quot; /&gt;&lt;/div&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The fully css tooltips had very little screen repaints.&lt;/p&gt;
+
+&lt;h4 id=&quot;flexibility&quot;&gt;Flexibility&lt;/h4&gt;
+
+&lt;figure class=&quot;post-image image-style-smallest&quot;&gt;
+  &lt;div class=&quot;image-wrap&quot;&gt;
+  &lt;img class=&quot;zoom-image js-zoom-image&quot; src=&quot;http://jonrohan.codes/assets/images/posts/css-tooltips/focus.gif&quot; /&gt;&lt;/div&gt;
+  &lt;figcaption class=&quot;image-caption&quot;&gt;Tooltips on &lt;code&gt;:focus&lt;/code&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;There was more flexibility with how and when we triggered the tooltips.&lt;/p&gt;
+
+&lt;p&gt;We could easily add &lt;code&gt;:focus&lt;/code&gt; triggers for the tooltips without adding more js events to them.&lt;/p&gt;
+
+&lt;p&gt;Even adding transitions and delays to the tooltips. Delays could be useful if we didn’t want the tooltips to appear right away. Giving the UX a more natural feel.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;disadvantages&quot;&gt;Disadvantages&lt;/h3&gt;
+
+&lt;p&gt;There were some disadvantages that caused us to rework some of our code.&lt;/p&gt;
+
+&lt;h4 id=&quot;overflow-hidden&quot;&gt;Overflow hidden&lt;/h4&gt;
+
+&lt;p&gt;This was one of the biggest trade-offs we had to overcome. There are many reasons you may want to use &lt;code&gt;overflow: hidden;&lt;/code&gt; or scroll. We do this in our issue comments, and in a lot of places that traditional &lt;a href=&quot;http://jonrohan.codes/fieldnotes/clear-fixes/#post&quot;&gt;clearfix&lt;/a&gt; fixes won’t work.&lt;/p&gt;
+
+&lt;p&gt;The problem is the tooltips were no longer global elements in the DOM. They now existed right along side the element that was triggering the tooltip. When these elements were inside a container that had &lt;code&gt;overflow:hidden;&lt;/code&gt; applied to it, you would get clipped content and not see the full tooltip or sometimes none of it.&lt;/p&gt;
+
+&lt;p&gt;With tipsy we didn’t have this problem, because tipsy creates a global tooltip that it reuses for every element. The global tooltip element lives at the bottom of the page, placing it safe from clipping.&lt;/p&gt;
+
+&lt;h4 id=&quot;before-after-collisions&quot;&gt;&lt;code&gt;:before, :after&lt;/code&gt; collisions&lt;/h4&gt;
+
+&lt;p&gt;Anytime we used &lt;code&gt;.tooltipped&lt;/code&gt; classes in conjunction with another class that used the &lt;code&gt;:before, :after&lt;/code&gt; pseudo-selectors we had collisions. This meant that we couldn’t use the &lt;code&gt;.tooltipped&lt;/code&gt; class with our &lt;a href=&quot;https://github.com/blog/1106-say-hello-to-octicons&quot;&gt;octicons&lt;/a&gt;, clearfix or a few other minor places we used &lt;code&gt;:before&lt;/code&gt; and &lt;code&gt;:after&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;We would get around this by separating these to separate elements.&lt;/p&gt;
+
+&lt;h4 id=&quot;title-attributes&quot;&gt;title attributes&lt;/h4&gt;
+
+&lt;figure class=&quot;post-image image-style-smallest&quot;&gt;
+  &lt;div class=&quot;image-wrap&quot;&gt;
+  &lt;img class=&quot;zoom-image js-zoom-image&quot; src=&quot;http://jonrohan.codes/assets/images/posts/css-tooltips/title-conflict.png&quot; /&gt;&lt;/div&gt;
+  &lt;figcaption class=&quot;image-caption&quot;&gt;Native tooltips and css tooltips all together.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The way that tipsy worked was it used the already defined &lt;code&gt;title=&lt;/code&gt; attribute on an element, grab the data within, destroy the &lt;code&gt;title=&lt;/code&gt; attribute, then display the tooltip. This was how it got around displaying both the native tooltip and the tipsy tooltip.&lt;/p&gt;
+
+&lt;p&gt;That is a lot of logic that we couldn’t accomplish with pure CSS tooltips. We ended up using &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-label_attribute&quot;&gt;aria-label&lt;/a&gt; instead. Which would not display a native tooltip, but would add context for users with accessibility issues. &lt;em&gt;“The aria-label attribute is used to define a string that labels the current element. Use it in cases where a text label is not visible on the screen.”&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;What seemed like a disadvantage turned out to be an advantage. Our site was now getting more accessible.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;going-live&quot;&gt;Going live&lt;/h3&gt;
+
+&lt;p&gt;After all the bugs &lt;img class=&quot;emoji&quot; title=&quot;:bug:&quot; alt=&quot;:bug:&quot; src=&quot;https://assets.github.com/images/icons/emoji/unicode/1f41b.png&quot; height=&quot;20&quot; width=&quot;20&quot; align=&quot;absmiddle&quot; /&gt; were squashed, we decided that it was ready for everyone. Before shipping, we began tracking window performance with &lt;code&gt;window.performance&lt;/code&gt; to see the results.&lt;/p&gt;
+
+&lt;figure class=&quot;post-image image-style-full&quot;&gt;
+  &lt;div class=&quot;image-wrap&quot;&gt;
+  &lt;img class=&quot;zoom-image js-zoom-image&quot; src=&quot;http://jonrohan.codes/assets/images/posts/css-tooltips/slow-js-events.png&quot; /&gt;&lt;/div&gt;
+  &lt;figcaption class=&quot;image-caption&quot;&gt;When we turned on the all css tooltips this was the performance graph of slow mouseover events&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The graphs looked GREAT! When we turned on the css tooltips, slow mouseover js events went from around 30,000 an hour to almost 0.&lt;/p&gt;
+
+      
+      
+      &lt;img src=&quot;http://www.google-analytics.com/collect?v=1&amp;t=pageview&amp;dl=http%3A%2F%2Fjonrohan.codes%2Fatom%2Ffieldnotes%2Fimplementing-an-all-css-tooltip&amp;ul=en-us&amp;de=UTF-8&amp;dt=Implementing%20all%20CSS%20tooltips&amp;cid=198907588.1430708348&amp;tid=UA-543420-18&quot;&gt;
+
+    </content>
+  </entry>
+  
+  <entry>
     <id>http://jonrohan.codes/fieldnotes/vertically-center-clipped-image</id>
-    <title>How to vertically center a clipped image with CSS</title>
+    <title>How to vertically center a clipped image in CSS</title>
     <updated>2015-05-08T00:00:00-04:00</updated>
     <published>2015-05-08T00:00:00-04:00</published>
-    <link href="http://jonrohan.codes/fieldnotes/vertically-center-clipped-image?utm_source=feed&amp;utm_medium=atom&amp;utm_campaign=how-to-vertically-center-a-clipped-image-with-css"/>
+    <link href="http://jonrohan.codes/fieldnotes/vertically-center-clipped-image?utm_source=feed&amp;utm_medium=atom&amp;utm_campaign=how-to-vertically-center-a-clipped-image-in-css"/>
     <category term="fieldnotes"/>
     
     <category term="css"/>
@@ -96,7 +288,7 @@
 
       
       
-      &lt;img src=&quot;http://www.google-analytics.com/collect?v=1&amp;t=pageview&amp;dl=http%3A%2F%2Fjonrohan.codes%2Fatom%2Ffieldnotes%2Fvertically-center-clipped-image&amp;ul=en-us&amp;de=UTF-8&amp;dt=How%20to%20vertically%20center%20a%20clipped%20image%20with%20CSS&amp;cid=198907588.1430708348&amp;tid=UA-543420-18&quot;&gt;
+      &lt;img src=&quot;http://www.google-analytics.com/collect?v=1&amp;t=pageview&amp;dl=http%3A%2F%2Fjonrohan.codes%2Fatom%2Ffieldnotes%2Fvertically-center-clipped-image&amp;ul=en-us&amp;de=UTF-8&amp;dt=How%20to%20vertically%20center%20a%20clipped%20image%20in%20CSS&amp;cid=198907588.1430708348&amp;tid=UA-543420-18&quot;&gt;
 
     </content>
   </entry>

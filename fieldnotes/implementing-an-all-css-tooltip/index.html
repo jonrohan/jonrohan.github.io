@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="en-us" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+
+  <head>
+
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <meta name="google-site-verification" content="RlkXEN-itWvUefIzgXZdJ2alzxiK5qruVYNaIVw5sEs" >
+  <meta name="google-site-verification" content="_NoxB0dNrqCAY1WyDfHG9fU1vr_XymYhPMf5ja9fwQI" >
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  
+
+  
+
+  <title>
+  
+    Implementing all CSS tooltips &#8212; Jon Rohan
+  
+  </title>
+  <meta name="description" content="
+  
+    GitHub's UI is a complex system of actions, notes and complex meanings. As a result, we've leaned pretty hard on tooltips. Since the site first launched we used a tooltip plugin called tipsy. Performance troubles led us to build CSS tooltips.
+  
+  ">
+
+  <link rel="alternate" type="application/atom+xml" title="Jon Rohan &#8212; Web Designer and Developer &#8212; ATOM" href="http://jonrohan.codes/atom.xml">
+  <link rel="alternate" type="application/rss+xml" title="Jon Rohan &#8212; Web Designer and Developer &#8212; RSS" href="http://jonrohan.codes/rss.xml">
+
+  <link rel="canonical" href="http://jonrohan.codes/fieldnotes/implementing-an-all-css-tooltip" >
+
+  <meta property="og:title" content="
+  
+    Implementing all CSS tooltips &#8212; Jon Rohan
+  
+  ">
+  <meta property="og:description" content="
+  
+    GitHub's UI is a complex system of actions, notes and complex meanings. As a result, we've leaned pretty hard on tooltips. Since the site first launched we used a tooltip plugin called tipsy. Performance troubles led us to build CSS tooltips.
+  
+  ">
+  <meta property="og:url" content="http://jonrohan.codes/fieldnotes/implementing-an-all-css-tooltip">
+  <meta property="og:image" content="http://jonrohan.codes/assets/images/avatar.png">
+  
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2015-06-02 00:00:00 -0400">
+  <meta property="article:author" content="Jon Rohan">
+  <meta property="article:section" content="fieldnotes">
+  <meta property="article:tag" content="css, github">
+  
+
+  <meta name="twitter:card" content="summary" >
+  <meta name="twitter:site" content="@jonrohan" >
+  <meta name="twitter:title" content="
+  
+    Implementing all CSS tooltips &#8212; Jon Rohan
+  
+  " >
+  <meta name="twitter:image" content="http://jonrohan.codes/images/avatar.png" >
+  <meta name="twitter:description" content="
+  
+    GitHub's UI is a complex system of actions, notes and complex meanings. As a result, we've leaned pretty hard on tooltips. Since the site first launched we used a tooltip plugin called tipsy. Performance troubles led us to build CSS tooltips.
+  
+  " >
+  <meta name="twitter:url" content="http://jonrohan.codes/fieldnotes/implementing-an-all-css-tooltip" >
+
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://jonrohan.codes/assets/images/icons/apple-touch-icon-57x57.png" >
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://jonrohan.codes/assets/images/icons/apple-touch-icon-114x114.png" >
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://jonrohan.codes/assets/images/icons/apple-touch-icon-72x72.png" >
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://jonrohan.codes/assets/images/icons/apple-touch-icon-144x144.png" >
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="http://jonrohan.codes/assets/images/icons/apple-touch-icon-60x60.png" >
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="http://jonrohan.codes/assets/images/icons/apple-touch-icon-120x120.png" >
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="http://jonrohan.codes/assets/images/icons/apple-touch-icon-76x76.png" >
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://jonrohan.codes/assets/images/icons/apple-touch-icon-152x152.png" >
+  <link rel="icon" type="image/png" href="http://jonrohan.codes/assets/images/icons/favicon-196x196.png" sizes="196x196" >
+  <link rel="icon" type="image/png" href="http://jonrohan.codes/assets/images/icons/favicon-96x96.png" sizes="96x96" >
+  <link rel="icon" type="image/png" href="http://jonrohan.codes/assets/images/icons/favicon-32x32.png" sizes="32x32" >
+  <link rel="icon" type="image/png" href="http://jonrohan.codes/assets/images/icons/favicon-16x16.png" sizes="16x16" >
+  <link rel="icon" type="image/png" href="http://jonrohan.codes/assets/images/icons/favicon-128.png" sizes="128x128" >
+  <meta name="application-name" content="&nbsp;">
+  <meta name="msapplication-TileColor" content="#FFFFFF" >
+  <meta name="msapplication-TileImage" content="http://jonrohan.codes/assets/images/icons/mstile-144x144.png" >
+  <meta name="msapplication-square70x70logo" content="http://jonrohan.codes/assets/images/icons/mstile-70x70.png" >
+  <meta name="msapplication-square150x150logo" content="http://jonrohan.codes/assets/images/icons/mstile-150x150.png" >
+  <meta name="msapplication-wide310x150logo" content="http://jonrohan.codes/assets/images/icons/mstile-310x150.png" >
+  <meta name="msapplication-square310x310logo" content="http://jonrohan.codes/assets/images/icons/mstile-310x310.png" >
+
+
+  <link rel="stylesheet" href="http://jonrohan.codes/assets/css/index.css">
+  <script>
+    if(document.cookie.match(/skipanaly=1/)==null) {
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-543420-18', 'auto');
+      ga('send', 'pageview');
+    }
+  </script>
+  <script src="//use.typekit.net/xlf5nmg.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+</head>
+
+
+  <body>
+    <header>
+
+      <div class="nav-bar js-menu-container">
+  <div class="container">
+    <span class="nav-menu js-menu-toggle"><svg class="icon" width="384" height="320" viewBox="0 0 384 320" xmlns="http://www.w3.org/2000/svg"><title>navicon-round</title><g fill="#000" fill-rule="evenodd"><path d="M353.4 128H30.6C13.7 128 0 142.3 0 160s13.7 32 30.6 32h322.8c16.9 0 30.6-14.3 30.6-32s-13.7-32-30.6-32zM353.4 0H30.6C13.7 0 0 14.3 0 32s13.7 32 30.6 32h322.8c16.9 0 30.6-14.3 30.6-32S370.3 0 353.4 0z" id="Shape"/><path d="M353.4 256H30.6C13.7 256 0 270.3 0 288s13.7 32 30.6 32h322.8c16.9 0 30.6-14.3 30.6-32s-13.7-32-30.6-32z"/></g></svg></span>
+    <nav class="right">
+      <ul>
+        <li>
+          <a class="js-ga-event-tracking" data-ga-category="links" data-ga-action="click" data-ga-label="about" href="http://jonrohan.codes/#about">About</a>
+        </li>
+        <li>
+          <a class="js-ga-event-tracking" data-ga-category="links" data-ga-action="click" data-ga-label="work" href="http://jonrohan.codes/#work">Work</a>
+        </li>
+        <li>
+          <a class="js-ga-event-tracking" data-ga-category="links" data-ga-action="click" data-ga-label="contact" href="http://jonrohan.codes/#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <span class="logo-head"><a href="http://jonrohan.codes/"><svg class="logo-svg" width="325" height="325" viewBox="0 0 325 325" xmlns="http://www.w3.org/2000/svg"><title>Oval 5</title><path d="M162.5 325c89.746 0 162.5-72.754 162.5-162.5S252.246 0 162.5 0 0 72.754 0 162.5 72.754 325 162.5 325zm28.906-220.313l-17.344 17.344 40.47 40.47-40.47 40.47 17.344 17.346 52.03-57.813-52.03-57.812zm-57.812 0L81.564 162.5l52.03 57.813 17.344-17.344-40.47-40.47 40.47-40.47-17.344-17.346z" fill-rule="evenodd"/></svg><svg class="jon-rohan" width="508" height="74" viewBox="0 0 508 74" xmlns="http://www.w3.org/2000/svg"><title>JonRohan</title><path d="M179.4 72.5c1-5 1.9-10 2.9-15h3.2c1.4 0 2.2-.5 2.5-2.1 2.1-11 4.3-22 6.4-33 .4-2 .1-2.3-2-2.4h-2.9c.3-1.4.5-2.6.7-3.9.6-3.3 1.3-6.6 1.9-9.9.2-1.1.6-1.3 1.6-1.3h23.6c5.9 0 11.8 0 17.6.2 3.6.1 7.1 1 10.4 2.5 6.3 2.9 9.6 8.3 9.1 15.4-.5 6.4-3 11.8-8.2 15.8-2.2 1.7-4.7 2.8-7.4 3.3-.4.1-.8.4-1.2.6 0 .1.1.3.1.4 1.1.3 2.3.5 3.4.9 3.6 1.2 4.9 3.2 4.8 6.9 0 .7-.1 1.3-.1 2-.3 3.5.1 4.1 3.8 4.6-.9 4.8-1.8 9.5-2.8 14.3-.1.3-.5.8-.9.8-6.1.9-12.2 1.6-18.4.5-6.5-1.2-8.7-5.5-7.9-11.6.4-3.1 1.1-6.1 1.7-9.2.4-2-.3-2.9-2.3-3.2-.3 0-.6-.1-.8-.1h-4c-.5 2.7-1 5.4-1.6 8.3h3.5c-1 5.1-1.9 10.1-2.9 15.1-11.3.1-22.4.1-33.8.1zm37.5-37.4c1.8 0 3.4.1 4.9 0 3.4-.3 5.5-2.2 6.2-5.6.2-1.1.3-2.3.3-3.5 0-1.9-.8-3.1-2.7-3.5-1.9-.3-3.8-.3-5.8-.3-.2 0-.6.5-.6.9-.4 1.8-.8 3.7-1.1 5.5-.4 2.2-.7 4.3-1.2 6.5zm159.6 23.2c-.7 3.8-1.3 7.3-2 10.9-.6 3.2-.6 3.2-3.9 3.7-4.9.7-9.9 1.3-14.8.2-6-1.3-9.3-5.4-8.5-11.6.7-5.4 1.8-10.8 2.8-16.2l1.2-6.3c.3-1.9-.5-2.9-2.4-2.6-1.4.2-2.7.9-4.1 1.5-.3.1-.5.6-.5.9-1.2 6.3-2.3 12.5-3.5 18.8v.6h3.8c-.5 2.6-.9 5-1.3 7.4-.3 1.9-.7 3.8-1.1 5.7-.1.7-.3 1.1-1.1 1.1h-31.4c-.1 0-.2 0-.4-.1.9-4.6 1.7-9.2 2.6-14.1h3.2c1.4 0 2.2-.7 2.4-2.1 1.7-9 3.4-17.9 5.1-26.9.7-3.9 1.4-7.7 2.2-11.6.4-2.2 0-2.8-2.3-2.8h-2.7c.9-4.8 1.8-9.4 2.6-14.1h28.9c-1.4 7.8-2.9 15.5-4.4 23.5.7-.4 1.1-.7 1.5-.9 5.3-3.4 11.1-5.2 17.5-4.2 6.1.9 9.9 4.9 9.8 11.1-.1 3.8-.9 7.7-1.5 11.5-.8 4.7-1.8 9.4-2.6 14.1-.3 1.8.2 2.3 2 2.3.8.2 1.7.2 2.9.2zm95.7.1h3.8c-.5 2.6-.9 5-1.3 7.4-.3 1.9-.7 3.8-1.1 5.7-.1.7-.3 1.1-1.1 1.1h-31.4c-.1 0-.2 0-.4-.1.9-4.6 1.7-9.2 2.6-14.1h3.3c1.3 0 2.1-.6 2.4-2 1-5.6 2.1-11.1 3.1-16.7.2-1.3.4-2.5.6-3.8.1-1-.4-1.5-1.4-1.5h-3.6c.5-2.6.9-4.9 1.3-7.3.4-2 .7-4 1.2-6 .1-.4.7-.9 1-.9 5.7 0 11.4-.2 17.1.1 3.9.1 6.8 1.9 7.5 6.1 2.2-1.4 4.2-2.9 6.4-4.1 4.8-2.7 9.9-3.8 15.4-2.9 5.8.9 9.6 4.9 9.6 10.7 0 3.9-.8 7.8-1.4 11.6-.8 4.8-1.8 9.5-2.7 14.2-.4 1.9.1 2.4 2 2.4h2.9c-.5 2.6-.9 5-1.3 7.5-.3 1.9-.7 3.8-1.1 5.7-.1.4-.4 1-.7 1-6 .9-12 1.9-18.1.5-5.7-1.3-8.8-5.5-8.1-11.4.7-5.5 1.8-10.9 2.8-16.3.4-2 .8-4.1 1.2-6.1.4-2-.5-3.1-2.5-2.7-1.3.2-2.6.9-3.8 1.4-.3.1-.5.7-.6 1-1.2 6.2-2.3 12.5-3.5 18.7-.2.2-.1.4-.1.8zm-330 0h3.9c-.9 4.8-1.7 9.4-2.6 14.1h-32.7c.6-3.1 1.1-6.1 1.7-9.1.2-1.3.4-2.7.8-4 .1-.4.7-.8 1.1-.9.7-.2 1.4 0 2.1-.1 1.8-.1 2.4-.5 2.7-2.3 1.2-6.6 2.4-13.1 3.6-19.7.3-1.4-.2-2-1.6-2h-3.4c.9-4.8 1.8-9.5 2.6-14.2 6.2 0 12.3-.2 18.3.1 4 .1 6 2.1 7.2 6.2.6-.4 1.2-.8 1.7-1.3 5.1-3.9 10.8-6.4 17.4-6.1 1.8.1 3.6.4 5.3 1 4.2 1.4 6.6 5 6.9 9.5.3 4.4-.8 8.6-1.6 12.9-.8 4.7-1.8 9.3-2.6 13.9-.2 1.3.3 1.9 1.6 1.9h3.4c-.9 4.8-1.7 9.4-2.6 14.2-6.1.8-12 1.9-18.1.7-5.7-1.1-8.8-4.7-8.5-10.4.2-4.2 1.1-8.3 1.8-12.5.6-3.6 1.4-7.1 2.1-10.7.5-2.6-.7-3.7-3.3-3-.3.1-.5.2-.8.3-1.8.5-2.8 1.5-3.1 3.6-1 5.9-2.2 11.7-3.3 17.9zm298.1 0c-.9 4.6-1.7 9.1-2.6 13.5-.1.3-.5.7-.8.8-4.9 1-9.9 1.6-14.9.3-3.2-.8-5.6-2.6-7.3-5.2-2.5 1.3-4.8 2.8-7.3 3.8-5.9 2.3-11.8 2.6-17.6-.3-5.4-2.7-8.3-7.5-9.1-13.3-1.5-11.4 1.5-21.5 9.7-29.8 5.4-5.4 12.1-8 19.5-8.8 10.5-1.1 20.6 1 30.5 4.5 1 .4 1.2.9 1 1.9-2.1 10.2-4.1 20.4-6.1 30.6-.3 1.4.1 2 1.6 2h3.4zm-24.5-22.5c-1.1-.1-2-.3-2.9-.2-3.1.3-4.7 2.5-6 5.1-1.7 3.6-2.3 7.5-2.4 11.4 0 1.5.3 3 1.9 3.7 1.8.8 3.5.4 5.2-.4.2-.1.4-.5.5-.8 1.2-6.1 2.5-12.3 3.7-18.8zM54.3 53.3c.1-9.1 2.6-17.3 9-24.1 5-5.3 11.1-8.2 18.1-9.5 5.6-1 11.1-.8 16.6.5 8.1 2 13.2 7.9 14 16.2.7 8.2-.8 16-5.4 23-5.2 7.9-12.7 12.1-21.9 13.6-5.5.9-11 .8-16.5-.6-8.8-2.2-13.8-8.5-14-17.6.1-.4.1-1 .1-1.5zm34.3-13c0-3.2-.6-4.3-2.5-4.5-2-.3-3.6.7-4.5 2.3-1.1 2.3-2.1 4.7-2.6 7.1-.6 3-.9 6.2-.9 9.3 0 2 1.4 2.8 3.4 2.5 2-.2 3.1-1.6 4-3.3 2.3-4.3 2.8-9.1 3.1-13.4zM288.3 19c4.5.1 8.9.6 13 2.5 5.9 2.6 9.4 7.2 10.3 13.5 1.2 9-.4 17.5-5.6 25.2-4.7 6.9-11.6 10.9-19.7 12.7-6 1.3-12 1.4-18-.2-8.8-2.3-13.7-7.7-14.2-16.8-.6-10.2 2-19.4 9.3-26.9 5.4-5.6 12.1-8.5 19.7-9.4 1.7-.4 3.5-.5 5.2-.6zm.1 20.9c-.1-1.5 0-3.2-1.8-4-1.7-.7-3.4-.1-4.8 1.6-.4.5-.8 1-1 1.5-2.3 4.7-3.1 9.8-2.9 15 .1 2.8 2.8 4.1 5.2 2.4 1.1-.8 1.9-2 2.5-3.1 2.1-4.2 2.4-8.8 2.8-13.4zM0 72.4V53h13c0 .2.1.4.1.6.8 3.2 3.9 4.3 6.6 2.2 1.4-1.2 2.1-2.8 2.5-4.5 1.4-7.3 2.8-14.7 4.3-22 .4-2.2.8-4.5 1.3-6.7S28 20 25.7 20h-3.8c.3-1.8.6-3.5.9-5.2.6-2.9 1.1-5.8 1.7-8.8.1-.6.3-1 1.1-1h35.3c.1 0 .3.1.5.2l-1.8 9.6c-.3 1.4-.5 2.8-.8 4.2-.1.8-.5 1.3-1.4 1.1H57c-4 0-3.9 0-4.7 4-1.9 10.1-3.8 20.1-5.8 30.2-1.8 9.5-7.8 15-16.8 17.7-6.4 1.9-13 2-19.6 1.6-3.3-.3-6.7-.8-10.1-1.2z" fill="none" fill-rule="evenodd"/></svg></a></span>
+  </div>
+</div>
+
+
+      <div class="container">
+        <span class="hero-logo"><svg class="logo-svg" width="325" height="325" viewBox="0 0 325 325" xmlns="http://www.w3.org/2000/svg"><title>Oval 5</title><path d="M162.5 325c89.746 0 162.5-72.754 162.5-162.5S252.246 0 162.5 0 0 72.754 0 162.5 72.754 325 162.5 325zm28.906-220.313l-17.344 17.344 40.47 40.47-40.47 40.47 17.344 17.346 52.03-57.813-52.03-57.812zm-57.812 0L81.564 162.5l52.03 57.813 17.344-17.344-40.47-40.47 40.47-40.47-17.344-17.346z" fill-rule="evenodd"/></svg></span>
+        <h1 class="tag-line">
+          I am a Web Designer and Developer<br> working at GitHub
+        </h1>
+        <p class="sub-tag-line">My passion is building beautiful products and working with wonderful people.</p>
+        <a href="#" class="js-em button-hero js-ga-event-tracking" data-ga-category="links" data-ga-action="click" data-ga-label="email" data-text="Let&#8217;s chat">Let&#8217;s chat</a>
+      </div>
+    </header>
+
+    <article class="container">
+      <article id="post" class="blog-post" itemscope itemtype="http://schema.org/NewsArticle">
+  <h2 class="post-title text-center" itemprop="headline">Implementing all CSS tooltips</h2>
+  
+  <p class="text-center post-meta">
+    <img itemprop="image" src="http://jonrohan.codes/assets/images/avatar.png" alt="jonrohan" class="avatar" width="30" height="30">
+    <span class="author">Jon Rohan</span>
+    <meta itemprop="datePublished" content="2015-06-02T00:00:00-04:00">
+    <time is="time-ago" datetime="2015-06-02T00:00:00-04:00">
+      Jun 02, 2015
+    </time>
+     &middot; <span>7 min read</span>
+    &middot; 
+
+
+
+
+
+<span class="menu-wrapper">
+  <span class="share-button js-ga-event-tracking" data-ga-category="share button" data-ga-action="toggle"><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><path d="M352 377.9H102.4V198.2h57.5s14.1-19.7 42.7-38.2H83.2c-10.6 0-19.2 8.5-19.2 19.1V397c0 10.5 8.6 19.1 19.2 19.1h288c10.6 0 19.2-8.5 19.2-19.1V288L352 319.4v58.5zM320 224v63.9l128-95.5L320 96v59.7C165.2 155.7 160 320 160 320c43.8-71.5 76-96 160-96z"/></svg>Share</span>
+  <span class="menu">
+    <a href="https://news.layervault.com/submit?url=http%3A%2F%2Fjonrohan.codes%2Ffieldnotes%2Fimplementing-an-all-css-tooltip&title=Implementing%20all%20CSS%20tooltips" target="_blank" class="muted designer-news-link js-ga-event-tracking" data-ga-category="share button" data-ga-action="share" data-ga-label="dn"><svg class="icon" width="448" height="320" viewBox="0 0 448 320" xmlns="http://www.w3.org/2000/svg"><title>social-designernews</title><path d="M258.4 49L195 0l63.6 102.2-.2-53.2z" id="Shape"/><path d="M297 0v163h-36.4l-63.2-98.6 1.7 98.6H159V56l-37.3-29.3c1 1.2 2 2.4 2.9 3.7 10 13.9 15 30.5 15 50.5 0 49.2-30.6 82.1-76.9 82.1H0v.4L199.6 320H448V118.1L297 0z" id="Shape"/><path d="M97.9 82.1c0-29-14.2-45.1-39.7-45.1H39v89h19c26 0 39.9-15.4 39.9-43.9z"/></svg> Designer News</a>
+    
+    
+    <a href="https://news.ycombinator.com/submitlink?u=http%3A%2F%2Fjonrohan.codes%2Ffieldnotes%2Fimplementing-an-all-css-tooltip&t=Implementing%20all%20CSS%20tooltips" target="_blank" class="muted hacker-news-link js-ga-event-tracking" data-ga-category="share button" data-ga-action="share" data-ga-label="hn"><svg class="icon" width="384" height="384" viewBox="0 0 384 384" xmlns="http://www.w3.org/2000/svg"><title>social-hacker-news</title><path d="M352 32v320H32V32h320zm32-32H0v384h384V0z" id="Shape"/><path d="M232.7 95H278l-63.9 120v72h-39.9v-72L108 95h47.1l39.7 83.6L232.7 95z"/></svg> Hacker News</a>
+    <a href="http://www.reddit.com/submit?url=http%3A%2F%2Fjonrohan.codes%2Ffieldnotes%2Fimplementing-an-all-css-tooltip&title=Implementing%20all%20CSS%20tooltips" target="_blank" class="muted reddit-link js-ga-event-tracking" data-ga-category="share button" data-ga-action="share" data-ga-label="reddit"><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="512" height="432.065" viewBox="0 0 512 432.065"><path d="M512 210.283c0-32.53-26.484-58.987-58.99-58.987-14.086 0-27.267 5.152-37.9 14.166-.335.21-.692.41-1.028.63-38.358-24.542-89.228-40.214-145.495-42.34l33.58-95.5 83.822 20.04c.066 26.497 21.625 48.04 48.154 48.04 26.552 0 48.166-21.6 48.166-48.16C482.31 21.603 460.695 0 434.144 0c-20.185 0-37.42 12.48-44.57 30.082L290.26 6.348l-41.24 117.188c-58.673 1.103-111.843 16.98-151.632 42.343-10.712-9.294-24.077-14.59-38.423-14.59C26.44 151.29 0 177.753 0 210.278c0 20.117 10.383 38.705 27.202 49.523-1.024 5.864-1.675 11.807-1.675 17.86 0 85.138 103.19 154.404 230.018 154.404 126.857 0 230.05-69.267 230.05-154.403 0-5.87-.593-11.645-1.554-17.353 17.27-10.74 27.96-29.594 27.96-50.024zm-178.232 76.37c-20.018 0-36.226-16.207-36.226-36.252 0-20.006 16.208-36.225 36.226-36.225 20.017 0 36.26 16.22 36.26 36.226-.002 20.046-16.244 36.254-36.26 36.254zm7.215 61.792c-1.095 1.117-27.077 27.58-85.844 27.58-59.097 0-82.717-26.82-83.708-27.972-3.312-3.876-2.86-9.74 1.02-13.058 3.87-3.295 9.676-2.87 13.027.95.526.59 20.245 21.558 69.66 21.558 50.23 0 72.282-21.715 72.517-21.927 3.552-3.642 9.417-3.71 13.07-.156 3.64 3.542 3.775 9.328.256 13.025zM146.24 250.4c0-20.006 16.203-36.225 36.254-36.225 19.983 0 36.226 16.22 36.226 36.226 0 20.046-16.242 36.254-36.226 36.254-20.045 0-36.253-16.208-36.253-36.253z"/></svg> Reddit</a>
+    <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fjonrohan.codes%2Ffieldnotes%2Fimplementing-an-all-css-tooltip&text=Implementing%20all%20CSS%20tooltips&via=jonrohan" target="_blank" class="muted twitter-link js-ga-event-tracking" data-ga-category="share button" data-ga-action="share" data-ga-label="twitter"><svg class="icon" width="472" height="384" viewBox="0 0 472 384" xmlns="http://www.w3.org/2000/svg"><title>Shape</title><path d="M472 45.5c-17.4 7.7-36 12.9-55.6 15.3 20-12 35.4-31 42.6-53.6-18.7 11.1-39.4 19.2-61.5 23.5C379.8 11.8 354.6 0 326.8 0 273.3 0 230 43.4 230 96.9c0 7.6.8 15 2.5 22.1C152 115 80.6 76.4 32.9 17.7c-8.3 14.3-13.1 31-13.1 48.7 0 33.6 17.2 63.3 43.2 80.7-16-.4-31-4.8-44-12.1v1.2c0 47 33.4 86.1 77.7 95-8.1 2.2-16.7 3.4-25.5 3.4-6.2 0-12.3-.6-18.2-1.8 12.3 38.5 48.1 66.5 90.5 67.3-33.1 26-74.9 41.5-120.3 41.5-7.8 0-15.5-.5-23.1-1.4C42.8 368 93.7 384 148.3 384 326.6 384 424 236.3 424 108.2c0-4.2-.1-8.4-.3-12.5C442.6 82 459 65 472 45.5z" fill-rule="evenodd"/></svg> Twitter</a>
+  </span>
+</span>
+
+  </p>
+  <section class="markdown-body clearfix" itemprop="articleBody">
+    
+<p>GitHub’s UI is a complex system of actions, notes and complex meanings. As a result, we’ve leaned pretty hard on tooltips. Since the site first launched we used a tooltip plugin called <a href="https://github.com/jaz303/tipsy">tipsy</a>.</p>
+
+<h3 id="tipsy">Tipsy</h3>
+
+<p>Tipsy, <em>now unmaintained</em>, was a jQuery plugin to replicate Facebook’s tooltip styles. Back then it was simple to add to the site, we dropped it in, and kept it around for a while.</p>
+
+<p>Last year I began to turn a <img class="emoji" title=":mag:" alt=":mag:" src="https://assets.github.com/images/icons/emoji/unicode/1f50d.png" height="20" width="20" align="absmiddle" /> critical eye to tipsy. We were focusing on front-end performance and were trimming all excess javascript events. What I found was we were firing sometimes hundreds of <code>mouseover</code> &amp; <code>mouseout</code> events on pages that had a lot of tooltips.</p>
+
+<p>We knew then that we wanted to kill tipsy from our site, but the only hope we had was to make a fully CSS solution.</p>
+
+<h3 id="hintcss">Hint.css</h3>
+
+<p>It was about this time that a library was released on GitHub. <a href="http://kushagragour.in/lab/hint/">Hint.css</a>, is <em>”..a tooltip library written in SASS which uses only HTML/CSS to create simple tooltips.”</em> This was a very interesting development and perfect timing because we were considering a tooltip replacement. Hint promised to be everything we wanted.</p>
+
+<p>We investigated and found that Hint.css is a very elegant solution, but didn’t match our tooltip style. More specifically, we wanted tooltips that centered on content.</p>
+
+<h3 id="hint-vs-tipsy">Hint vs Tipsy</h3>
+
+<p>I didn’t want to have to redesign our tooltips or figure out how they fit on all the different places we scattered them. The fact that Hint.css, <em>at the time</em>, only showed tooltips from the top left or bottom left made using it a non-starter.</p>
+
+<figure class="post-image image-style-full">
+  <div class="image-wrap">
+  <img src="http://jonrohan.codes/assets/images/posts/css-tooltips/hintvstipsy.png" /></div>
+</figure>
+
+<h3 id="primercss-tooltips">Primer.css tooltips</h3>
+
+<p><em>“I was tinkering around and found a way we can replace tipsy with all css tooltips. I’ve already seen a couple of downside and upsides, but I will create a pull request with the advantages and disadvantages here. We can have a thread on if we really want to do this or not.”</em></p>
+
+<p>That’s how I started a pull request off where I had been working out a way to rebuild our tooltips with CSS. The breakthrough happened when I read about <code>translateX</code> which has pretty good <a href="#browser-support">browser support</a> now. Translate calculates the position based on the <a href="http://jonrohan.codes/fieldnotes/vertically-center-clipped-image/#a-fist-full-of-properties">object’s size</a>. The difficulty before was, we don’t know how wide the tooltips are going to be. We can’t position them in the old fashion where we offset with <code>margin-left: -50px;</code>.</p>
+
+<p>What we <a href="https://github.com/primer/primer/blob/f266ae3bd95137c0a0cf4f6703c61335721cfa56/scss/_tooltips.scss">ended up with</a>, was a hybrid of Hint and Tipsy.</p>
+
+<h3 id="replacing-717-tooltips">Replacing 717 tooltips</h3>
+
+<p>I’m not exaggerating when I say <strong>I replaced 717 tooltips</strong> across our codebase. This didn’t happen in one big swoop. And it wasn’t released to non-staff for a few weeks.</p>
+
+<p>The approach I took was to start out by making the new <a href="https://github.com/primer/primer/blob/f266ae3bd95137c0a0cf4f6703c61335721cfa56/scss/_tooltips.scss">Primer tooltips</a> and tipsy work side by side. To do this, I added a class to the body for all non-staff. <code>tipsy-tooltips</code>.</p>
+
+<pre><code class="language-coffee">$.observe '.tipsy-tooltips .tooltipped',
+  init:   -&gt;
+    el = $(this)
+    el.attr('aria-label', el.attr('title')) unless el.attr('aria-label')
+    el.tipsy {
+      gravity: gravity
+      title: 'aria-label'
+    }
+  add:    -&gt; $(this).tipsy 'enable'
+  remove: -&gt;
+    $(this).tipsy 'disable'
+    $.fn.tipsy.revalidate()
+</code></pre>
+
+<p>Doing this would turn on tipsy tooltips for anyone who had the <code>tipsy-tooltips</code> class.</p>
+
+<p>For GitHub staff, I had a conditional around the tooltip stylesheet bundle. Which would only add the css to the page if the user was staff.</p>
+
+<pre><code class="language-erb">&lt;%= stylesheet_bundle 'tooltipped' if css_tooltips_enabled? %&gt;
+</code></pre>
+
+<p>The strategy behind this was to give us the ability to find the bugs with the new system before shipping it to the public.</p>
+
+<hr />
+
+<h3 id="advantages">Advantages</h3>
+
+<p>There were going to be trade-offs in going from a JS based tooltip solution to a CSS based solution. I wanted to list the advantages and disadvantages to see if the benefits outweighed the trade-offs.</p>
+
+<h4 id="performance">Performance</h4>
+
+<p>This was the first question in my head, because we’re doing a bunch of transformations and transitions with the css version it’s unclear that it’s really a win. But early diagnostics look good! Here’s the mouse hovering over the collapsed repository sidebar tipsy vs. primer css tooltips.</p>
+
+<figure class="post-image image-style-full">
+  <div class="image-wrap">
+  <img class="zoom-image js-zoom-image" alt="Tipsy repaints in the Chrome devtools event timeline" src="http://jonrohan.codes/assets/images/posts/css-tooltips/repaint-before.png" /></div>
+  <figcaption class="image-caption">Tipsy repaints in the Chrome devtools event timeline</figcaption>
+</figure>
+
+<p>In the tipsy timeline, you can see at the top there are spikes that are shooting into the 30fps range. This causes <a href="http://jankfree.org/">jank</a> hovering and scrolling on some of our larger pages.</p>
+
+<p>Notice also the yellow bar that occurs at the beginning of the event waterfall. This is the time it takes for the JS mouseover event to fire and move the tooltip into position.</p>
+
+<figure class="post-image image-style-full">
+  <div class="image-wrap">
+  <img class="zoom-image js-zoom-image" alt="Primer css tooltip repaints in the Chrome devtools event timeline" src="http://jonrohan.codes/assets/images/posts/css-tooltips/repaint-after.png" /></div>
+  <figcaption class="image-caption">Primer css tooltip repaints in the Chrome devtools event timeline</figcaption>
+</figure>
+
+<p>For comparison here is the Primer.css tooltip timeline. All of the actions remain in the 60fps <img class="emoji" title=":sparkles:" alt=":sparkles:" src="https://assets.github.com/images/icons/emoji/unicode/2728.png" height="20" width="20" align="absmiddle" />.</p>
+
+<p>I was also looking into the paint rectangles that happen when tipsy was fired, versus primer.css tooltips.</p>
+
+<figure class="post-image image-style-full">
+  <div class="image-wrap">
+  <img src="http://jonrohan.codes/assets/images/posts/css-tooltips/paint-calcs-before.png" /></div>
+</figure>
+
+<p>Tipsy’s paint triangle was the whole screen. I believe because the tooltip is moved off screen and repositioned after every hover.</p>
+
+<figure class="post-image image-style-full">
+  <div class="image-wrap">
+  <img src="http://jonrohan.codes/assets/images/posts/css-tooltips/paint-calcs-after.png" /></div>
+</figure>
+
+<p>The fully css tooltips had very little screen repaints.</p>
+
+<h4 id="flexibility">Flexibility</h4>
+
+<figure class="post-image image-style-smallest">
+  <div class="image-wrap">
+  <img class="zoom-image js-zoom-image" src="http://jonrohan.codes/assets/images/posts/css-tooltips/focus.gif" /></div>
+  <figcaption class="image-caption">Tooltips on <code>:focus</code></figcaption>
+</figure>
+
+<p>There was more flexibility with how and when we triggered the tooltips.</p>
+
+<p>We could easily add <code>:focus</code> triggers for the tooltips without adding more js events to them.</p>
+
+<p>Even adding transitions and delays to the tooltips. Delays could be useful if we didn’t want the tooltips to appear right away. Giving the UX a more natural feel.</p>
+
+<hr />
+
+<h3 id="disadvantages">Disadvantages</h3>
+
+<p>There were some disadvantages that caused us to rework some of our code.</p>
+
+<h4 id="overflow-hidden">Overflow hidden</h4>
+
+<p>This was one of the biggest trade-offs we had to overcome. There are many reasons you may want to use <code>overflow: hidden;</code> or scroll. We do this in our issue comments, and in a lot of places that traditional <a href="http://jonrohan.codes/fieldnotes/clear-fixes/#post">clearfix</a> fixes won’t work.</p>
+
+<p>The problem is the tooltips were no longer global elements in the DOM. They now existed right along side the element that was triggering the tooltip. When these elements were inside a container that had <code>overflow:hidden;</code> applied to it, you would get clipped content and not see the full tooltip or sometimes none of it.</p>
+
+<p>With tipsy we didn’t have this problem, because tipsy creates a global tooltip that it reuses for every element. The global tooltip element lives at the bottom of the page, placing it safe from clipping.</p>
+
+<h4 id="before-after-collisions"><code>:before, :after</code> collisions</h4>
+
+<p>Anytime we used <code>.tooltipped</code> classes in conjunction with another class that used the <code>:before, :after</code> pseudo-selectors we had collisions. This meant that we couldn’t use the <code>.tooltipped</code> class with our <a href="https://github.com/blog/1106-say-hello-to-octicons">octicons</a>, clearfix or a few other minor places we used <code>:before</code> and <code>:after</code>.</p>
+
+<p>We would get around this by separating these to separate elements.</p>
+
+<h4 id="title-attributes">title attributes</h4>
+
+<figure class="post-image image-style-smallest">
+  <div class="image-wrap">
+  <img class="zoom-image js-zoom-image" src="http://jonrohan.codes/assets/images/posts/css-tooltips/title-conflict.png" /></div>
+  <figcaption class="image-caption">Native tooltips and css tooltips all together.</figcaption>
+</figure>
+
+<p>The way that tipsy worked was it used the already defined <code>title=</code> attribute on an element, grab the data within, destroy the <code>title=</code> attribute, then display the tooltip. This was how it got around displaying both the native tooltip and the tipsy tooltip.</p>
+
+<p>That is a lot of logic that we couldn’t accomplish with pure CSS tooltips. We ended up using <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-label_attribute">aria-label</a> instead. Which would not display a native tooltip, but would add context for users with accessibility issues. <em>“The aria-label attribute is used to define a string that labels the current element. Use it in cases where a text label is not visible on the screen.”</em></p>
+
+<p>What seemed like a disadvantage turned out to be an advantage. Our site was now getting more accessible.</p>
+
+<hr />
+
+<h3 id="going-live">Going live</h3>
+
+<p>After all the bugs <img class="emoji" title=":bug:" alt=":bug:" src="https://assets.github.com/images/icons/emoji/unicode/1f41b.png" height="20" width="20" align="absmiddle" /> were squashed, we decided that it was ready for everyone. Before shipping, we began tracking window performance with <code>window.performance</code> to see the results.</p>
+
+<figure class="post-image image-style-full">
+  <div class="image-wrap">
+  <img class="zoom-image js-zoom-image" src="http://jonrohan.codes/assets/images/posts/css-tooltips/slow-js-events.png" /></div>
+  <figcaption class="image-caption">When we turned on the all css tooltips this was the performance graph of slow mouseover events</figcaption>
+</figure>
+
+<p>The graphs looked GREAT! When we turned on the css tooltips, slow mouseover js events went from around 30,000 an hour to almost 0.</p>
+
+    
+
+
+<h5 id="browser-support">Support for <a href="http://caniuse.com/#feat=transforms2d">CSS3 Transforms</a></h5>
+<table class="browser-support-table">
+  <thead>
+    <tr>
+      <th>
+        IE
+      </th>
+      <th>
+        Firefox
+      </th>
+      <th>
+        Chrome
+      </th>
+      <th>
+        Safari
+      </th>
+      <th>
+        Android
+      </th>
+      <th>
+        iOS
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="caniuse--true">
+        9+
+      </td>
+      <td class="caniuse--true">
+        3.5+
+      </td>
+      <td class="caniuse--true">
+        4+
+      </td>
+      <td class="caniuse--true">
+        3.1+
+      </td>
+      <td class="caniuse--true">
+        2.1+
+      </td>
+      <td class="caniuse--true">
+        3.2+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+<small class="browser-support-foot">Browser support data provided by <a href="http://caniuse.com/">caniuse.com</a>, updated <time is="time-ago" datetime="2015-05-18T02:21:17-04:00">May 18, 2015</time></small>
+
+
+  </section>
+
+  <p id="a" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+    <span class="post-meta">Tagged in:</span>
+    <a href="/fieldnotes" itemprop="url" class="category-tag"><span itemprop="title">fieldnotes</span></a>
+    <a href="/tag/css/" class="category-tag">css</a><a href="/tag/github/" class="category-tag">github</a>
+  </p>
+</article>
+<div class="post-page-foot clearfix">
+  <span class="right share-wrap">
+
+
+
+
+
+<span class="menu-wrapper">
+  <span class="share-button js-ga-event-tracking" data-ga-category="share button" data-ga-action="toggle"><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><path d="M352 377.9H102.4V198.2h57.5s14.1-19.7 42.7-38.2H83.2c-10.6 0-19.2 8.5-19.2 19.1V397c0 10.5 8.6 19.1 19.2 19.1h288c10.6 0 19.2-8.5 19.2-19.1V288L352 319.4v58.5zM320 224v63.9l128-95.5L320 96v59.7C165.2 155.7 160 320 160 320c43.8-71.5 76-96 160-96z"/></svg>Share</span>
+  <span class="menu">
+    <a href="https://news.layervault.com/submit?url=http%3A%2F%2Fjonrohan.codes%2Ffieldnotes%2Fimplementing-an-all-css-tooltip&title=Implementing%20all%20CSS%20tooltips" target="_blank" class="muted designer-news-link js-ga-event-tracking" data-ga-category="share button" data-ga-action="share" data-ga-label="dn"><svg class="icon" width="448" height="320" viewBox="0 0 448 320" xmlns="http://www.w3.org/2000/svg"><title>social-designernews</title><path d="M258.4 49L195 0l63.6 102.2-.2-53.2z" id="Shape"/><path d="M297 0v163h-36.4l-63.2-98.6 1.7 98.6H159V56l-37.3-29.3c1 1.2 2 2.4 2.9 3.7 10 13.9 15 30.5 15 50.5 0 49.2-30.6 82.1-76.9 82.1H0v.4L199.6 320H448V118.1L297 0z" id="Shape"/><path d="M97.9 82.1c0-29-14.2-45.1-39.7-45.1H39v89h19c26 0 39.9-15.4 39.9-43.9z"/></svg> Designer News</a>
+    
+    
+    <a href="https://news.ycombinator.com/submitlink?u=http%3A%2F%2Fjonrohan.codes%2Ffieldnotes%2Fimplementing-an-all-css-tooltip&t=Implementing%20all%20CSS%20tooltips" target="_blank" class="muted hacker-news-link js-ga-event-tracking" data-ga-category="share button" data-ga-action="share" data-ga-label="hn"><svg class="icon" width="384" height="384" viewBox="0 0 384 384" xmlns="http://www.w3.org/2000/svg"><title>social-hacker-news</title><path d="M352 32v320H32V32h320zm32-32H0v384h384V0z" id="Shape"/><path d="M232.7 95H278l-63.9 120v72h-39.9v-72L108 95h47.1l39.7 83.6L232.7 95z"/></svg> Hacker News</a>
+    <a href="http://www.reddit.com/submit?url=http%3A%2F%2Fjonrohan.codes%2Ffieldnotes%2Fimplementing-an-all-css-tooltip&title=Implementing%20all%20CSS%20tooltips" target="_blank" class="muted reddit-link js-ga-event-tracking" data-ga-category="share button" data-ga-action="share" data-ga-label="reddit"><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="512" height="432.065" viewBox="0 0 512 432.065"><path d="M512 210.283c0-32.53-26.484-58.987-58.99-58.987-14.086 0-27.267 5.152-37.9 14.166-.335.21-.692.41-1.028.63-38.358-24.542-89.228-40.214-145.495-42.34l33.58-95.5 83.822 20.04c.066 26.497 21.625 48.04 48.154 48.04 26.552 0 48.166-21.6 48.166-48.16C482.31 21.603 460.695 0 434.144 0c-20.185 0-37.42 12.48-44.57 30.082L290.26 6.348l-41.24 117.188c-58.673 1.103-111.843 16.98-151.632 42.343-10.712-9.294-24.077-14.59-38.423-14.59C26.44 151.29 0 177.753 0 210.278c0 20.117 10.383 38.705 27.202 49.523-1.024 5.864-1.675 11.807-1.675 17.86 0 85.138 103.19 154.404 230.018 154.404 126.857 0 230.05-69.267 230.05-154.403 0-5.87-.593-11.645-1.554-17.353 17.27-10.74 27.96-29.594 27.96-50.024zm-178.232 76.37c-20.018 0-36.226-16.207-36.226-36.252 0-20.006 16.208-36.225 36.226-36.225 20.017 0 36.26 16.22 36.26 36.226-.002 20.046-16.244 36.254-36.26 36.254zm7.215 61.792c-1.095 1.117-27.077 27.58-85.844 27.58-59.097 0-82.717-26.82-83.708-27.972-3.312-3.876-2.86-9.74 1.02-13.058 3.87-3.295 9.676-2.87 13.027.95.526.59 20.245 21.558 69.66 21.558 50.23 0 72.282-21.715 72.517-21.927 3.552-3.642 9.417-3.71 13.07-.156 3.64 3.542 3.775 9.328.256 13.025zM146.24 250.4c0-20.006 16.203-36.225 36.254-36.225 19.983 0 36.226 16.22 36.226 36.226 0 20.046-16.242 36.254-36.226 36.254-20.045 0-36.253-16.208-36.253-36.253z"/></svg> Reddit</a>
+    <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fjonrohan.codes%2Ffieldnotes%2Fimplementing-an-all-css-tooltip&text=Implementing%20all%20CSS%20tooltips&via=jonrohan" target="_blank" class="muted twitter-link js-ga-event-tracking" data-ga-category="share button" data-ga-action="share" data-ga-label="twitter"><svg class="icon" width="472" height="384" viewBox="0 0 472 384" xmlns="http://www.w3.org/2000/svg"><title>Shape</title><path d="M472 45.5c-17.4 7.7-36 12.9-55.6 15.3 20-12 35.4-31 42.6-53.6-18.7 11.1-39.4 19.2-61.5 23.5C379.8 11.8 354.6 0 326.8 0 273.3 0 230 43.4 230 96.9c0 7.6.8 15 2.5 22.1C152 115 80.6 76.4 32.9 17.7c-8.3 14.3-13.1 31-13.1 48.7 0 33.6 17.2 63.3 43.2 80.7-16-.4-31-4.8-44-12.1v1.2c0 47 33.4 86.1 77.7 95-8.1 2.2-16.7 3.4-25.5 3.4-6.2 0-12.3-.6-18.2-1.8 12.3 38.5 48.1 66.5 90.5 67.3-33.1 26-74.9 41.5-120.3 41.5-7.8 0-15.5-.5-23.1-1.4C42.8 368 93.7 384 148.3 384 326.6 384 424 236.3 424 108.2c0-4.2-.1-8.4-.3-12.5C442.6 82 459 65 472 45.5z" fill-rule="evenodd"/></svg> Twitter</a>
+  </span>
+</span>
+</span>
+  <img src="http://jonrohan.codes/assets/images/avatar.png" alt="jonrohan" class="avatar" width="50" height="50">
+  This post was hastily written by
+  <span class="author-name">Jon Rohan</span>
+</div>
+
+<hr>
+<div class="clearfix next-previous">
+  
+  
+  <a href="http://jonrohan.codes/fieldnotes/vertically-center-clipped-image/#post" class="left"><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><path d="M213.7 256L380.9 81.9c4.2-4.3 4.1-11.4-.2-15.8l-29.9-30.6c-4.3-4.4-11.3-4.5-15.5-.2L131.1 247.9c-2.2 2.2-3.2 5.2-3 8.1-.1 3 .9 5.9 3 8.1l204.2 212.7c4.2 4.3 11.2 4.2 15.5-.2l29.9-30.6c4.3-4.4 4.4-11.5.2-15.8L213.7 256z"/></svg> How to vertically center a clipped image in CSS</a>
+  
+</div>
+
+
+<hr>
+<h4>Related Posts</h4>
+
+<a href="http://jonrohan.codes/fieldnotes/a-big-update-to-this-site/#post" class="next-post">
+  <h3>A big update to this site</h3>
+  I recently updated this site. I wanted to share what I was using to build this site. With details on what each thing is good for.
+</a>
+
+<a href="http://jonrohan.codes/fieldnotes/primer-css-styleguide/#post" class="next-post">
+  <h3>Primer CSS Styleguide</h3>
+  We recently open sourced Primer, because we wanted to be transparent with our styleguide and if anyone could get any use out of it we would like to share. The toolkit isn’t meant to be a full fledged CSS framework like Bootstrap.
+</a>
+
+<a href="http://jonrohan.codes/fieldnotes/dead-simple-git-workflow-for-agile-teams/#post" class="next-post">
+  <h3>Dead Simple Git Workflow</h3>
+  Recently I have had the privilege to work with a few excellent small agile teams. With each team, they have their own process, which works best for them. And there's nothing wrong with that, a team should work in it's most effective way. But I came across a team recently that had a workflow that really impressed me. It is described as an extremely cool Git workflow.
+</a>
+
+
+
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+    </article>
+
+    <footer>
+      <div class="container">
+        <div class="columns">
+          <dl class="column one-third">
+            <dt>Links</dt>
+            <dd>
+              <ul class="footer-links">
+                <li><a href="http://jonrohan.codes/fieldnotes/">Blog</a></li>
+                <li><a href="http://jonrohan.codes/appearances/">Appearances</a></li>
+                <li><a href="http://jonrohan.codes/code/">Projects</a></li>
+                <li><a href="http://jonrohan.codes/atom.xml">RSS Feed</a></li>
+              </ul>
+            </dd>
+          </dl>
+          <dl class="column one-third">
+            <dt>Connect</dt>
+            <dd>
+              <ul class="footer-links">
+                <li><a href="https://twitter.com/jonrohan" class="twitter-link"><svg class="icon" width="472" height="384" viewBox="0 0 472 384" xmlns="http://www.w3.org/2000/svg"><title>Shape</title><path d="M472 45.5c-17.4 7.7-36 12.9-55.6 15.3 20-12 35.4-31 42.6-53.6-18.7 11.1-39.4 19.2-61.5 23.5C379.8 11.8 354.6 0 326.8 0 273.3 0 230 43.4 230 96.9c0 7.6.8 15 2.5 22.1C152 115 80.6 76.4 32.9 17.7c-8.3 14.3-13.1 31-13.1 48.7 0 33.6 17.2 63.3 43.2 80.7-16-.4-31-4.8-44-12.1v1.2c0 47 33.4 86.1 77.7 95-8.1 2.2-16.7 3.4-25.5 3.4-6.2 0-12.3-.6-18.2-1.8 12.3 38.5 48.1 66.5 90.5 67.3-33.1 26-74.9 41.5-120.3 41.5-7.8 0-15.5-.5-23.1-1.4C42.8 368 93.7 384 148.3 384 326.6 384 424 236.3 424 108.2c0-4.2-.1-8.4-.3-12.5C442.6 82 459 65 472 45.5z" fill-rule="evenodd"/></svg> @jonrohan</a></li>
+                <li><a href="https://dribbble.com/jonrohan" class="dribbble-link"><svg class="icon" width="384" height="384" viewBox="0 0 384 384" xmlns="http://www.w3.org/2000/svg"><title>social-dribbble</title><path d="M192 0C86 0 0 86 0 192c0 106.1 86 192 192 192s192-85.9 192-192C384 86 298 0 192 0zm121.9 88.5c21.6 25.4 35.3 57.6 37.7 92.9-34.6-1.8-76-1.8-109.2 1.3-4.2-10.6-8.5-21-13.2-31 38.3-16.6 67.8-38.4 84.7-63.2zM192 32c38.8 0 74.4 13.8 102.1 36.8-17.4 22-44.7 41.1-78.7 55.6-18.6-34.4-40-64-62.8-87.3 12.7-3.2 25.8-5.1 39.4-5.1zm-72.4 17.5c23.1 23 44.8 52.3 63.8 86.6-36.1 11-77.5 17.3-121.7 17.3-8.4 0-16.6-.3-24.7-.8 11.5-45.1 42-82.5 82.6-103.1zM32.3 184.4c9.1.4 18.3.6 27.6.5 50.4-.6 97.3-8.5 137.6-21.4 3.8 7.9 7.4 16 10.8 24.3-5.5 1.3-10.4 2.7-14.3 4.3-55.1 23.1-98.5 60.4-122 105.5-24.8-28.2-40-65.1-40-105.6 0-2.6.1-5.1.3-7.6zM192 352c-37 0-71-12.6-98.1-33.7 21.3-42.2 59.3-77.1 107.2-98.8 4.5-2.1 10.5-3.8 17.4-5.3 5.7 15.8 10.8 32.2 15.3 49.2 6.9 26.5 11.8 52.7 14.8 78.1C231 348.2 212 352 192 352zm86.5-25.5c-3-25.7-7.9-52.1-14.9-78.9-3.4-13-7.3-25.6-11.5-37.9 31.4-2.6 69-2.2 98.9 0-5.4 49.1-33 91.3-72.5 116.8z" fill-rule="evenodd"/></svg> Jon Rohan</a></li>
+                <li><a href="https://github.com/jonrohan" class="github-link"><svg class="icon" height="1024" width="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M512 0C229.252 0 0 229.252 0 512c0 226.25 146.688 418.126 350.155 485.813 25.593 4.686 34.937-11.125 34.937-24.626 0-12.188-.47-52.562-.718-95.314-128.708 23.46-161.707-31.54-172.47-60.373-5.524-14.81-30.406-60.25-52.397-72.263-17.988-9.828-43.26-33.237-.917-33.735 40.434-.476 69.348 37.308 78.47 52.75 45.94 77.75 119.877 55.627 149 42.5 4.654-33 17.902-55.627 32.5-68.373-113.656-12.94-233.22-56.877-233.22-253.065 0-55.94 19.97-101.56 52.66-137.404-5.22-13-22.845-65.094 5.062-135.562 0 0 42.937-13.75 140.81 52.5 40.812-11.406 84.595-17.03 128.125-17.22 43.5.188 87.314 5.874 128.188 17.28 97.69-66.31 140.686-52.5 140.686-52.5 28 70.53 10.377 122.563 5.126 135.498 32.81 35.844 52.626 81.468 52.626 137.404 0 196.686-119.75 240-233.812 252.686 18.44 15.876 34.748 47 34.748 94.748 0 68.437-.686 123.627-.686 140.5 0 13.626 9.312 29.562 35.25 24.563C877.436 929.997 1024 738.125 1024 512 1024 229.252 794.748 0 512 0z"/></svg> jonrohan</a></li>
+                <li><a href="#" class="js-em"><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><path d="M67 148.7c11 5.8 163.8 89.1 169.5 92.1 5.7 3 11.5 4.4 20.5 4.4s14.8-1.4 20.5-4.4c5.7-3 158.5-86.3 169.5-92.1 4.1-2.1 11-5.9 12.5-10.2 2.6-7.6-.2-10.5-11.3-10.5H65.8c-11.1 0-13.9 3-11.3 10.5 1.5 4.4 8.4 8.1 12.5 10.2z"/><path d="M455.7 153.2c-8.2 4.2-81.8 56.6-130.5 88.1l82.2 92.5c2 2 2.9 4.4 1.8 5.6-1.2 1.1-3.8.5-5.9-1.4l-98.6-83.2c-14.9 9.6-25.4 16.2-27.2 17.2-7.7 3.9-13.1 4.4-20.5 4.4s-12.8-.5-20.5-4.4c-1.9-1-12.3-7.6-27.2-17.2L110.7 338c-2 2-4.7 2.6-5.9 1.4-1.2-1.1-.3-3.6 1.7-5.6l82.1-92.5c-48.7-31.5-123.1-83.9-131.3-88.1-8.8-4.5-9.3.8-9.3 4.9v205c0 9.3 13.7 20.9 23.5 20.9h371c9.8 0 21.5-11.7 21.5-20.9v-205c0-4.2.6-9.4-8.3-4.9z"/></svg> email</a></li>
+              </ul>
+            </dd>
+          </dl>
+          <dl class="column one-third blurb-block">
+            <dt>Blurb</dt>
+            <dd>
+              <p class="blurb-desc">I am a Web Designer and Developer working at GitHub. My passion is building beautiful products and working with wonderful people.</p>
+              <p class="blurb-desc">For info on how this <a href="http://jonrohan.codes/fieldnotes/a-big-update-to-this-site/">site was built</a>.</p>
+            </dd>
+          </dl>
+        </div>
+        <p class="text-center">&copy; 2015 Jon Rohan</p>
+      </div>
+    </footer>
+    <div class="modal-screen js-image-modal hidden">
+      <div class="image-window js-image-window"></div>
+    </div>
+    <script type="application/ld+json">
+{ "@context" : "http://schema.org",
+  "@type" : "Person",
+  "name" : "Jon Rohan",
+  "url" : "http://jonrohan.codes",
+  "sameAs" : [
+    "https://www.facebook.com/jonrohan",
+    "http://www.linkedin.com/in/jonrohan",
+    "http://twitter.com/jonrohan",
+    "https://github.com/jonrohan",
+    "https://dribbble.com/jonrohan"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{  "@context" : "http://schema.org",
+   "@type" : "WebSite",
+   "name" : "Jon Rohan Codes",
+   "alternateName" : "Jon Rohan Code Blog",
+   "url" : "http://jonrohan.codes"
+}
+</script>
+<script src="http://jonrohan.codes/assets/js/lib.js"></script>
+<script src="http://jonrohan.codes/assets/js/index.js"></script>
+
+  </body>
+</html>
