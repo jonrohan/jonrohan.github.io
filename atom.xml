@@ -340,7 +340,7 @@
   &lt;li&gt;&lt;a href=&quot;#jekyll&quot;&gt;jekyll&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#normalize&quot;&gt;normalize&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#primer&quot;&gt;primer&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#time-elements&quot;&gt;time-elements&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#momentjs&quot;&gt;moment.js&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#typekit&quot;&gt;typekit&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -372,9 +372,9 @@
 
 &lt;p&gt;I’m using &lt;a href=&quot;http://primercss.io/&quot;&gt;primer’s&lt;/a&gt; grid and markdown styles. Because sometimes you don’t really need to re-invent something that is great.&lt;/p&gt;
 
-&lt;h4 id=&quot;time-elements&quot;&gt;time-elements&lt;/h4&gt;
+&lt;h4 id=&quot;momentjs&quot;&gt;Moment.js&lt;/h4&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/github/time-elements&quot;&gt;time-elements.js&lt;/a&gt; is a way to take a date &lt;code&gt;2014-04-01T16:30:00-08:00&lt;/code&gt; and turn it into something like &lt;code&gt;2 years ago&lt;/code&gt;. Jekyll doesn’t include this sort of date calculation, but I wanted to have something and this worked.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://momentjs.com/&quot;&gt;Moment.js&lt;/a&gt; is a way to take a date &lt;code&gt;2014-04-01T16:30:00-08:00&lt;/code&gt; and turn it into something like &lt;code&gt;2 years ago&lt;/code&gt;. Jekyll doesn’t include this sort of date calculation, but I wanted to have something and this worked.&lt;/p&gt;
 
 &lt;h4 id=&quot;typekit&quot;&gt;typekit&lt;/h4&gt;
 
