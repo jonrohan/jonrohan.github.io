@@ -76,4 +76,12 @@
     return $('.js-image-modal').toggleClass('hidden');
   });
 
+  $(document).ready(function() {
+    return $("[is='time-ago']").each(function() {
+      var datetime;
+      datetime = $(this).attr("datetime");
+      return $(this).attr("title", datetime).text(moment(datetime).fromNow());
+    });
+  });
+
 }).call(this);
