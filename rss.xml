@@ -1176,5 +1176,376 @@ git branch -d <span class="k">${</span><span class="nv">CURRENT</span><span clas
     </item>
     
 
+    
+    
+    <item>
+      <title>GitHub Integrations Directory</title>
+      <link>https://github.com/blog/2068-find-and-install-your-favorite-developer-tools</link>
+      <guid isPermaLink="true">https://github.com/blog/2068-find-and-install-your-favorite-developer-tools</guid>
+      <pubDate>Thu, 01 Oct 2015 01:00:00 -0400</pubDate>
+      <description>&lt;p&gt;We shipped an Integrations directory for application makers on GitHub.&lt;/p&gt;
+</description>
+      <category>link</category>
+      <category>ship</category>
+    </item>
+    
+    <item>
+      <title>Updated syntax highlighting theme</title>
+      <link>https://github.com/blog/1932-syntax-highlighted-diffs</link>
+      <guid isPermaLink="true">https://github.com/blog/1932-syntax-highlighted-diffs</guid>
+      <pubDate>Tue, 09 Dec 2014 00:00:00 -0500</pubDate>
+      <description>&lt;p&gt;When we launched syntax highlighted diffs, we needed to rewrite our pygments processor because of the extra processing power that it required. This gave us the opportunity to rethink the theme. We redesigned the colors with readability in mind for red/green highlighted lines in diffs.&lt;/p&gt;
+</description>
+      <category>link</category>
+      <category>ship</category>
+    </item>
+    
+    <item>
+      <title>GitHub's Explore Email</title>
+      <link>https://github.com/blog/1681-subscribe-to-github-s-explore-email</link>
+      <guid isPermaLink="true">https://github.com/blog/1681-subscribe-to-github-s-explore-email</guid>
+      <pubDate>Mon, 11 Nov 2013 00:00:00 -0500</pubDate>
+      <description>&lt;p&gt;After shipping &lt;a href=&quot;/appearances/#github-trending&quot;&gt;GitHub Trending&lt;/a&gt;, I had a lot of developers asking to be able to subscribe to the trending list. I created the explore email to give developers snapshots of activity daily, weekly or monthly.&lt;/p&gt;
+</description>
+      <category>link</category>
+      <category>ship</category>
+    </item>
+    
+    <item>
+      <title>GitHub Trending</title>
+      <link>https://github.com/blog/1585-explore-what-is-trending-on-github</link>
+      <guid isPermaLink="true">https://github.com/blog/1585-explore-what-is-trending-on-github</guid>
+      <pubDate>Tue, 13 Aug 2013 01:00:00 -0400</pubDate>
+      <description>&lt;p&gt;I shipped GitHub’s &lt;a href=&quot;https://github.com/trending&quot;&gt;trending&lt;/a&gt; section designing and developing it. The trending section was the first of a number of improvement’s to GitHub’s explore sections of the site.&lt;/p&gt;
+</description>
+      <category>link</category>
+      <category>ship</category>
+    </item>
+    
+    <item>
+      <title>GitHub Repository Search</title>
+      <link>https://github.com/blog/1492-repository-search-on-all-repositories</link>
+      <guid isPermaLink="true">https://github.com/blog/1492-repository-search-on-all-repositories</guid>
+      <pubDate>Mon, 06 May 2013 01:00:00 -0400</pubDate>
+      <description>&lt;p&gt;After launching &lt;a href=&quot;#global-github-search&quot;&gt;Global GitHub search&lt;/a&gt;, we focused our attention on updating repostory search, adding code search and issues search. I was the lead designer and front-end developer for this project.&lt;/p&gt;
+</description>
+      <category>link</category>
+      <category>ship</category>
+    </item>
+    
+    <item>
+      <title>Non Breaking Space Show #30</title>
+      <link>http://goodstuff.fm/nbsp/30</link>
+      <guid isPermaLink="true">http://goodstuff.fm/nbsp/30</guid>
+      <pubDate>Thu, 14 Mar 2013 01:00:00 -0400</pubDate>
+      <description>&lt;p&gt;I was invited to speak on the &lt;a href=&quot;https://twitter.com/nbsptv&quot;&gt;Non Breaking Space&lt;/a&gt; show about CSS performance. I was prompted because of a &lt;a href=&quot;#github-s-css-performance&quot;&gt;talk&lt;/a&gt; I gave on the subject.&lt;/p&gt;
+</description>
+      <category>link</category>
+      <category>podcast</category>
+    </item>
+    
+    <item>
+      <title>Global GitHub search</title>
+      <link>https://github.com/blog/1381-a-whole-new-code-search</link>
+      <guid isPermaLink="true">https://github.com/blog/1381-a-whole-new-code-search</guid>
+      <pubDate>Wed, 23 Jan 2013 00:00:00 -0500</pubDate>
+      <description>&lt;p&gt;This was a complete update to GitHub’s global search page. We updated the backend to elastic search, and updated the UI including creating an advanced search page. I was the lead designer on all of these changes.&lt;/p&gt;
+</description>
+      <category>link</category>
+      <category>ship</category>
+    </item>
+    
+    <item>
+      <title>GitHub's CSS Performance</title>
+      <link>https://speakerdeck.com/jonrohan/githubs-css-performance</link>
+      <guid isPermaLink="true">https://speakerdeck.com/jonrohan/githubs-css-performance</guid>
+      <pubDate>Wed, 05 Dec 2012 00:00:00 -0500</pubDate>
+      <description>&lt;p&gt;A talk I gave at the 2012 &lt;a href=&quot;http://2012.cssdevconf.com/&quot;&gt;CSS Dev conference&lt;/a&gt; about monitoring and fixing some performance problems on GitHub’s diff pages. I talked about lessons learned, tools used and rules for the future. The talk was also &lt;a href=&quot;https://vimeo.com/54990931&quot;&gt;recorded&lt;/a&gt;.&lt;/p&gt;
+</description>
+      <category>link</category>
+      <category>talk</category>
+    </item>
+    
+    <item>
+      <title>GitHub Notifications 2.0</title>
+      <link>https://github.com/blog/1204-notifications-stars</link>
+      <guid isPermaLink="true">https://github.com/blog/1204-notifications-stars</guid>
+      <pubDate>Mon, 06 Aug 2012 01:00:00 -0400</pubDate>
+      <description>&lt;p&gt;I helped ship what was the second iteration of GitHub notifications. The focus of a lot of the work was around subscribing to threads and the web notifications view.&lt;/p&gt;
+</description>
+      <category>link</category>
+      <category>ship</category>
+    </item>
+    
+    <item>
+      <title>The making of octicons</title>
+      <link>https://speakerdeck.com/jonrohan/say-hello-to-octicons</link>
+      <guid isPermaLink="true">https://speakerdeck.com/jonrohan/say-hello-to-octicons</guid>
+      <pubDate>Sat, 21 Jul 2012 01:00:00 -0400</pubDate>
+      <description>&lt;p&gt;Gave a joint talk with &lt;a href=&quot;http://cameronmcefee.com/&quot;&gt;Cameron McEfee&lt;/a&gt; about octicons at a &lt;a href=&quot;http://cascadesf.com/&quot;&gt;cascade sf&lt;/a&gt; event. This was a talk focused specifically after we &lt;a href=&quot;#say-hello-to-octicons&quot;&gt;launched octicons&lt;/a&gt;.&lt;/p&gt;
+</description>
+      <category>link</category>
+      <category>talk</category>
+    </item>
+    
+    <item>
+      <title>Say hello to octicons</title>
+      <link>https://github.com/blog/1106-say-hello-to-octicons</link>
+      <guid isPermaLink="true">https://github.com/blog/1106-say-hello-to-octicons</guid>
+      <pubDate>Wed, 09 May 2012 01:00:00 -0400</pubDate>
+      <description>&lt;p&gt;This was a blog post introducing GitHub’s new icon font, &lt;a href=&quot;https://octicons.github.com/&quot;&gt;Octicons&lt;/a&gt;. We did this because we wanted to make our site as HDpi as we could. Replacing the previous icon set with scallable ones was a win win.&lt;/p&gt;
+</description>
+      <category>link</category>
+      <category>ship</category>
+    </item>
+    
+
+    
+    
+    <item>
+      <title>Search iTunes hubot script</title>
+      <pubDate>Tue, 25 Aug 2015 01:30:23 -0400</pubDate>
+      <guid isPermaLink="true">https://github.com/jonrohan/hubot-itunes-search</guid>
+      <link>https://github.com/jonrohan/hubot-itunes-search</link>
+      <description>&lt;p&gt;A hubot script that searches iTunes for a song and returns a preview.&lt;/p&gt;
+</description>
+      <category>link</category>
+      <category>CoffeeScript</category>
+    </item>
+    
+    <item>
+      <title>Search for a ruby gem with hubot</title>
+      <pubDate>Sun, 23 Aug 2015 01:30:23 -0400</pubDate>
+      <guid isPermaLink="true">https://github.com/jonrohan/hubot-rubygems-search</guid>
+      <link>https://github.com/jonrohan/hubot-rubygems-search</link>
+      <description>&lt;p&gt;A hubot script that searches rubygems.org for a gem and returns latest info.&lt;/p&gt;
+</description>
+      <category>link</category>
+      <category>CoffeeScript</category>
+    </item>
+    
+    <item>
+      <title>Slack react me for hubot</title>
+      <pubDate>Wed, 19 Aug 2015 01:30:23 -0400</pubDate>
+      <guid isPermaLink="true">https://github.com/jonrohan/hubot-slack-reactions</guid>
+      <link>https://github.com/jonrohan/hubot-slack-reactions</link>
+      <description>&lt;p&gt;A hubot script for Slack that will search the API for messages with reactions.&lt;/p&gt;
+</description>
+      <category>link</category>
+      <category>CoffeeScript</category>
+    </item>
+    
+    <item>
+      <title>Primer</title>
+      <pubDate>Thu, 19 Mar 2015 19:31:21 -0400</pubDate>
+      <guid isPermaLink="true">http://primercss.io/</guid>
+      <link>http://primercss.io/</link>
+      <description>&lt;p&gt;The CSS toolkit and guidelines that power GitHub.&lt;/p&gt;
+</description>
+      <category>link</category>
+      <category>CSS</category>
+    </item>
+    
+    <item>
+      <title>Atom docs snippets</title>
+      <pubDate>Thu, 27 Feb 2014 00:30:23 -0500</pubDate>
+      <guid isPermaLink="true">https://github.com/jonrohan/docs-snippets</guid>
+      <link>https://github.com/jonrohan/docs-snippets</link>
+      <description>&lt;p&gt;Atom snippets for writing documentation.&lt;/p&gt;
+</description>
+      <category>link</category>
+      <category>CoffeeScript</category>
+    </item>
+    
+    <item>
+      <title>GitHub Pages time machine theme</title>
+      <pubDate>Mon, 08 Oct 2012 01:30:23 -0400</pubDate>
+      <guid isPermaLink="true">https://github.com/jonrohan/time-machine-theme</guid>
+      <link>https://github.com/jonrohan/time-machine-theme</link>
+      <description>&lt;p&gt;Created an official theme for the &lt;a href=&quot;https://help.github.com/articles/creating-pages-with-the-automatic-generator/&quot;&gt;GitHub pages automatic generator&lt;/a&gt;&lt;/p&gt;
+</description>
+      <category>link</category>
+      <category>CSS</category>
+    </item>
+    
+    <item>
+      <title>ZeroClipboard</title>
+      <pubDate>Thu, 12 Apr 2012 23:59:44 -0400</pubDate>
+      <guid isPermaLink="true">https://github.com/zeroclipboard/zeroclipboard</guid>
+      <link>https://github.com/zeroclipboard/zeroclipboard</link>
+      <description>&lt;p&gt;Copy to clipboard functionality.&lt;/p&gt;
+</description>
+      <category>link</category>
+      <category>JavaScript</category>
+    </item>
+    
+
+    
+    
+    <item>
+      <title>Personal styleguide</title>
+      <pubDate>Mon, 08 Jun 2015 12:30:37 -0000</pubDate>
+      <guid isPermaLink="true">https://dribbble.com/shots/2097371-Personal-styleguide</guid>
+      <link>https://dribbble.com/shots/2097371-Personal-styleguide</link>
+      <description>&lt;p&gt;This is my personal coding styleguide. I try to cover how I write HTML, CSS, JavaScript and Ruby.&lt;/p&gt;
+
+&lt;p&gt;I&#39;m still writing out more docs, but I think I&#39;ve pretty much nailed the design down.&lt;/p&gt;
+
+&lt;p&gt;Full site - &lt;a href=&quot;http://jonrohan.codes/styleguide/&quot; target=&quot;_blank&quot;&gt;http://jonrohan.codes/styleguide/&lt;/a&gt;&lt;/p&gt;</description>
+      <content:encoded><![CDATA[
+        <img src="https://d13yacurqjgara.cloudfront.net/users/2044/screenshots/2097371/screen_shot_2015-06-08_at_8.29.58_am_1x.png">
+        <p>This is my personal coding styleguide. I try to cover how I write HTML, CSS, JavaScript and Ruby.</p>
+
+<p>I'm still writing out more docs, but I think I've pretty much nailed the design down.</p>
+
+<p>Full site - <a href="http://jonrohan.codes/styleguide/" target="_blank">http://jonrohan.codes/styleguide/</a></p>
+      ]]></content:encoded>
+      <category>photo</category>
+      
+      <category>css</category>
+      
+      <category>docs</category>
+      
+      <category>hamburger icon</category>
+      
+      <category>html</category>
+      
+      <category>javascript</category>
+      
+      <category>ruby</category>
+      
+      <category>styleguide</category>
+      
+    </item>
+    
+    <item>
+      <title>More input, more input</title>
+      <pubDate>Sat, 27 Aug 2011 14:54:19 -0000</pubDate>
+      <guid isPermaLink="true">https://dribbble.com/shots/249009-More-input-more-input</guid>
+      <link>https://dribbble.com/shots/249009-More-input-more-input</link>
+      <description>&lt;p&gt;We&#39;re using these awesome bot avatars as default avatars on botriot.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[
+        <img src="https://d13yacurqjgara.cloudfront.net/users/2044/screenshots/249009/screen_shot_2011-08-27_at_7.54.04_am.png">
+        <p>We're using these awesome bot avatars as default avatars on botriot.</p>
+      ]]></content:encoded>
+      <category>photo</category>
+      
+    </item>
+    
+    <item>
+      <title>Personal site redesign</title>
+      <pubDate>Sun, 03 May 2015 14:13:10 -0000</pubDate>
+      <guid isPermaLink="true">https://dribbble.com/shots/2046512-Personal-site-redesign</guid>
+      <link>https://dribbble.com/shots/2046512-Personal-site-redesign</link>
+      <description>&lt;p&gt;Decided to give my site &lt;a href=&quot;http://jonrohan.codes/&quot; target=&quot;_blank&quot;&gt;http://jonrohan.codes/&lt;/a&gt; a little bit of a design update. More details here &lt;a href=&quot;http://jonrohan.codes/fieldnotes/a-big-update-to-this-site/#post&quot; target=&quot;_blank&quot;&gt;http://jonrohan.codes/fieldnotes/a-big-update-to-this-site/#post&lt;/a&gt;&lt;/p&gt;</description>
+      <content:encoded><![CDATA[
+        <img src="https://d13yacurqjgara.cloudfront.net/users/2044/screenshots/2046512/untitled_1x.png">
+        <p>Decided to give my site <a href="http://jonrohan.codes/" target="_blank">http://jonrohan.codes/</a> a little bit of a design update. More details here <a href="http://jonrohan.codes/fieldnotes/a-big-update-to-this-site/#post" target="_blank">http://jonrohan.codes/fieldnotes/a-big-update-to-this-site/#post</a></p>
+      ]]></content:encoded>
+      <category>photo</category>
+      
+      <category>blog</category>
+      
+      <category>code</category>
+      
+      <category>developer</category>
+      
+      <category>portfolio</category>
+      
+    </item>
+    
+    <item>
+      <title>Commits listing</title>
+      <pubDate>Sun, 12 Apr 2015 19:31:33 -0000</pubDate>
+      <guid isPermaLink="true">https://dribbble.com/shots/2016018-Commits-listing</guid>
+      <link>https://dribbble.com/shots/2016018-Commits-listing</link>
+      <description>&lt;p&gt;Posting this after updating it a few months ago, but I thought I&#39;d share.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[
+        <img src="https://d13yacurqjgara.cloudfront.net/users/2044/screenshots/2016018/screen_shot_2015-04-12_at_3.30.26_pm_1x.png">
+        <p>Posting this after updating it a few months ago, but I thought I'd share.</p>
+      ]]></content:encoded>
+      <category>photo</category>
+      
+      <category>commits</category>
+      
+      <category>github</category>
+      
+    </item>
+    
+    <item>
+      <title>Following listing</title>
+      <pubDate>Tue, 09 Jul 2013 23:39:30 -0000</pubDate>
+      <guid isPermaLink="true">https://dribbble.com/shots/1149268-Following-listing</guid>
+      <link>https://dribbble.com/shots/1149268-Following-listing</link>
+      <description>&lt;p&gt;I updated the following/followers pages on GitHub. Was trying to get them to be more enticing.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[
+        <img src="https://d13yacurqjgara.cloudfront.net/users/2044/screenshots/1149268/screen_shot_2013-07-09_at_4.38.42_pm.png">
+        <p>I updated the following/followers pages on GitHub. Was trying to get them to be more enticing.</p>
+      ]]></content:encoded>
+      <category>photo</category>
+      
+      <category>follow</category>
+      
+      <category>following</category>
+      
+      <category>github</category>
+      
+      <category>unfollow</category>
+      
+    </item>
+    
+    <item>
+      <title>Heisencat</title>
+      <pubDate>Fri, 24 Aug 2012 21:04:50 -0000</pubDate>
+      <guid isPermaLink="true">https://dribbble.com/shots/702065-Heisencat</guid>
+      <link>https://dribbble.com/shots/702065-Heisencat</link>
+      <description>&lt;p&gt;#laterdribbble I don&#39;t know how I didn&#39;t dribbble this before. full size here &lt;a href=&quot;http://octodex.github.com/heisencat/&quot; target=&quot;_blank&quot;&gt;http://octodex.github.com/heisencat/&lt;/a&gt;&lt;/p&gt;</description>
+      <content:encoded><![CDATA[
+        <img src="https://d13yacurqjgara.cloudfront.net/users/2044/screenshots/702065/heisencat.png">
+        <p>#laterdribbble I don't know how I didn't dribbble this before. full size here <a href="http://octodex.github.com/heisencat/" target="_blank">http://octodex.github.com/heisencat/</a></p>
+      ]]></content:encoded>
+      <category>photo</category>
+      
+      <category>breaking bad</category>
+      
+      <category>github</category>
+      
+      <category>octocat</category>
+      
+    </item>
+    
+    <item>
+      <title>2012 Workspace</title>
+      <pubDate>Fri, 17 Feb 2012 22:05:55 -0000</pubDate>
+      <guid isPermaLink="true">https://dribbble.com/shots/431890-2012-Workspace</guid>
+      <link>https://dribbble.com/shots/431890-2012-Workspace</link>
+      <description>&lt;p&gt;My GitHub Desk&lt;/p&gt;</description>
+      <content:encoded><![CDATA[
+        <img src="https://d13yacurqjgara.cloudfront.net/users/2044/screenshots/431890/img_1185.jpg">
+        <p>My GitHub Desk</p>
+      ]]></content:encoded>
+      <category>photo</category>
+      
+    </item>
+    
+    <item>
+      <title>Total Bots</title>
+      <pubDate>Mon, 14 Nov 2011 19:35:23 -0000</pubDate>
+      <guid isPermaLink="true">https://dribbble.com/shots/319062-Total-Bots</guid>
+      <link>https://dribbble.com/shots/319062-Total-Bots</link>
+      <description>&lt;p&gt;I love stats dashboards.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[
+        <img src="https://d13yacurqjgara.cloudfront.net/users/2044/screenshots/319062/screen_shot_2011-11-14_at_11.34.17_am.png">
+        <p>I love stats dashboards.</p>
+      ]]></content:encoded>
+      <category>photo</category>
+      
+      <category>graphs</category>
+      
+      <category>stats</category>
+      
+    </item>
+    
+
   </channel>
 </rss>
