@@ -28,7 +28,7 @@
 
   $(document).ready(function() {
     var emd;
-    emd = ["j", "on", "@", "jonr", "ohan", ".me"];
+    emd = ["y", "es", "@", "jonr", "ohan", ".codes"];
     return $('.js-em').attr("href", "mailto:" + (emd.join("")));
   });
 
