@@ -7,9 +7,9 @@
   <link href="http://jonrohan.codes/"/>
   <icon>http://jonrohan.codes/assets/images/apple-touch-icon-72x72.png</icon>
   <logo>http://jonrohan.codes/assets/images/apple-touch-icon-72x72.png</logo>
-  <updated>2015-06-02T00:00:00-04:00</updated>
+  <updated>2015-06-02T00:00:00-07:00</updated>
   <id>http://jonrohan.codes/</id>
-  <rights type="html">&amp;copy; Jon Rohan 2017. All rights reserved.</rights>
+  <rights type="html">&amp;copy; Jon Rohan 2018. All rights reserved.</rights>
 
   <author>
     <name>Jon Rohan</name>
@@ -20,8 +20,8 @@
   <entry>
     <id>http://jonrohan.codes/fieldnotes/implementing-an-all-css-tooltip</id>
     <title>Implementing an all CSS tooltip</title>
-    <updated>2015-06-02T00:00:00-04:00</updated>
-    <published>2015-06-02T00:00:00-04:00</published>
+    <updated>2015-06-02T00:00:00-07:00</updated>
+    <published>2015-06-02T00:00:00-07:00</published>
     <link href="http://jonrohan.codes/fieldnotes/implementing-an-all-css-tooltip?utm_source=feed&amp;utm_medium=atom&amp;utm_campaign=implementing-an-all-css-tooltip"/>
     <category term="fieldnotes"/>
     
@@ -212,8 +212,8 @@
   <entry>
     <id>http://jonrohan.codes/fieldnotes/vertically-center-clipped-image</id>
     <title>How to vertically center a clipped image in CSS</title>
-    <updated>2015-05-08T00:00:00-04:00</updated>
-    <published>2015-05-08T00:00:00-04:00</published>
+    <updated>2015-05-08T00:00:00-07:00</updated>
+    <published>2015-05-08T00:00:00-07:00</published>
     <link href="http://jonrohan.codes/fieldnotes/vertically-center-clipped-image?utm_source=feed&amp;utm_medium=atom&amp;utm_campaign=how-to-vertically-center-a-clipped-image-in-css"/>
     <category term="fieldnotes"/>
     
@@ -296,8 +296,8 @@
   <entry>
     <id>http://jonrohan.codes/fieldnotes/a-big-update-to-this-site</id>
     <title>A big update to this site</title>
-    <updated>2015-05-03T00:00:00-04:00</updated>
-    <published>2015-05-03T00:00:00-04:00</published>
+    <updated>2015-05-03T00:00:00-07:00</updated>
+    <published>2015-05-03T00:00:00-07:00</published>
     <link href="http://jonrohan.codes/fieldnotes/a-big-update-to-this-site?utm_source=feed&amp;utm_medium=atom&amp;utm_campaign=a-big-update-to-this-site"/>
     <category term="fieldnotes"/>
     
@@ -402,8 +402,8 @@
   <entry>
     <id>http://jonrohan.codes/fieldnotes/scale-box-by-ratio</id>
     <title>Scale a block-level element in CSS</title>
-    <updated>2015-05-02T00:00:00-04:00</updated>
-    <published>2015-05-02T00:00:00-04:00</published>
+    <updated>2015-05-02T00:00:00-07:00</updated>
+    <published>2015-05-02T00:00:00-07:00</published>
     <link href="http://jonrohan.codes/fieldnotes/scale-box-by-ratio?utm_source=feed&amp;utm_medium=atom&amp;utm_campaign=scale-a-block-level-element-in-css"/>
     <category term="fieldnotes"/>
     
@@ -465,8 +465,8 @@
   <entry>
     <id>http://jonrohan.codes/fieldnotes/primer-css-styleguide</id>
     <title>Primer CSS Styleguide</title>
-    <updated>2015-03-23T00:00:00-04:00</updated>
-    <published>2015-03-23T00:00:00-04:00</published>
+    <updated>2015-03-23T00:00:00-07:00</updated>
+    <published>2015-03-23T00:00:00-07:00</published>
     <link href="http://jonrohan.codes/fieldnotes/primer-css-styleguide?utm_source=feed&amp;utm_medium=atom&amp;utm_campaign=primer-css-styleguide"/>
     <category term="fieldnotes"/>
     
@@ -525,8 +525,8 @@
   <entry>
     <id>http://jonrohan.codes/fieldnotes/semantic-css-class-naming</id>
     <title>Class Naming: Semantic Approach</title>
-    <updated>2012-01-20T00:00:00-05:00</updated>
-    <published>2012-01-20T00:00:00-05:00</published>
+    <updated>2012-01-20T00:00:00-08:00</updated>
+    <published>2012-01-20T00:00:00-08:00</published>
     <link href="http://jonrohan.codes/fieldnotes/semantic-css-class-naming?utm_source=feed&amp;utm_medium=atom&amp;utm_campaign=class-naming-semantic-approach"/>
     <category term="fieldnotes"/>
     
@@ -581,8 +581,8 @@
   <entry>
     <id>http://jonrohan.codes/fieldnotes/list-git-contributors</id>
     <title>List of Git Contributors</title>
-    <updated>2012-01-15T00:00:00-05:00</updated>
-    <published>2012-01-15T00:00:00-05:00</published>
+    <updated>2012-01-15T00:00:00-08:00</updated>
+    <published>2012-01-15T00:00:00-08:00</published>
     <link href="http://jonrohan.codes/fieldnotes/list-git-contributors?utm_source=feed&amp;utm_medium=atom&amp;utm_campaign=list-of-git-contributors"/>
     <category term="fieldnotes"/>
     
@@ -617,8 +617,8 @@
   <entry>
     <id>http://jonrohan.codes/fieldnotes/clear-fixes</id>
     <title>Clear Fixes</title>
-    <updated>2011-01-20T00:00:00-05:00</updated>
-    <published>2011-01-20T00:00:00-05:00</published>
+    <updated>2011-01-20T00:00:00-08:00</updated>
+    <published>2011-01-20T00:00:00-08:00</published>
     <link href="http://jonrohan.codes/fieldnotes/clear-fixes?utm_source=feed&amp;utm_medium=atom&amp;utm_campaign=clear-fixes"/>
     <category term="fieldnotes"/>
     
@@ -715,8 +715,8 @@
   <entry>
     <id>http://jonrohan.codes/fieldnotes/creating-triangles-in-css</id>
     <title>Creating Triangles in CSS</title>
-    <updated>2011-01-18T00:00:00-05:00</updated>
-    <published>2011-01-18T00:00:00-05:00</published>
+    <updated>2011-01-18T00:00:00-08:00</updated>
+    <published>2011-01-18T00:00:00-08:00</published>
     <link href="http://jonrohan.codes/fieldnotes/creating-triangles-in-css?utm_source=feed&amp;utm_medium=atom&amp;utm_campaign=creating-triangles-in-css"/>
     <category term="fieldnotes"/>
     
@@ -860,8 +860,8 @@
   <entry>
     <id>http://jonrohan.codes/fieldnotes/classes-and-inheritance</id>
     <title>Classes and Inheritance</title>
-    <updated>2010-10-15T00:00:00-04:00</updated>
-    <published>2010-10-15T00:00:00-04:00</published>
+    <updated>2010-10-15T00:00:00-07:00</updated>
+    <published>2010-10-15T00:00:00-07:00</published>
     <link href="http://jonrohan.codes/fieldnotes/classes-and-inheritance?utm_source=feed&amp;utm_medium=atom&amp;utm_campaign=classes-and-inheritance"/>
     <category term="fieldnotes"/>
     
@@ -932,8 +932,8 @@
   <entry>
     <id>http://jonrohan.codes/fieldnotes/text-rotation</id>
     <title>Text Rotation</title>
-    <updated>2010-10-10T00:00:00-04:00</updated>
-    <published>2010-10-10T00:00:00-04:00</published>
+    <updated>2010-10-10T00:00:00-07:00</updated>
+    <published>2010-10-10T00:00:00-07:00</published>
     <link href="http://jonrohan.codes/fieldnotes/text-rotation?utm_source=feed&amp;utm_medium=atom&amp;utm_campaign=text-rotation"/>
     <category term="fieldnotes"/>
     
@@ -1085,8 +1085,8 @@
   <entry>
     <id>http://jonrohan.codes/fieldnotes/dead-simple-git-workflow-for-agile-teams</id>
     <title>Dead Simple Git Workflow</title>
-    <updated>2010-10-09T00:00:00-04:00</updated>
-    <published>2010-10-09T00:00:00-04:00</published>
+    <updated>2010-10-09T00:00:00-07:00</updated>
+    <published>2010-10-09T00:00:00-07:00</published>
     <link href="http://jonrohan.codes/fieldnotes/dead-simple-git-workflow-for-agile-teams?utm_source=feed&amp;utm_medium=atom&amp;utm_campaign=dead-simple-git-workflow"/>
     <category term="fieldnotes"/>
     
@@ -1174,8 +1174,8 @@ git branch -d &lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quo
   <entry>
     <id>http://jonrohan.codes/fieldnotes/8-bit-kill-screen</id>
     <title>8-bit Kill Screen</title>
-    <updated>2010-10-04T00:00:00-04:00</updated>
-    <published>2010-10-04T00:00:00-04:00</published>
+    <updated>2010-10-04T00:00:00-07:00</updated>
+    <published>2010-10-04T00:00:00-07:00</published>
     <link href="http://jonrohan.codes/fieldnotes/8-bit-kill-screen?utm_source=feed&amp;utm_medium=atom&amp;utm_campaign=8-bit-kill-screen"/>
     <category term="fieldnotes"/>
     
@@ -1208,8 +1208,8 @@ git branch -d &lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quo
   <entry>
     <id>http://jonrohan.codes/fieldnotes/deck-of-cards</id>
     <title>Building a deck of 20 cards and shuffling them</title>
-    <updated>2010-06-16T00:00:00-04:00</updated>
-    <published>2010-06-16T00:00:00-04:00</published>
+    <updated>2010-06-16T00:00:00-07:00</updated>
+    <published>2010-06-16T00:00:00-07:00</published>
     <link href="http://jonrohan.codes/fieldnotes/deck-of-cards?utm_source=feed&amp;utm_medium=atom&amp;utm_campaign=building-a-deck-of-20-cards-and-shuffling-them"/>
     <category term="fieldnotes"/>
     
@@ -1470,7 +1470,7 @@ git branch -d &lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quo
     <link href="https://dribbble.com/shots/1149268-Following-listing"/>
     <summary type="html">&lt;p&gt;I updated the following/followers pages on GitHub. Was trying to get them to be more enticing.&lt;/p&gt;</summary>
     <content type="html">
-      <img src="https://d13yacurqjgara.cloudfront.net/users/2044/screenshots/1149268/screen_shot_2013-07-09_at_4.38.42_pm.png"/>
+      <img src="https://cdn.dribbble.com/users/2044/screenshots/1149268/screen_shot_2013-07-09_at_4.38.42_pm.png"/>
       <p>I updated the following/followers pages on GitHub. Was trying to get them to be more enticing.</p>
     </content>
     <category term="photo"/>
@@ -1493,7 +1493,7 @@ git branch -d &lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quo
     <link href="https://dribbble.com/shots/2016018-Commits-listing"/>
     <summary type="html">&lt;p&gt;Posting this after updating it a few months ago, but I thought I&#39;d share.&lt;/p&gt;</summary>
     <content type="html">
-      <img src="https://d13yacurqjgara.cloudfront.net/users/2044/screenshots/2016018/screen_shot_2015-04-12_at_3.30.26_pm_1x.png"/>
+      <img src="https://cdn.dribbble.com/users/2044/screenshots/2016018/screen_shot_2015-04-12_at_3.30.26_pm_1x.png"/>
       <p>Posting this after updating it a few months ago, but I thought I'd share.</p>
     </content>
     <category term="photo"/>
@@ -1512,7 +1512,7 @@ git branch -d &lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quo
     <link href="https://dribbble.com/shots/702065-Heisencat"/>
     <summary type="html">&lt;p&gt;#laterdribbble I don&#39;t know how I didn&#39;t dribbble this before. full size here &lt;a href=&quot;http://octodex.github.com/heisencat/&quot; rel=&quot;noreferrer&quot;&gt;http://octodex.github.com/heisencat/&lt;/a&gt;&lt;/p&gt;</summary>
     <content type="html">
-      <img src="https://d13yacurqjgara.cloudfront.net/users/2044/screenshots/702065/heisencat.png"/>
+      <img src="https://cdn.dribbble.com/users/2044/screenshots/702065/heisencat.png"/>
       <p>#laterdribbble I don't know how I didn't dribbble this before. full size here <a href="http://octodex.github.com/heisencat/" rel="noreferrer">http://octodex.github.com/heisencat/</a></p>
     </content>
     <category term="photo"/>
@@ -1537,7 +1537,7 @@ git branch -d &lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quo
 
 &lt;p&gt;Full site - &lt;a href=&quot;http://jonrohan.codes/styleguide/&quot; rel=&quot;noreferrer&quot;&gt;http://jonrohan.codes/styleguide/&lt;/a&gt;&lt;/p&gt;</summary>
     <content type="html">
-      <img src="https://d13yacurqjgara.cloudfront.net/users/2044/screenshots/2097371/screen_shot_2015-06-08_at_8.29.58_am_1x.png"/>
+      <img src="https://cdn.dribbble.com/users/2044/screenshots/2097371/screen_shot_2015-06-08_at_8.29.58_am_1x.png"/>
       <p>This is my personal coding styleguide. I try to cover how I write HTML, CSS, JavaScript and Ruby.</p>
 
 <p>I'm still writing out more docs, but I think I've pretty much nailed the design down.</p>
@@ -1570,7 +1570,7 @@ git branch -d &lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quo
     <link href="https://dribbble.com/shots/249009-More-input-more-input"/>
     <summary type="html">&lt;p&gt;We&#39;re using these awesome bot avatars as default avatars on botriot.&lt;/p&gt;</summary>
     <content type="html">
-      <img src="https://d13yacurqjgara.cloudfront.net/users/2044/screenshots/249009/screen_shot_2011-08-27_at_7.54.04_am.png"/>
+      <img src="https://cdn.dribbble.com/users/2044/screenshots/249009/screen_shot_2011-08-27_at_7.54.04_am.png"/>
       <p>We're using these awesome bot avatars as default avatars on botriot.</p>
     </content>
     <category term="photo"/>
@@ -1585,7 +1585,7 @@ git branch -d &lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quo
     <link href="https://dribbble.com/shots/2046512-Personal-site-redesign"/>
     <summary type="html">&lt;p&gt;Decided to give my site &lt;a href=&quot;http://jonrohan.codes/&quot; rel=&quot;noreferrer&quot;&gt;http://jonrohan.codes/&lt;/a&gt; a little bit of a design update. More details here &lt;a href=&quot;http://jonrohan.codes/fieldnotes/a-big-update-to-this-site/#post&quot; rel=&quot;noreferrer&quot;&gt;http://jonrohan.codes/fieldnotes/a-big-update-to-this-site/#post&lt;/a&gt;&lt;/p&gt;</summary>
     <content type="html">
-      <img src="https://d13yacurqjgara.cloudfront.net/users/2044/screenshots/2046512/untitled_1x.png"/>
+      <img src="https://cdn.dribbble.com/users/2044/screenshots/2046512/untitled_1x.png"/>
       <p>Decided to give my site <a href="http://jonrohan.codes/" rel="noreferrer">http://jonrohan.codes/</a> a little bit of a design update. More details here <a href="http://jonrohan.codes/fieldnotes/a-big-update-to-this-site/#post" rel="noreferrer">http://jonrohan.codes/fieldnotes/a-big-update-to-this-site/#post</a></p>
     </content>
     <category term="photo"/>
@@ -1608,7 +1608,7 @@ git branch -d &lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quo
     <link href="https://dribbble.com/shots/431890-2012-Workspace"/>
     <summary type="html">&lt;p&gt;My GitHub Desk&lt;/p&gt;</summary>
     <content type="html">
-      <img src="https://d13yacurqjgara.cloudfront.net/users/2044/screenshots/431890/img_1185.jpg"/>
+      <img src="https://cdn.dribbble.com/users/2044/screenshots/431890/img_1185.jpg"/>
       <p>My GitHub Desk</p>
     </content>
     <category term="photo"/>
@@ -1623,7 +1623,7 @@ git branch -d &lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quo
     <link href="https://dribbble.com/shots/319062-Total-Bots"/>
     <summary type="html">&lt;p&gt;I love stats dashboards.&lt;/p&gt;</summary>
     <content type="html">
-      <img src="https://d13yacurqjgara.cloudfront.net/users/2044/screenshots/319062/screen_shot_2011-11-14_at_11.34.17_am.png"/>
+      <img src="https://cdn.dribbble.com/users/2044/screenshots/319062/screen_shot_2011-11-14_at_11.34.17_am.png"/>
       <p>I love stats dashboards.</p>
     </content>
     <category term="photo"/>

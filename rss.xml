@@ -7,8 +7,8 @@
     <link>http://jonrohan.codes</link>
     <description><![CDATA[Web Designer & Developer]]></description>
     <language>en</language>
-    <lastBuildDate>Tue, 02 Jun 2015 00:00:00 -0400</lastBuildDate>
-    <copyright>Copyright Jon Rohan 2017. All rights reserved.</copyright>
+    <lastBuildDate>Tue, 02 Jun 2015 00:00:00 -0700</lastBuildDate>
+    <copyright>Copyright Jon Rohan 2018. All rights reserved.</copyright>
 
     
     <item>
@@ -16,7 +16,7 @@
       <link>http://jonrohan.codes/fieldnotes/implementing-an-all-css-tooltip?utm_source=feed&amp;utm_medium=rss&amp;utm_campaign=implementing-an-all-css-tooltip</link>
       <description>GitHub&#39;s UI is a complex system of actions, notes and complex meanings. As a result, we&#39;ve leaned pretty hard on tooltips. Since the site first launched we used a tooltip plugin called tipsy. Performance troubles led us to build CSS tooltips.</description>
       <guid isPermaLink="true">http://jonrohan.codes/fieldnotes/implementing-an-all-css-tooltip</guid>
-      <pubDate>Tue, 02 Jun 2015 00:00:00 -0400</pubDate>
+      <pubDate>Tue, 02 Jun 2015 00:00:00 -0700</pubDate>
       <category>fieldnotes</category>
       
       <category>css</category>
@@ -204,7 +204,7 @@
       <link>http://jonrohan.codes/fieldnotes/vertically-center-clipped-image?utm_source=feed&amp;utm_medium=rss&amp;utm_campaign=how-to-vertically-center-a-clipped-image-in-css</link>
       <description>Sometimes you need to clip an image to a certain height, even though the image may be taller. This article shows you how to clip the image and center it vertically.</description>
       <guid isPermaLink="true">http://jonrohan.codes/fieldnotes/vertically-center-clipped-image</guid>
-      <pubDate>Fri, 08 May 2015 00:00:00 -0400</pubDate>
+      <pubDate>Fri, 08 May 2015 00:00:00 -0700</pubDate>
       <category>fieldnotes</category>
       
       <category>css</category>
@@ -284,7 +284,7 @@
       <link>http://jonrohan.codes/fieldnotes/a-big-update-to-this-site?utm_source=feed&amp;utm_medium=rss&amp;utm_campaign=a-big-update-to-this-site</link>
       <description>I recently updated this site. I wanted to share what I was using to build this site. With details on what each thing is good for.</description>
       <guid isPermaLink="true">http://jonrohan.codes/fieldnotes/a-big-update-to-this-site</guid>
-      <pubDate>Sun, 03 May 2015 00:00:00 -0400</pubDate>
+      <pubDate>Sun, 03 May 2015 00:00:00 -0700</pubDate>
       <category>fieldnotes</category>
       
       <category>jekyll</category>
@@ -386,7 +386,7 @@
       <link>http://jonrohan.codes/fieldnotes/scale-box-by-ratio?utm_source=feed&amp;utm_medium=rss&amp;utm_campaign=scale-a-block-level-element-in-css</link>
       <description>Sometimes you want to scale an iframe window like an image, but the iframe doesn&#39;t behave that way. A good example is when you embed a youtube video in your site.</description>
       <guid isPermaLink="true">http://jonrohan.codes/fieldnotes/scale-box-by-ratio</guid>
-      <pubDate>Sat, 02 May 2015 00:00:00 -0400</pubDate>
+      <pubDate>Sat, 02 May 2015 00:00:00 -0700</pubDate>
       <category>fieldnotes</category>
       
       <category>css</category>
@@ -445,7 +445,7 @@
       <link>http://jonrohan.codes/fieldnotes/primer-css-styleguide?utm_source=feed&amp;utm_medium=rss&amp;utm_campaign=primer-css-styleguide</link>
       <description>We recently open sourced Primer, because we wanted to be transparent with our styleguide and if anyone could get any use out of it we would like to share. The toolkit isn’t meant to be a full fledged CSS framework like Bootstrap.</description>
       <guid isPermaLink="true">http://jonrohan.codes/fieldnotes/primer-css-styleguide</guid>
-      <pubDate>Mon, 23 Mar 2015 00:00:00 -0400</pubDate>
+      <pubDate>Mon, 23 Mar 2015 00:00:00 -0700</pubDate>
       <category>fieldnotes</category>
       
       <category>css</category>
@@ -501,7 +501,7 @@
       <link>http://jonrohan.codes/fieldnotes/semantic-css-class-naming?utm_source=feed&amp;utm_medium=rss&amp;utm_campaign=class-naming-semantic-approach</link>
       <description>With the rise of web standards we have seen the rise of the semantic web. This applies to the HTML elements selected as well as the class names chosen for the HTML. When choosing semantic elements and class names you want to pick a name considering the function or meaning of the element as it is on your page, not the position or style of the element.</description>
       <guid isPermaLink="true">http://jonrohan.codes/fieldnotes/semantic-css-class-naming</guid>
-      <pubDate>Fri, 20 Jan 2012 00:00:00 -0500</pubDate>
+      <pubDate>Fri, 20 Jan 2012 00:00:00 -0800</pubDate>
       <category>fieldnotes</category>
       
       <category>css</category>
@@ -553,7 +553,7 @@
       <link>http://jonrohan.codes/fieldnotes/list-git-contributors?utm_source=feed&amp;utm_medium=rss&amp;utm_campaign=list-of-git-contributors</link>
       <description>Get a list of git contributors and sort by number of commits.</description>
       <guid isPermaLink="true">http://jonrohan.codes/fieldnotes/list-git-contributors</guid>
-      <pubDate>Sun, 15 Jan 2012 00:00:00 -0500</pubDate>
+      <pubDate>Sun, 15 Jan 2012 00:00:00 -0800</pubDate>
       <category>fieldnotes</category>
       
       <category>git</category>
@@ -585,7 +585,7 @@
       <link>http://jonrohan.codes/fieldnotes/clear-fixes?utm_source=feed&amp;utm_medium=rss&amp;utm_campaign=clear-fixes</link>
       <description>There is a common problem in front end engineering where, when you float an element it is actually removed from it&#39;s parents&#39; flow. This can cause the elements below the floating element to run into the floating elements.</description>
       <guid isPermaLink="true">http://jonrohan.codes/fieldnotes/clear-fixes</guid>
-      <pubDate>Thu, 20 Jan 2011 00:00:00 -0500</pubDate>
+      <pubDate>Thu, 20 Jan 2011 00:00:00 -0800</pubDate>
       <category>fieldnotes</category>
       
       <category>css</category>
@@ -679,7 +679,7 @@
       <link>http://jonrohan.codes/fieldnotes/creating-triangles-in-css?utm_source=feed&amp;utm_medium=rss&amp;utm_campaign=creating-triangles-in-css</link>
       <description>I&#39;ve come across a few techniques and tips in my career, while working at my last gig a co-worker pointed me to this technique. I believe this was originally discovered by the legendary Eric Meyer, but I couldn&#39;t find much documentation about it on the web. Which is why I am sharing it here.</description>
       <guid isPermaLink="true">http://jonrohan.codes/fieldnotes/creating-triangles-in-css</guid>
-      <pubDate>Tue, 18 Jan 2011 00:00:00 -0500</pubDate>
+      <pubDate>Tue, 18 Jan 2011 00:00:00 -0800</pubDate>
       <category>fieldnotes</category>
       
       <category>css</category>
@@ -820,7 +820,7 @@
       <link>http://jonrohan.codes/fieldnotes/classes-and-inheritance?utm_source=feed&amp;utm_medium=rss&amp;utm_campaign=classes-and-inheritance</link>
       <description>Object oriented JavaScript is everywhere today, and its the type of thing that takes a developer from someone tinkering with JavaScript on the path to becoming a JavaScript ninja.</description>
       <guid isPermaLink="true">http://jonrohan.codes/fieldnotes/classes-and-inheritance</guid>
-      <pubDate>Fri, 15 Oct 2010 00:00:00 -0400</pubDate>
+      <pubDate>Fri, 15 Oct 2010 00:00:00 -0700</pubDate>
       <category>fieldnotes</category>
       
       <category>javascript</category>
@@ -888,7 +888,7 @@
       <link>http://jonrohan.codes/fieldnotes/text-rotation?utm_source=feed&amp;utm_medium=rss&amp;utm_campaign=text-rotation</link>
       <description>What I wanted to make was a clock. The basis of this project is using the -webkit-transform:rotate(0deg); css property. This allows you to rotate any object 360 degrees. I began to wonder, if I have a line, and I setup a javascript timer can I rotate it every second?</description>
       <guid isPermaLink="true">http://jonrohan.codes/fieldnotes/text-rotation</guid>
-      <pubDate>Sun, 10 Oct 2010 00:00:00 -0400</pubDate>
+      <pubDate>Sun, 10 Oct 2010 00:00:00 -0700</pubDate>
       <category>fieldnotes</category>
       
       <category>css</category>
@@ -1037,7 +1037,7 @@
       <link>http://jonrohan.codes/fieldnotes/dead-simple-git-workflow-for-agile-teams?utm_source=feed&amp;utm_medium=rss&amp;utm_campaign=dead-simple-git-workflow</link>
       <description>Recently I have had the privilege to work with a few excellent small agile teams. With each team, they have their own process, which works best for them. And there&#39;s nothing wrong with that, a team should work in it&#39;s most effective way. But I came across a team recently that had a workflow that really impressed me. It is described as an extremely cool Git workflow.</description>
       <guid isPermaLink="true">http://jonrohan.codes/fieldnotes/dead-simple-git-workflow-for-agile-teams</guid>
-      <pubDate>Sat, 09 Oct 2010 00:00:00 -0400</pubDate>
+      <pubDate>Sat, 09 Oct 2010 00:00:00 -0700</pubDate>
       <category>fieldnotes</category>
       
       <category>git</category>
@@ -1122,7 +1122,7 @@ git branch -d <span class="k">${</span><span class="nv">CURRENT</span><span clas
       <link>http://jonrohan.codes/fieldnotes/8-bit-kill-screen?utm_source=feed&amp;utm_medium=rss&amp;utm_campaign=8-bit-kill-screen</link>
       <description>Using paralax scrolling and canvas to create a &#39;kill screen&#39; effect.</description>
       <guid isPermaLink="true">http://jonrohan.codes/fieldnotes/8-bit-kill-screen</guid>
-      <pubDate>Mon, 04 Oct 2010 00:00:00 -0400</pubDate>
+      <pubDate>Mon, 04 Oct 2010 00:00:00 -0700</pubDate>
       <category>fieldnotes</category>
       
       <category>canvas</category>
@@ -1152,7 +1152,7 @@ git branch -d <span class="k">${</span><span class="nv">CURRENT</span><span clas
       <link>http://jonrohan.codes/fieldnotes/deck-of-cards?utm_source=feed&amp;utm_medium=rss&amp;utm_campaign=building-a-deck-of-20-cards-and-shuffling-them</link>
       <description>Was playing with making some cards, without using any images or such.</description>
       <guid isPermaLink="true">http://jonrohan.codes/fieldnotes/deck-of-cards</guid>
-      <pubDate>Wed, 16 Jun 2010 00:00:00 -0400</pubDate>
+      <pubDate>Wed, 16 Jun 2010 00:00:00 -0700</pubDate>
       <category>fieldnotes</category>
       
       <category>javascript</category>
@@ -1389,7 +1389,7 @@ git branch -d <span class="k">${</span><span class="nv">CURRENT</span><span clas
       <link>https://dribbble.com/shots/1149268-Following-listing</link>
       <description>&lt;p&gt;I updated the following/followers pages on GitHub. Was trying to get them to be more enticing.&lt;/p&gt;</description>
       <content:encoded><![CDATA[
-        <img src="https://d13yacurqjgara.cloudfront.net/users/2044/screenshots/1149268/screen_shot_2013-07-09_at_4.38.42_pm.png">
+        <img src="https://cdn.dribbble.com/users/2044/screenshots/1149268/screen_shot_2013-07-09_at_4.38.42_pm.png">
         <p>I updated the following/followers pages on GitHub. Was trying to get them to be more enticing.</p>
       ]]></content:encoded>
       <category>photo</category>
@@ -1411,7 +1411,7 @@ git branch -d <span class="k">${</span><span class="nv">CURRENT</span><span clas
       <link>https://dribbble.com/shots/2016018-Commits-listing</link>
       <description>&lt;p&gt;Posting this after updating it a few months ago, but I thought I&#39;d share.&lt;/p&gt;</description>
       <content:encoded><![CDATA[
-        <img src="https://d13yacurqjgara.cloudfront.net/users/2044/screenshots/2016018/screen_shot_2015-04-12_at_3.30.26_pm_1x.png">
+        <img src="https://cdn.dribbble.com/users/2044/screenshots/2016018/screen_shot_2015-04-12_at_3.30.26_pm_1x.png">
         <p>Posting this after updating it a few months ago, but I thought I'd share.</p>
       ]]></content:encoded>
       <category>photo</category>
@@ -1429,7 +1429,7 @@ git branch -d <span class="k">${</span><span class="nv">CURRENT</span><span clas
       <link>https://dribbble.com/shots/702065-Heisencat</link>
       <description>&lt;p&gt;#laterdribbble I don&#39;t know how I didn&#39;t dribbble this before. full size here &lt;a href=&quot;http://octodex.github.com/heisencat/&quot; rel=&quot;noreferrer&quot;&gt;http://octodex.github.com/heisencat/&lt;/a&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[
-        <img src="https://d13yacurqjgara.cloudfront.net/users/2044/screenshots/702065/heisencat.png">
+        <img src="https://cdn.dribbble.com/users/2044/screenshots/702065/heisencat.png">
         <p>#laterdribbble I don't know how I didn't dribbble this before. full size here <a href="http://octodex.github.com/heisencat/" rel="noreferrer">http://octodex.github.com/heisencat/</a></p>
       ]]></content:encoded>
       <category>photo</category>
@@ -1453,7 +1453,7 @@ git branch -d <span class="k">${</span><span class="nv">CURRENT</span><span clas
 
 &lt;p&gt;Full site - &lt;a href=&quot;http://jonrohan.codes/styleguide/&quot; rel=&quot;noreferrer&quot;&gt;http://jonrohan.codes/styleguide/&lt;/a&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[
-        <img src="https://d13yacurqjgara.cloudfront.net/users/2044/screenshots/2097371/screen_shot_2015-06-08_at_8.29.58_am_1x.png">
+        <img src="https://cdn.dribbble.com/users/2044/screenshots/2097371/screen_shot_2015-06-08_at_8.29.58_am_1x.png">
         <p>This is my personal coding styleguide. I try to cover how I write HTML, CSS, JavaScript and Ruby.</p>
 
 <p>I'm still writing out more docs, but I think I've pretty much nailed the design down.</p>
@@ -1485,7 +1485,7 @@ git branch -d <span class="k">${</span><span class="nv">CURRENT</span><span clas
       <link>https://dribbble.com/shots/249009-More-input-more-input</link>
       <description>&lt;p&gt;We&#39;re using these awesome bot avatars as default avatars on botriot.&lt;/p&gt;</description>
       <content:encoded><![CDATA[
-        <img src="https://d13yacurqjgara.cloudfront.net/users/2044/screenshots/249009/screen_shot_2011-08-27_at_7.54.04_am.png">
+        <img src="https://cdn.dribbble.com/users/2044/screenshots/249009/screen_shot_2011-08-27_at_7.54.04_am.png">
         <p>We're using these awesome bot avatars as default avatars on botriot.</p>
       ]]></content:encoded>
       <category>photo</category>
@@ -1499,7 +1499,7 @@ git branch -d <span class="k">${</span><span class="nv">CURRENT</span><span clas
       <link>https://dribbble.com/shots/2046512-Personal-site-redesign</link>
       <description>&lt;p&gt;Decided to give my site &lt;a href=&quot;http://jonrohan.codes/&quot; rel=&quot;noreferrer&quot;&gt;http://jonrohan.codes/&lt;/a&gt; a little bit of a design update. More details here &lt;a href=&quot;http://jonrohan.codes/fieldnotes/a-big-update-to-this-site/#post&quot; rel=&quot;noreferrer&quot;&gt;http://jonrohan.codes/fieldnotes/a-big-update-to-this-site/#post&lt;/a&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[
-        <img src="https://d13yacurqjgara.cloudfront.net/users/2044/screenshots/2046512/untitled_1x.png">
+        <img src="https://cdn.dribbble.com/users/2044/screenshots/2046512/untitled_1x.png">
         <p>Decided to give my site <a href="http://jonrohan.codes/" rel="noreferrer">http://jonrohan.codes/</a> a little bit of a design update. More details here <a href="http://jonrohan.codes/fieldnotes/a-big-update-to-this-site/#post" rel="noreferrer">http://jonrohan.codes/fieldnotes/a-big-update-to-this-site/#post</a></p>
       ]]></content:encoded>
       <category>photo</category>
@@ -1521,7 +1521,7 @@ git branch -d <span class="k">${</span><span class="nv">CURRENT</span><span clas
       <link>https://dribbble.com/shots/431890-2012-Workspace</link>
       <description>&lt;p&gt;My GitHub Desk&lt;/p&gt;</description>
       <content:encoded><![CDATA[
-        <img src="https://d13yacurqjgara.cloudfront.net/users/2044/screenshots/431890/img_1185.jpg">
+        <img src="https://cdn.dribbble.com/users/2044/screenshots/431890/img_1185.jpg">
         <p>My GitHub Desk</p>
       ]]></content:encoded>
       <category>photo</category>
@@ -1535,7 +1535,7 @@ git branch -d <span class="k">${</span><span class="nv">CURRENT</span><span clas
       <link>https://dribbble.com/shots/319062-Total-Bots</link>
       <description>&lt;p&gt;I love stats dashboards.&lt;/p&gt;</description>
       <content:encoded><![CDATA[
-        <img src="https://d13yacurqjgara.cloudfront.net/users/2044/screenshots/319062/screen_shot_2011-11-14_at_11.34.17_am.png">
+        <img src="https://cdn.dribbble.com/users/2044/screenshots/319062/screen_shot_2011-11-14_at_11.34.17_am.png">
         <p>I love stats dashboards.</p>
       ]]></content:encoded>
       <category>photo</category>
